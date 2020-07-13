@@ -1,0 +1,49 @@
+//VARIABLES
+$p5:5px;
+$p10:10px;
+$p15:15px;
+
+.site-footer{
+
+    //LOGO
+    &-logo{
+        width: 112px;
+    }
+
+    //MENU
+    &-menu{
+        width: calc(100% - 112px);
+        .lv1{
+            width: calc(100% - #{$p10});
+            max-width: 960px;
+            > li{
+                width: calc(25% - #{$p10});
+                padding: 0 $p5;
+                > a{
+                    padding: $p15 0;
+                    cursor: auto;
+                    pointer-events: none;
+                    background-image: none !important;
+                    background-position: inherit;
+                }
+            }
+        }
+        .lv2{
+            display: block;
+            padding: 0;
+            > li{
+                > a{
+                    padding: $p5 0;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//SCROLL TOP
+.scroll-top-btn{
+    top: -30px;
+}

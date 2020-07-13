@@ -1,0 +1,79 @@
+include __imports.pug
+
+include ../includes/__bulletin.pug
+.ems-container.site-footer-inner.ems-flex.ems-flex-wrap.p-t-50.p-b-60.p-lg-t-60.m-lg-t-60
+    .ems-section.order-lg-1.width-100
+        .ems-flex.ems-flex-column.d-ems-flex-row
+            .site-footer-logo.m-auto.m-lg-0
+                +image('no', 'frontend/images/header-logo.svg')(title="Ersa Mobilya" alt="Ersa Mobilya")
+            .site-footer-menu
+                .site-footer-menu-tab.ems-flex.ems-flex-column.d-ems-flex-row
+                    ul.ems-flex.lv1.ems-flex-wrap.d-ems-flex-right.p-lg-l-10.m-t-50.m-lg-t-0.m-lg-l-auto.accordion
+                        li(rel="tab-1")
+                            a(href="javascript:void(0);" class="display-block")
+                                |Products
+                            ul.lv2
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Products for Work
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Products for Life
+                        li(rel="tab-2")
+                            a(href="javascript:void(0);" class="display-block")
+                                |More
+                            ul.lv2
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Projects
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Designers
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Resources
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |News #{'&'} Stories
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Dealerzone
+                        li(rel="tab-3")
+                            a(href="javascript:void(0);" class="display-block")
+                                |Corporate
+                            ul.lv2
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Our Story
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Our Partners
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Showrooms
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Career
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Contact Us
+                        li(rel="tab-4")
+                            a(href="javascript:void(0);" class="display-block")
+                                |Legal
+                            ul.lv2
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Terms of Use
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Privacy Policy
+                                li
+                                    a(href="javascript:void(0);" class="display-block")
+                                        |Information of Services
+    .ems-flex.ems-flex-between.ems-flex-middle.ems-section.order-lg-3.m-t-50.p-lg-t-30.width-100
+        span.color-white.site-footer-copyright © 2020 Ersa Mobilya, All Rights Reserved.
+        a(href="https://www.minus99.com" title="-99 Design Studio" alt="-99 Design Studio" target="_blank" class="display-inline-block")
+            +image('no', 'frontend/images/minus99.svg')
+    .ems-section.order-lg-2.m-auto.m-t-30.m-lg-t-0.m-lg-l-0
+        a(href="javascript:void(0);" class="display-inline-flex ems-flex-center ems-flex-middle border-circle-4 position-relative scroll-top-btn")
+            +icon('top-arrow color-white')

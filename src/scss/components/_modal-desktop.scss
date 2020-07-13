@@ -1,0 +1,124 @@
+.modal {
+    &-header {
+        width: calc(100% - 80px);
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &-body {
+        @extend .d-ems-scrollbar;
+    }
+
+    &-default {
+        max-width: 90%;
+        max-height: 90%;
+        padding: $d-container-gap;
+    }
+}
+
+//MODALS CFGS
+//hide
+%modal-wrapper-hide {
+    opacity: 0;
+}
+//show
+%modal-wrapper-show {
+    opacity: 1;
+}
+//top
+%modal-wrapper-top {
+    transform: translateY(-75%);
+    transition: all .3s ease;
+}
+//left
+%modal-wrapper-left {
+    transform: translateX(-75%);
+    transition: all .12s ease;
+}
+//right
+%modal-wrapper-right {
+    right: 0;
+    left: auto;
+    transform: translateX(75%);
+    transition: all .12s ease;
+}
+//center
+%modal-wrapper-center {
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, 75%);
+    max-width: 940px;
+    border-radius: 0;
+    padding: 50px;
+    .modal-header {
+        padding: 0 0 20px;
+        width: 100%;
+    }
+    .modal-body {
+        padding: 0 10px 0 0;
+    }
+}
+//showing
+%modal-wrapper-block {
+    display: inline-flex;
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
+//y to x //need @extend %modal-wrapper-left or %modal-wrapper-right
+%modal-wrapper-y-to-x {
+    width: 95%;
+    max-width: 1320px;
+    max-height: none;
+    height: 100%;
+    border-radius: 0;
+}
+//no modal
+%modal-wrapper-static {
+    display: inline-flex;
+    position: static;
+    opacity: 1;
+    transform: none;
+}
+%modal-wrapper-no-fixed{
+    position: static;
+    opacity: 1;
+    transform: none;
+}
+%modal-wrapper-static-header {
+    width: 100%;
+    font-size: $font-size;
+    padding: 0 0 10px;
+}
+%modal-wrapper-static-body {
+    padding: 0;
+}
+
+//
+%modal-ready {
+    display: inline-flex;
+}
+
+%modal-animate {
+    overflow: initial;
+}
+%modal-animate-scrollbar-placeholder {
+    overflow: hidden;
+    padding-right: $native-scrollbar;
+}
+%modal-animate-wrapper-x {
+    transform: translateX(0);
+}
+%modal-animate-wrapper-y {
+    transform: translateY(0);
+    transition: all .3s ease;
+}
+%modal-animate-wrapper-y-header {
+    transform: translateY($d-site-header-height);
+}
+%modal-animate-wrapper-center {
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}

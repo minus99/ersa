@@ -1,0 +1,32 @@
+include __imports.pug
+
+//FILTER
+.ems-filter-overlay.ems-overlay(data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="remove")
+.ems-filter.modal-bottom
+    .modal-header.ems-mobile Düzenle
+        span.ems-qty.ems-qty-dark 5
+        //CLOSE
+        +icon('close')(href="javascript:void(0);" class="modal-close" data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="toggle")
+    .modal-body
+        ul.lvl-1.filter-tree.d-ems-flex.d-ems-flex-left
+            li
+                +link('Features')(href="javascript:void(0);")
+                ul.lvl-2
+                    li.col-2.d-ems-flex.d-ems-flex-wrap
+                        +link('<span></span> Height adjustable')(href="javascript:void(0);" class="filter_link")
+                        +link('<span></span> Sled base')(href="javascript:void(0);" class="filter_link")
+                        +link('<span></span> 4 leg')(href="javascript:void(0);" class="filter_link selected")
+                        +link('<span></span> Headrest')(href="javascript:void(0);" class="filter_link")
+                        +link('<span></span> Wood base')(href="javascript:void(0);" class="filter_link selected")
+            li
+                +link('Usage')(href="javascript:void(0);")
+                ul.lvl-2
+                    li.col-1.d-ems-flex.d-ems-flex-wrap
+                        +link('<span></span> Meeting Room')(href="javascript:void(0);" class="filter_link")
+                        +link('<span></span> Library')(href="javascript:void(0);" class="filter_link selected")
+                        +link('<span></span> Hospitality')(href="javascript:void(0);" class="filter_link")
+    .modal-footer.ems-mobile
+        .ga1
+            +link('Clean All')(href="javascript:void(0);" class="btn-filter-clear ems-link")
+        .ga2
+            +link('Apply')(href="javascript:void(0);" class="btn btn-medium btn-filter-apply")

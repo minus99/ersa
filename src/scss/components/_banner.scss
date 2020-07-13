@@ -1,0 +1,262 @@
+@mixin banner-gradient {
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        pointer-events: none;
+    }
+}
+@mixin banner-gradient01 {
+    &::before {
+        left: 0;
+        bottom: 0;
+        height: 45%;
+        //background-image: linear-gradient(to bottom, transparent, rgba($color: $color0, $alpha: .5));
+    }
+}
+@mixin banner-gradient02 {
+    &::before {
+        left: 0;
+        bottom: 0;
+        height: 45%;
+        //background-image: linear-gradient(to bottom, transparent, rgba($color: $color255, $alpha: .5));
+    }
+}
+@mixin banner-gradient-none {
+    &::before {
+        display: none !important
+    }
+}
+@mixin banner-type01 {
+    padding-left: 240px;
+}
+@mixin banner-body {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    padding:30px 20px;
+}
+@mixin banner-body-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    > div + div {
+        margin-top: auto;
+    }
+}
+@mixin banner-body-middle {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin banner-body-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@mixin d-banner-body-bottom {
+    @include banner-body-bottom();
+    top: auto;
+    right: auto;
+    transform: none;
+}
+@mixin banner-body-static {
+    position: static;
+    transform: none;
+}
+@mixin banner-body-p0 {
+    padding: 0;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    z-index: $z-index-object;
+    .prm-media {
+        position: relative;
+        display: block;
+        transition: all .32s ease;
+        img,
+        video {
+            width: 100%;
+        }
+        video {
+            &[poster] {
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+
+    .prm-subtitle {
+        font-size: 16px;
+        margin-left: -$container-gap;
+        &::before {
+            content: "";
+            width: #{$container-gap - 5px};
+            //border-top: 1px solid currentColor;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        + .prm-title {
+            margin-top: 10px;
+        }
+    }
+
+    .prm-title {
+        //font-family: $font2;
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .prm-desc {
+        margin-top: 10px;
+        line-height: 1.1;
+        //color: lighten($color: $color0, $amount: 50);
+    }
+
+    .prm-link-text {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .btn-full {
+        z-index: $z-index-overlay;
+    }
+
+    &-body {
+        @include banner-body();
+
+        &-cover {
+            @include banner-body-cover();
+        }
+        &-middle {
+            @include banner-body-middle();
+        }
+        &-bottom {
+            @include banner-body-bottom();
+        }
+
+        &:empty {
+            @extend .ems-none;
+        }
+        &-p0 {
+            @include banner-body-p0();
+        }
+    }
+
+    &:hover {
+        .prm-link-text {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    //gradients
+    &[class*="banner-gradient"] {
+        @include banner-gradient();
+    }
+    &-gradient01 {
+        @include banner-gradient01();
+    }
+    &-gradient02 {
+        @include banner-gradient02();
+    }
+    &-gradient-none {
+        @include banner-gradient-none();
+    }
+
+    //effects
+    &-effect01 {
+        &:hover {
+            .prm-media {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    //main lookbook
+    &01,
+    &02{
+        @include aspect-ratio(375, 667);
+    }
+
+    //lookbook detail
+    &02 {
+        .banner-body{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 2;
+            max-width: calc(100% - 30px);
+            margin: auto;
+            color: $color255;
+            padding: 0;
+        }
+        span{
+            font-size: 32px;
+            font-family: $font-family3;
+            padding: 0 2px;
+        }
+        p{
+            margin: 10px 0;
+            font-size: $font-size-20;
+            line-height: 28px;
+        }
+    }
+    //
+    &03{
+        @include aspect-ratio(375, 320);
+    }
+
+    //story
+    &04,
+    &06 {
+        .prm-title{
+            font-family: $font-family2;
+            font-size: $font-size-24;
+        }
+        .prm-desc{
+            font-size: $font-size-16;
+            line-height: $font-size-24;
+        } 
+    }
+
+    //story
+    &05 {
+        .prm-title {
+            font-family: $font-family2;
+            font-size: $font-size-13;
+            margin-top: 20px;
+        }
+        .prm-sub-title{
+            font-size: $font-size-20;
+            margin-top: 5px;
+            line-height: normal;
+        }
+        .prm-desc {
+            font-size: $font-size-16;
+            line-height: 24px;
+        }
+        .prm-link-text{
+            margin-top: 5px !important;
+        }
+    }
+    //single bottom
+    &07{
+        @include aspect-ratio(375, 375);
+    }
+}

@@ -1,0 +1,192 @@
+//inline variables
+$p5:5px;
+$p10:10px;
+$m20:20px;
+
+.site-header{
+    min-height: 90px;
+    
+    //if fixed
+    &.fixed{
+        .ems-menu{
+            > ul > li >a{
+                color: $color255;
+            }
+        }
+    }
+    //not if fixed
+    &:not(.fixed){
+        .ems-menu{
+            > ul > li >a{
+                color: $color1;
+            }
+            &-right{
+                a.menu-link{
+                    color: $color1;
+                }
+                a.menu-link-small{
+                    &:not(.selected){
+                        color: $color7;
+                    }
+                }
+            }
+        }
+    }
+    &-inner{
+        position: relative;
+        top: inherit;
+        right: inherit;
+        height: auto;
+        min-height: 90px;
+        overflow-y: inherit;
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+        @extend %modal-animate-wrapper-x;
+    }
+
+    &-logo{
+        top: 20px;
+        left: 0;
+        right: 0;
+        width: 120px;
+        margin: auto;
+    }
+
+    //ANIMATED
+    &-animate{
+        //MENU
+        .ems-menu{
+            > ul > li{
+                > a{
+                    color: $color1 !important;
+                }
+            }
+            &-right{
+                a.menu-link{
+                    color: $color1 !important;
+                    &-shop{
+                        color: $color3 !important;
+                    }
+                }
+                a.menu-link-small{
+                    &:not(.selected){
+                        color: $color7 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//MENU
+.ems-menu{
+
+    &-category{
+
+        > li{
+            > a{
+                font-size: $font-size-14;
+                font-family: $font-family;
+                padding: $p10 0;
+            }
+            &:not(:first-child){
+                margin-left: $m20;
+            }
+        }
+
+        ul.lvl-2{
+            position: absolute;
+            top: 90px;
+            left: 0;
+            width: 100%;
+            min-height: 400px;
+            max-height: calc(100vh - 90px);
+            background: red;
+            z-index: $z-index-drop;
+            padding: 25px 80px;
+            margin-bottom: 0;
+            > li{
+                max-width: 200px;
+                > a{
+                    font-family: $font-family2;
+                    font-size: $font-size-20;
+                }
+                &.selected{
+                    ul.lvl-3{
+                        display: flex;
+                    }            
+                }
+            }
+        }
+
+        ul.lvl-3{
+            position: absolute;
+            top: 25px;
+            left: 300px;
+            width: calc(100% - 380px);
+            height: calc(100% - 50px);
+            justify-content: flex-start;
+            z-index: $z-index-drop2;
+            &-1{
+                > li{
+                    &:not(:first-child){
+                        margin-left: 60px;
+                    }
+                }
+            }
+            &-2{
+                @extend .d-ems-flex-row;
+                > li{
+                    flex-basis: auto;
+                    flex: auto;
+                    max-width: 220px;
+                    &:not(:first-child){
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        ul.lvl-4{
+            display: block;
+        }
+
+    }
+    
+    &-right{
+        height: auto;
+        a.menu-link{
+            font-family: $font-family;
+            font-size: $font-size-14;
+            color: $color255;
+            &-small{
+                font-family: $font-family2;
+            }
+        }
+    }
+
+    //ANIMATED
+    &-animate {
+        
+        //MENU
+        .ems-menu{
+            > ul > li{
+                > a{
+                    color: $color1 !important;
+                }
+            }
+
+            &-right{
+                a.menu-link{
+                    color: $color1 !important;
+                    &-shop{
+                        color: $color3 !important;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

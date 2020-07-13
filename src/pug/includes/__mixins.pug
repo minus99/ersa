@@ -1,0 +1,57 @@
+mixin picture(wrapperClass, lazyMode, small, small2x, large)
+    .prm-media(class=wrapperClass + ' ' + lazyMode)
+        picture
+            if lazyMode!= "no"
+                source(class="lazy-picture" media="(max-width:5000px)" srcset="frontend/images/1x1.png")
+            source(media="(max-width: 1024px)" srcset=small + " 1x, " + small2x + " 2x")
+            source(media="(min-width: 1025px)" srcset=large)
+            img(src=small class=wrapperClass.indexOf('ems-responsive') > -1 ? "ems-responsive-item" : '')&attributes(attributes)
+
+//- video
+    (autoplay playsinline loop muted)
+mixin video(wrapperClass, src)
+    .prm-media(class=wrapperClass)
+        video(src=src class=wrapperClass.indexOf('ems-responsive') > -1 ? "ems-responsive-item" : '')&attributes(attributes)
+
+//- image
+mixin image(lazyMode, small)
+    if lazyMode!= "no"
+        img(src="frontend/images/1x1.png" data-image-src=small class=lazyMode)&attributes(attributes)
+    else
+        img(src=small)&attributes(attributes)
+
+//- subtitle
+mixin subtitle(text)
+    .prm-subtitle&attributes(attributes)!=text
+//- title
+mixin title(text)
+    .prm-title&attributes(attributes)!=text
+//- desc
+mixin description(text)
+    .prm-desc&attributes(attributes)!=text
+
+//- link
+mixin link(linkText)
+    if attributes.href
+        a&attributes(attributes)!=linkText
+    else
+        .prm-link-text&attributes(attributes)!=linkText
+
+//- icon
+mixin icon(iconName)
+    if attributes.href
+        a&attributes(attributes)
+            i(class="icon-"+iconName)
+    else
+        i(class="icon-"+iconName)
+
+//- product
+mixin product(wrapperClass, title, image1, desc)
+    li.ems-prd(class=wrapperClass)&attributes(attributes)
+        .ems-prd-inner
+            .ems-prd-media.ems-responsive
+                +image('lazy', image1)(class="ems-responsive-item" alt=title)
+            .ems-prd-body.ems-text-left.d-ems-text-center
+                .ems-prd-title= title
+                .ems-prd-desc.m-t-10= desc
+            +link('')(href="product-detail.html" class="ems-prd-link btn-full")

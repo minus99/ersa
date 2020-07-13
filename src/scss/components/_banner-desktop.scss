@@ -1,0 +1,109 @@
+.d-banner {
+    &-body {
+        &-bottom {
+            @include d-banner-body-bottom();
+        }
+        &-static {
+            @include banner-body-static();
+        }
+        &-lg-p0{
+            @include banner-body-p0();
+        }
+    }
+    &-gradient-none {
+        @include banner-gradient-none();
+    }
+
+    &-effect01 {
+        &-ready {
+            .prm-media {
+                transform: translateX(15%);
+                transition-duration: 1s;
+                transition-delay: .5s;
+            }
+            .banner-body {
+                animation: animation-03 .32s ease .75s forwards;
+            }
+        }
+    }
+
+    &-effect02 {
+        .prm-media {
+            transform-origin: center top;
+        }
+        &-ready {
+            .prm-media {
+                transform: scale(.9) translateY(-10%);
+            }
+        }
+    }
+}
+
+.banner {
+    .prm-link-text {
+        margin-top: 30px;
+    }
+
+    //main lookbook
+    &01 {
+        @include aspect-ratio(2880, 1580);
+    }
+
+    //lookbook detail
+    &02 {
+        @include aspect-ratio(2560, 1334);
+        .banner-body{
+            max-width: 377px;
+            > div{
+                text-indent: -5px;
+            }
+        }
+        span{
+            font-size: 92px;
+            padding: 0;
+        }
+    }
+
+    //lookbook hero
+    &03 {
+        @include aspect-ratio(1240, 1060);
+    }
+
+    //lookbook hero
+    &04 {
+        @include aspect-ratio(1100, 1380);
+        .prm-media{
+            margin-top:13%;
+        }
+    }
+    &04,
+    &06{
+        .banner-body{
+            max-width: 550px;
+        }
+    }
+
+    //news
+    &05 {
+        .prm-title{
+            color: $color3;
+        }
+        div:not(.prm-title){
+            color: $color255;
+        }
+        .prm-sub-title{
+            min-height: 50px;
+            max-height: 50px;
+        }
+        .prm-desc {
+            min-height: 75px;
+            max-height: 75px;
+        }
+    }
+    //single bottom
+    &07{
+        max-width: 620px;
+        margin: 0 auto;
+        @include aspect-ratio(1240, 930);
+    }
+}

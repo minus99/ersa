@@ -1,0 +1,31 @@
+$p5:5px;
+$m15:15px;
+.bulletin{
+    max-width: 1040px;
+    &-form{
+        font-size: $font-size-20;
+    }
+    &-social{
+        >a{
+            width: 48px;
+            height: 48px;
+            border: 1px solid $color6;
+            margin-left: $m15;
+        }
+        i:before{
+            font-size: $font-size-30;
+        }
+    }
+    &-form-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: $z-index-object;
+        .btn{
+            padding: $p5;
+        }
+        i:before{
+            color: $color7;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.modal {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: $z-index-modal;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: $color255;
+    background-position: center center;
+
+    opacity: 0;
+    transform: translateX(-75%);
+    transition: all .12s cubic-bezier(0.950, 0.050, 0.795, 0.035);
+
+    &-header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 13px $container-gap;
+        border-bottom: 1px solid $color1;
+        font-size: $font-size;
+        line-height: 1.3;
+        i {
+            font-size: 36px;
+        }
+        
+        &-absolute {
+            position: absolute;
+            right: $container-gap;
+            top: 15px;
+            z-index: $z-index-drop;
+            border-bottom: none;
+            padding: 0;
+        }
+    }
+
+    &-close {
+        flex: none;
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+        cursor: pointer;
+    }
+    
+    &-desc {
+        font-size: 15px;
+    }
+
+    &-body {
+        overflow: auto;
+        height: 100%;
+    }
+    
+    &-footer {
+        width: calc(100% - #{$container-gap * 2});
+        margin: auto auto 0;
+        padding: $container-gap 0;
+        border-top: 1px solid $color1;
+        > .ga2 {
+            margin: 30px #{-$container-gap} #{-$container-gap};
+        }
+    }
+
+    &-right {
+        transform: translateX(75%);
+    }
+
+    &-bottom {
+        transform: translateY(75%);
+    }
+
+    &[class*="modal-gradient"] {
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 4;
+            width: 100%;
+            pointer-events: none;
+        }
+    }
+    &-gradient01 {
+        &::after {
+            left: 0;
+            bottom: 0;
+            height: 150px;
+            background: linear-gradient(to bottom, transparent, $color255);
+        }
+        .modal-body {
+            padding-bottom: 20px !important;
+        }
+    }
+
+    &-default {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: $container-gap;
+        .modal-header {
+            padding: 0 0 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .modal-body {
+            padding: 0 10px 0 0;
+        }
+
+        &-ready & {
+            @extend %modal-full-ready-wrapper;
+        }
+
+        &-animate & {
+            opacity: 1;
+
+            &-overlay {
+                @extend %modal-full-animate-overlay;
+            }
+        }
+    }
+
+    &-radius {
+        top: auto;
+        bottom: 0;
+        height: auto;
+        max-height: calc(100% - 55px);
+        border-radius: 16px 16px 0 0;
+        overflow: hidden;
+    
+        transform: translateY(75%);
+
+        .modal-header {
+            font-size: 16px;
+            padding: 40px 30px 20px;
+            border-bottom: none;
+            + .modal-body {
+                padding-top: 0;
+            }
+            
+            &-absolute {
+                padding: 0;
+            }
+        }
+
+        .modal-body {
+            padding: $container-gap 30px 40px;
+        }
+    }
+
+}
+
+//MODALS CFGS
+%modal-animation{
+    transition: all .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+%modal-full-ready-wrapper {
+    display: inline-flex;
+}
+%modal-full-animate {
+    overflow: hidden;
+}
+%modal-full-animate-wrapper {
+    transform: translateX(100%);
+    transition: all .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+%modal-full-animate-wrapper-x {
+    transform: translateX(0);
+}
+%modal-full-animate-wrapper-y {
+    transform: translateY(0);
+}
+%modal-full-animate-overlay {
+    display: block;
+}
+
+%modal-loading {
+    background: $bg-loading;
+    > div {
+        filter: opacity(.5) blur(3px);
+        pointer-events: none;
+        user-select: none;
+    }
+}

@@ -1,0 +1,57 @@
+//VARIABLES
+$p5:5px;
+$p10:10px;
+
+.site-footer{
+    min-height: 200px;
+    
+    //INNER
+    &-inner{
+        background-color: $background-dark;
+    }
+
+    //MENU
+    &-menu{
+        .lv1{
+            > li{
+                width: 100%;
+                > a{
+                    font-size: $font-size-16;
+                    color: $color255;
+                    padding: $p10 0;
+                    @extend .ems-bg-plus;
+                }
+                &.selected{
+                    > a{
+                        @extend .ems-bg-minus;
+                    }
+                    .lv2{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .lv2{
+            display: none;
+            padding: $p10 0;
+            > li{
+                > a{
+                    font-size: $font-size-14;
+                    color: $color5;
+                    padding: $p10 0;
+                }
+            }
+        }
+    }
+    //COPYRIGHT TEXT
+    &-copyright{
+        font-size: $font-size-12;
+    }
+}
+
+//SCROLL TOP
+.scroll-top-btn{
+    background-color: $color4;
+    width: 60px;
+    height: 60px;
+}

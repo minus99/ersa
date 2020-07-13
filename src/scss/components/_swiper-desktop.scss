@@ -1,0 +1,57 @@
+.swiper-pagination {
+    padding: 85px $d-container-gap;
+}
+
+//CUSTOM CFG
+//product widget
+.swiper-product {
+    $p: 30px;
+    .swiper-inner {
+        margin-left: #{-$p};
+    }
+    .swiper-slide {
+        padding-left: #{$p};
+        width: calc(100% / 3);
+    }
+}
+
+//navigation
+.slider-navigation {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+    }
+}
+
+//swipe only mobile
+.mobi-swiper {
+    &.slider-navigation {
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+    &.slider-pagination {
+        .swiper-pagination {
+            display: none;
+        }
+    }
+}
+
+//horizontal content layout
+.d-swiper-layout-r {
+    > .swiper-inner {
+        > .swiper-wrapper {
+            flex-direction: row;
+        }
+    }
+}
+
+//vertical content layout
+.d-swiper-layout-v {
+    > .swiper-inner {
+        > .swiper-wrapper {
+            flex-direction: column;
+        }
+    }
+}

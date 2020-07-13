@@ -1,0 +1,21 @@
+{
+    "short_name": "Ersa",
+    "display": "standalone",
+    "name": "Ersa",
+    "icons": [{
+        "src": "http://localhost:3000/frontend/images/pwa-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "http://localhost:3000/frontend/images/pwa-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }],
+    "scope": "/",
+    "start_url": "/?utm_source=pwahome",
+    "background_color": "#dae0dc",
+    "theme_color": "#ebe3d7",
+    "gcm_sender_id": "821478403717",
+    "gcm_user_visible_only": "true",
+    "permissions": ["http://localhost:3000/"]
+  }

@@ -1,0 +1,98 @@
+//ICONFONT
+%icon, [class^="icon-"], [class*=" icon-"] {
+    flex: none !important;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;    
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &:before{
+        font-size: $font-size-24;
+    }
+}
+
+.icon-behance:before {
+    content: "\e900";
+}
+.icon-close:before {
+    content: "\e901";
+}
+.icon-doc:before {
+    content: "\e902";
+}
+.icon-down:before {
+    content: "\e903";
+}
+.icon-down-arrow:before {
+    content: "\e904";
+}
+.icon-download:before {
+    content: "\e905";
+}
+.icon-ersa:before {
+    content: "\e906";
+}
+.icon-eye:before {
+    content: "\e907";
+}
+.icon-eye-open:before {
+    content: "\e908";
+}
+.icon-facebook:before {
+    content: "\e909";
+}
+.icon-instagram:before {
+    content: "\e90a";
+}
+.icon-left:before {
+    content: "\e90b";
+}
+.icon-left-arrow:before {
+    content: "\e90c";
+}
+.icon-linkedin:before {
+    content: "\e90d";
+}
+.icon-menu:before {
+    content: "\e90e";
+}
+.icon-minus:before {
+    content: "\e90f";
+}
+.icon-pinterest:before {
+    content: "\e910";
+}
+.icon-plus:before {
+    content: "\e911";
+}
+.icon-right:before {
+    content: "\e912";
+}
+.icon-right-arrow:before {
+    content: "\e913";
+}
+.icon-right-arrow2:before {
+    content: "\e914";
+}
+.icon-search:before {
+    content: "\e915";
+}
+.icon-size:before {
+    content: "\e916";
+}
+.icon-top:before {
+    content: "\e917";
+}
+.icon-top-arrow:before {
+    content: "\e918";
+}
+.icon-twitter:before {
+    content: "\e919";
+}
+.icon-youtube:before {
+    content: "\e91a";
+}

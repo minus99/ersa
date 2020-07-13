@@ -1,0 +1,67 @@
+//font-face
+@mixin fontFace($family, $url, $fontWeight, $fontStyle, $fontDisplay) {
+    @font-face {
+        font-family: $family;
+        @if $family !=  $font-icon {
+            src: url(#{$baseHref + $url + '.woff2'}) format('woff2'),
+                 url(#{$baseHref + $url + '.woff'}) format('woff');
+        } @else {
+            src: url(#{$baseHref + $url + '.woff'}) format('woff');
+        }
+        font-weight: $fontWeight;
+        font-style: $fontStyle;
+        font-display: $fontDisplay;
+    }
+}
+
+//@media
+@mixin setMediaScreen($feature, $value) {
+    @media screen and (#{$feature}: #{$value}) {
+        @content;
+    }
+}
+
+@mixin setMediaPrint {
+    @media print {
+        @content;
+    }
+}
+
+//grid-area
+@mixin setGridArea($first, $last) {
+    @for $i from $first through $last {
+        > .ga#{$i} {
+            grid-area: ga#{$i};
+        }
+    }
+}
+
+//curve
+@mixin setCurve($skewX, $translateX) {
+    transform: skewX(#{$skewX}deg) translateX(#{$translateX}px);
+}
+
+//rotate
+@mixin setTurn($rotate) {
+    transform: rotate(#{$rotate}deg)
+}
+
+//mirror
+@mixin turn-mirror {
+    transform: scale(-1);
+}
+
+//aspect ratio
+@mixin aspect-ratio($w, $h) {
+    .ems-responsive {
+        @if $w == 0 and $h == 0 {
+            &::before {
+                @content;
+            }
+        } @else {
+            &::before {
+                padding-top: percentage($h / $w);
+            }
+        }
+    }
+}

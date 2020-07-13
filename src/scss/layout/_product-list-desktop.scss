@@ -1,0 +1,125 @@
+//PAGE LIST COVER
+.d-ems-grid{
+    &-cover-top{
+        grid-template-areas:"A B" "C B" "C B" "D D";
+        grid-template-columns: minmax(0,55%) minmax(auto, 45%);
+        grid-template-rows: minmax(0, auto) max-content;   
+
+        .d-ems-area-b,
+        .d-ems-area-d{
+            margin-top: -45px;
+        }
+        .d-ems-area-b{
+            text-align: right;
+            img{
+                max-width: 730px;
+            }
+        }
+    }
+    &-cover-text{
+        margin-top: 170px;
+    }
+}
+
+//FILTER
+.ems-filter {
+    @extend %modal-wrapper-no-fixed;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid $color6;
+    //BUTTON
+    &-trigger{
+        margin-top: 60px;
+    }
+    .modal-body{
+        max-height: 160px;
+    }
+
+    ul.lvl-2{
+        @extend .d-ems-flex;
+        @extend .d-ems-flex-wrap;
+    }
+
+    &-animate & {
+        @extend %modal-animate-wrapper-y;
+    }
+}
+
+.filter-tree{
+
+    ul{
+        li.col-2{
+            a{
+                width: calc(50% - 20px);
+                max-width: 200px;
+                &:nth-child(odd){
+                    margin-right: 20px;
+                }
+            }
+        }
+        li.col-1{
+            a{
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.ems-flex{
+    &-prd-list-wrapper{
+        margin: 0 -20px;
+        border-width: 0;
+    }
+}
+
+.ems-prd{
+    width: 33.333%;
+    border-width: 0 !important;
+    border-color: transparent !important;
+    &-title{
+        font-size: $font-size-16;
+        padding-top: 20px;
+    }
+    &-inner{
+        padding: 5px 20px 80px 20px;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            width: calc(100% - 40px);
+            height: calc(100% - 20px);
+            z-index: 1;
+            border: 1px solid $color1;
+            pointer-events: none;
+            transition: all .2s ease;
+            opacity: 0;
+            visibility: hidden;
+            transition-delay: .2s;
+        }
+    }
+    
+    &:hover{
+        .ems-prd-inner{
+            &:before{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+///LIST SEO
+.ems-seo{
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    &-text{
+        max-width: 700px;
+        max-height: 125px;
+    }
+    .btn{
+        margin-top: 30px;
+    }
+}

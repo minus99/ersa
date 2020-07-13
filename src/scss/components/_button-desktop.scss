@@ -1,0 +1,26 @@
+//.btn {}
+
+%d-btn {
+    &-primary {
+        background: $color255;
+        color: $color0;
+        &-hover {
+            background: $color0;
+            color: $color255;
+        }
+        &:hover {
+            @extend %d-btn-primary-hover;
+        }
+    }
+    //DESKTOP FIX SIZE
+    &-sizeD{
+        max-width: 140px;
+    }
+}
+
+.d-btn-primary {
+    @extend %d-btn-primary;
+}
+.d-btn-sizeD {
+    @extend %d-btn-sizeD;
+}

@@ -1,0 +1,183 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page page-home"
+    - var fixedClass = " fixed"
+
+block content
+    .swiper-gradient-dark.position-relative
+        .swiper-container(data-duration="5000" data-swiper="main")
+            .swiper-inner
+                ul.swiper-wrapper
+                    li.swiper-slide
+                        .banner.banner01
+                            +picture('ems-responsive', 'no', 'upload/home-page-slide/mnSlide1x1.jpg', 'upload/home-page-slide/mnSlide1x2.jpg', 'upload/home-page-slide/mnSlide1.jpg')
+                    li.swiper-slide
+                        .banner.banner01
+                            +picture('ems-responsive', 'no', 'upload/home-page-slide/mnSlide1x1.jpg', 'upload/home-page-slide/mnSlide1x2.jpg', 'upload/home-page-slide/mnSlide1.jpg')
+            .swiper-pagination
+            .swiper-button-next
+            .swiper-button-prev
+    .ems-container-full.ems-container-lg.m-lg-t-80
+        a(href="#1" class="display-block")
+            .banner.banner02
+                +picture('ems-responsive', 'no', 'upload/home-page-banner/fold-koltuk1x.jpg', 'upload/home-page-banner/fold-koltuk2x.jpg', 'upload/home-page-banner/fold-koltuk.jpg')
+                .banner-body.banner-body-0
+                    .ems-flex.ems-flex-row.d-ems-flex-column.ems-flex-center.d-ems-flex-left
+                        span.m-lg-l-auto New
+                        span.m-lg-r-auto Design
+                    p.ems-text-center.d-ems-text-left
+                        |Design #{'for'} people. Design #{'for'} you.
+                        br
+                        |We design what we 
+                        i love.
+    .ems-container-full.ems-container-lg.m-lg-t-80.p-lg-b-80
+        ul.ems-flex-banners
+            li.ems-flex.ems-flex-column.ems-flex-banners-column.d-ems-flex-row
+                .col.col-1
+                    a(href="#2" class="display-block")
+                        .banner.banner03
+                            +picture('ems-responsive', 'no', 'upload/home-page-banner/polar-koltuk1x.jpg', 'upload/home-page-banner/polar-koltuk2x.jpg', 'upload/home-page-banner/polar-koltuk.jpg')
+                .col.col-2
+                    a(href="#2" class="display-block")
+                        .banner.banner04
+                            .banner-body.d-banner-body.d-banner-body-lg-p0
+                                .prm-title
+                                    |Lela Sofa
+                                .prm-desc
+                                    |Introducing our perspective seating. With its contemporary design and comfortable structure, Lela is a privileged seating series, and thanks to its modular structure, it is perfect harmony the interior.
+                                .prm-link-text
+                                    .btn.btn-transparent.btn-icon
+                                        span Explore now
+                                            +icon('right-arrow m-l-5')
+                            .banner-img.p-20.p-lg-0
+                                +picture('ems-responsive', 'no', 'upload/home-page-banner/ersa-life1x.jpg', 'upload/home-page-banner/ersa-life2x.jpg', 'upload/home-page-banner/ersa-life.jpg')
+            li.ems-flex.ems-flex-column.ems-flex-banners-column.d-ems-flex-row
+                .col.col-1
+                    a(href="#1" class="display-block")
+                        .banner.banner03.p-t-20.p-lg-0
+                            +picture('ems-responsive', 'no', 'upload/home-page-banner/ece-yalim1x.jpg', 'upload/home-page-banner/ece-yalim2x.jpg', 'upload/home-page-banner/ece-yalim.jpg')
+                .col.col-2
+                    a(href="#2" class="display-block")
+                        .banner.banner06.p-t-10.p-b-10.p-lg-0
+                            .banner-body.d-banner-body.d-banner-body-lg-p0
+                                .prm-title
+                                    |Frame Operational Desk
+                                .prm-desc
+                                    |As a unique desk its metal body and minimal design, Frame operational series, meets its users by the singular desk, executive desk storage unit extension and workstation alternatives two, four or six people.
+                                .prm-link-text
+                                    .btn.btn-transparent.btn-icon
+                                        span Explore now
+                                            +icon('right-arrow m-l-5')
+    .ems-container-full.m-lg-t-80
+        .background-dark-light.p-t-40.p-b-60.p-l-20.p-r-20.p-lg-l-60.p-lg-r-60.p-lg-t-100.p-lg-b-70
+            .ems-section-title.p-lg-l-20.p-lg-r-20.p-b-20
+                span News
+                .display-block.display-lg-none
+                |#{'&'} Stories
+            ul.ems-flex.ems-flex-wrap.ems-flex-banners-column-three
+                li.p-lg-20.m-b-20.m-lg-b-0
+                    a(href="#1" class="display-block")
+                        .banner.banner05
+                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
+                            .banner-body.banner-body-p0
+                                .prm-title
+                                    |ARTICLE
+                                .prm-sub-title
+                                    |How Are Offices Evolving?
+                                .prm-desc
+                                    |What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the
+                                .prm-link-text
+                                    .btn.btn-transparent.btn-icon
+                                        span Read more
+                                            +icon('right-arrow m-l-5')
+                li.p-lg-20.m-b-20.m-lg-b-0
+                    a(href="#1" class="display-block")
+                        .banner.banner05
+                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
+                            .banner-body.banner-body-p0
+                                .prm-title
+                                    |ARTICLE
+                                .prm-sub-title
+                                    |Ersa Completes Its Digital Transformation
+                                .prm-desc
+                                    |What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the
+                                .prm-link-text
+                                    .btn.btn-transparent.btn-icon
+                                        span Read more
+                                            +icon('right-arrow m-l-5')
+                li.p-lg-20.m-b-20.m-lg-b-0
+                    a(href="#1" class="display-block")
+                        .banner.banner05
+                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
+                            .banner-body.banner-body-p0
+                                .prm-title
+                                    |ARTICLE
+                                .prm-sub-title
+                                    |How Are Offices Evolving?
+                                .prm-desc
+                                    |What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the
+                                .prm-link-text
+                                    .btn.btn-transparent.btn-icon
+                                        span Read more
+                                            +icon('right-arrow m-l-5')
+                li.p-lg-20.m-b-20.m-lg-b-0
+                    a(href="#1" class="display-block")
+                        .banner.banner05
+                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
+                            .banner-body.banner-body-p0
+                                .prm-title
+                                    |ARTICLE
+                                .prm-sub-title
+                                    |Ersa Completes Its Digital Transformation
+                                .prm-desc
+                                    |What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the
+                                .prm-link-text
+                                    .btn.btn-transparent.btn-icon
+                                        span Read more
+                                            +icon('right-arrow m-l-5')
+                li.p-lg-20.m-b-20.m-lg-b-0
+                    a(href="#1" class="display-block")
+                        .banner.banner05
+                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
+                            .banner-body.banner-body-p0
+                                .prm-title
+                                    |ARTICLE
+                                .prm-sub-title
+                                    |How Are Offices Evolving?
+                                .prm-desc
+                                    |What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the
+                                .prm-link-text
+                                    .btn.btn-transparent.btn-icon
+                                        span Read more
+                                            +icon('right-arrow m-l-5')
+                li.p-lg-20.m-b-20.m-lg-b-0
+                    a(href="#1" class="display-block")
+                        .banner.banner05
+                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
+                            .banner-body.banner-body-p0
+                                .prm-title
+                                    |ARTICLE
+                                .prm-sub-title
+                                    |How Are Offices Evolving?
+                                .prm-desc
+                                    |What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the
+                                .prm-link-text
+                                    .btn.btn-transparent.btn-icon
+                                        span Read more
+                                            +icon('right-arrow m-l-5')
+            .ems-flex.ems-flex-center.ems-section-footer.m-t-20.m-lg-t-0
+                a(href="#13" class="btn btn-border btn-size100 d-btn-sizeD")
+                    span See more posts
+    .ems-container-full.m-lg-t-80.p-lg-t-20.position-relative
+        .banner.banner07
+            a(href="#1" class="display-block")
+                +picture('ems-responsive', 'no', 'upload/home-page-single/bottom-single1x.jpg', 'upload/home-page-single/bottom-single2x.jpg', 'upload/home-page-single/bottom-single.jpg')
+        .swiper-container.swiper-container-marquee(data-swiper="WidgetMarquee")
+            .swiper-inner
+                ul.swiper-wrapper
+                    li.swiper-slide Common Spaces
+                    li.swiper-slide Task Chairs
+                    li.swiper-slide Sofas & Chairs
+                    li.swiper-slide Desks & Tables
+                    li.swiper-slide Storage

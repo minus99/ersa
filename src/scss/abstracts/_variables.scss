@@ -1,0 +1,74 @@
+//BASE
+$baseHref: '';
+
+//FONT
+$font-icon:icomoon;
+$font1:UntitledReg;
+$font2:UntitledMed;
+$font3:UntitledBold;
+$font-family: $font1, arial, sans-serif;
+$font-family2: $font2, arial, sans-serif;
+$font-family3: $font3, arial, sans-serif;
+
+//CONTAINER
+$container-gap: 20px;
+$d-container-gap: 80px;
+$container-large: #{1340px + $d-container-gap * 2};
+$container-medium: #{900px + $d-container-gap * 2};
+$container-small: #{600px + $d-container-gap * 2};
+$native-scrollbar: 16px;
+
+//BREAKPOINT
+$breakpoint-small: 640px;
+$breakpoint-medium: 1025px;
+$breakpoint-large: 1350px;
+$breakpoint-xlarge: 1600px;
+
+//FONT SIZE
+$font-size:14px;
+$font-size-36: 36px;
+$font-size-32: 32px;
+$font-size-30: 30px;
+$font-size-24: 24px;
+$font-size-20: 20px;
+$font-size-18: 18px;
+$font-size-16: 16px;
+$font-size-14: 14px;
+$font-size-13: 13px;
+$font-size-12: 12px;
+
+//COLOR PALETTE
+$color0:#000000;
+$color1:#2b2a2a;
+$color2:#f3f1ef;
+$color3:#c54644;
+$color4:#454343;
+$color5:#ccc4c4;
+$color6:#eff2f3;
+$color7:#babfc2;
+$color255: #fff;
+$colorRGBA: rgba(43, 42, 42, .5);
+
+//BODY
+$background: $color255;
+$background-dark: $color1;
+$font-weight:normal;
+
+//Z-INDEX
+$z-index-auto: auto;
+$z-index-negative: -1;
+$z-index-object: 1;
+$z-index-drop: 2;
+$z-index-drop2: 3;
+$z-index-overlay: 9;
+$z-index-overlay2: 10;
+$z-index-modal: 11;
+$z-index-modal2: 12;
+$z-index-notification: 13;
+$z-index-alert: 14;
+
+//MISC
+$loading-image: '../images/loading.gif';
+$bg-loading: url($loading-image) center center/80px no-repeat #f9f9f9;
+$bg-plus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23BABFC2' d='M12.3 6c.276 0 .5.224.5.5v4.7h4.7c.276 0 .5.224.5.5v.6c0 .276-.224.5-.5.5h-4.7v4.7c0 .276-.224.5-.5.5h-.6c-.276 0-.5-.224-.5-.5v-4.7H6.5c-.276 0-.5-.224-.5-.5v-.6c0-.276.224-.5.5-.5h4.699l.001-4.7c0-.276.224-.5.5-.5h.6z'/%3E%3C/g%3E%3C/svg%3E");
+$bg-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='12' height='1.6' x='6' y='11' fill='%23BABFC2' rx='.5'/%3E%3C/g%3E%3C/svg%3E");

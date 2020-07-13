@@ -1,0 +1,69 @@
+include __imports.pug
+doctype html
+html(lang=lang xmlns="http://www.w3.org/1999/xhtml")
+    //HEAD
+    head
+        block head
+            meta(charset="UTF-8")
+            meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, user-scalable=no")
+            link(rel="manifest" href="manifest-min.json")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            meta(name="theme-color" content=siteColor)
+            link(rel="shortcut icon" type="image/x-icon" media="all" href=favicon)
+            //Add to homescreen for Chrome on Android
+            meta(name="mobile-web-app-capable" content="yes")
+            meta(name="application-name" content="Proje")
+            link(rel="icon" sizes="192x192" href=favicon_android)
+            //Add to homescreen for Safari on iOS
+            meta(name="apple-mobile-web-app-capable" content="yes")
+            meta(name="apple-mobile-web-app-status-bar-style" content=siteColor)
+            meta(name="apple-mobile-web-app-title" content="Proje")
+            link(rel="apple-touch-icon" href=favicon_ios)
+            link(rel="icon" type="image/png" sizes="32x32" href=favicon)
+            title=pageTitle
+            meta(name="description" content=pageDesc)
+            
+            
+            //css
+            link(rel="stylesheet", href="frontend/css/style.css")
+            
+            //dns-prefetch
+            <link rel="dns-prefetch" href="connect.facebook.net">
+            
+            //serviceWorker
+            script.
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('/sw.js').then(function(reg) {
+                        if(reg.installing) {
+                            console.log('sw installing');
+                        } else if(reg.waiting) {
+                            console.log('sw installed');
+                        } else if(reg.active) {
+                            console.log('sw active');
+                        }
+                    }).catch(function(error) {
+                        // registration failed
+                        console.log('Registration failed with ' + error);
+                    });
+                }
+
+    //HEAD
+    body(class=pageClass)
+        //HEADER
+        block header
+            header(class="site-header" + fixedClass)
+                include ../includes/_header.pug
+        //HEADER
+        //PAGE CONTENT
+        main(class="site-main d-flex flex-column")
+            block content
+                h1(style="margin: 100px 0; text-align: center;") page content here
+        //PAGE CONTENT
+        //FOOTER
+        block footer
+            footer(class="site-footer")
+                include ../includes/_footer.pug
+        //FOOTER
+        block foot
+            //script(src="frontend/js/all.js")
+            script(src="frontend/js/vanilla-all.js")

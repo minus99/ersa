@@ -1,0 +1,47 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page page-list"
+    
+block content
+    .ems-container-lg
+        .d-ems-grid.d-ems-grid-cover-top
+            .d-ems-area-a
+                include includes/_breadcrumb.pug
+            .d-ems-area-b.p-l-20.p-lg-l-0
+                +image('no', '/upload/page-covers/list-cover-x2.png')
+            .d-ems-area-c
+                div(class="d-ems-grid-cover-text p-l-20 p-r-20 p-lg-l-0 p-lg-r-0")
+                    h1.page-title-h1 Sofas & Chairs
+                    div(class="ems-flex ems-flex-left ems-flex-middle m-t-10 ems-product-styles")
+                        a(href="javascript:void(0);" class="color-red p-y-10 m-r-25" id="all_products_link") All Products
+                        a(href="javascript:void(0);" class="ems-flex ems-flex-middle p-y-10 color-gray" id="all_products_style")
+                            span.m-r-5 Styles
+                            +icon('plus')
+                    a(href="javascript:void(0);" class="ems-flex ems-flex-middle p-y-10 ems-filter-trigger" data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="toggle")
+                            |FILTERS
+                            +icon('plus')
+            .d-ems-area-d
+                //FILTER
+                include includes/_filter.pug
+        //PRODUCT LIST GRID
+        .ems-prd-list.ems-prd-list-page.ems-section.m-t-10.m-lg-t-0
+            ul.ems-flex.ems-flex-wrap.ems-flex-prd-list-wrapper
+                +product('', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                +product('', 'Likhia', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
+                +product('', 'Risus', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                +product('', 'Dark', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
+                +product('', 'Magnolia', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                +product('', 'Denver', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
+        //PRODUCT FOOTER
+        .ems-seo.m-t-40.m-lg-t-80
+            .ems-seo-text
+                h3.page-title-h3
+                    |Sofas & Chairs
+                p
+                    |Developed with high-level engineering systems and offering an ergonomic seating experience to its user with a simple design concept, the working chairs do not compromise the comfort level even for long periods of sitting. Armrest adjustment, lumbar support, depth-adjusted session and an adjustable height of the user freedom of movement with the Ersa work chairs, a wide range of products to meet the user.
+                p
+                    |Developed with high-level engineering systems and offering an ergonomic seating experience to its user with a simple design concept, the working chairs do not compromise the comfort level even for long periods of sitting. Armrest adjustment, lumbar support, depth-adjusted session and an adjustable height of the user freedom of movement with the Ersa work chairs, a wide range of products to meet the user.
+            a(href="javascript:void(0);" class="btn btn-transparent btn-icon p-y-10 read-me-more")
+                span.m-r-5 Read more
+                +icon('down')

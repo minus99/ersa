@@ -1,0 +1,9 @@
+//https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping
+
+
+//ICOMOON
+@include fontFace($font-icon, '../fonts/#{$font-icon}/#{$font-icon}', normal, normal, block);
+
+@include fontFace($font1, '../fonts/#{$font1}/#{$font1}', 400, normal, swap);
+@include fontFace($font2, '../fonts/#{$font2}/#{$font2}', 500, normal, swap);
+@include fontFace($font3, '../fonts/#{$font3}/#{$font3}', 600, normal, swap);

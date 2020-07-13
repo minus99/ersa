@@ -1,0 +1,35 @@
+$m20:20px;
+
+//GRIDS BANNERS
+.ems-flex-banners{
+    > li{
+        .col{
+            width:100%;
+        }
+    }
+    //HOME PAGE THREE COLUMN
+    &-column-three{
+        > li{
+            width: 100%;
+        }
+    }
+}
+
+//VARIEBLES BACKGROUND 
+.background-dark-light{
+    background-color: $color2;
+}
+
+//PAGE TITLE
+.page-title{
+    &-h1,
+    &-h3{
+        font-family: $font-family2;
+    }
+    &-h1{
+        font-size: $font-size-32;
+    }
+    &-h3{
+        font-size: $font-size-20;
+    }
+}
