@@ -1,0 +1,19 @@
+.ems-prdd {
+    &-title {
+        font-family: $font-family2;
+        font-size: $font-size-32;
+    }
+    &-subtitle{
+        font-size: 15px;
+    }
+    &-desc{
+        font-size: $font-size-16;
+        line-height: $font-size-24;
+    }
+    &-share{
+        > a{
+            font-family: $font-family2;
+            font-size: 15px;
+        }
+    }
+}

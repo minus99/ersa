@@ -1,0 +1,49 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page page-detail"
+    - var fixedClass = " fixed"
+
+block content
+    .ems-container-full
+        //PRODUCT DETAIL
+        .ems-prd-detail.ems-section
+            .ems-prdd
+                .ems-prdd-grid.d-ems-grid
+                    .ga1
+                        .ems-prdd-media
+                            .swiper-container.slider-pagination.slider-pagination2.slider-navigation(data-swiper="widgetAuto")
+                                .swiper-inner
+                                    ul.swiper-wrapper
+                                        li.swiper-slide
+                                            .banner
+                                                .prm-media.ems-responsive
+                                                    +image('lazy-swiper', 'https://via.placeholder.com/1620x1400/ff0/f00')(class="ems-responsive-item" alt='title')
+                                        li.swiper-slide
+                                            .banner
+                                                .prm-media.ems-responsive
+                                                    +image('lazy-swiper', 'https://via.placeholder.com/1620x1400/ccc/f00')(class="ems-responsive-item" alt='title')
+                                        li.swiper-slide
+                                            .banner
+                                                .prm-media.ems-responsive
+                                                    +image('lazy-swiper', 'https://via.placeholder.com/1620x1400/eb7/f00')(class="ems-responsive-item" alt='title')
+                                .swiper-button-next
+                                .swiper-button-prev
+                                .swiper-pagination.ems-mobile
+                    .ga2
+                        .ems-prdd-body.m-lg-auto
+                            h1.ems-prdd-title Magnolia
+                            h2.ems-prdd-subtitle.m-t-10
+                                |by Studio Balutto Associati
+                            h3.ems-prdd-desc.m-t-30.m-lg-t-50
+                                |Providing comfortable seating with its curved back design and seating font that surrounds the user, Polar family chair series offers a contemporary look with its wooden and transmission legs and different backrest size alternatives.
+                            .ems-prdd-request.m-t-20.m-lg-t-60
+                                a(href="javascript:void(0);" class="btn btn-default btn-size100 border-circle-4")
+                                    span Request #{'for'} a Quote 
+                            .ems-prdd-share.ems-flex.ems-flex-middle.ems-flex-between.m-t-10.m-lg-t-30
+                                a(href="javascript:void(0);" class="ems-flex ems-flex-middle p-y-10")
+                                    span.m-r-5 Download Files
+                                    +icon('download')
+                                a(href="javascript:void(0);" class="ems-flex ems-flex-middle p-y-10")
+                                    span.m-r-5 Share
+                                    +icon('size')

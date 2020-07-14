@@ -418,6 +418,10 @@
         margin-bottom: $m80;
     }
 
+    //FULL AUTO
+    &-auto{
+        margin: 0 auto;
+    }
     //TOP AUTO
     &-t-auto{
         margin-top: auto;

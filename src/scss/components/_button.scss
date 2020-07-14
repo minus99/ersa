@@ -11,8 +11,8 @@ $btn-height: 50px;
 $btn-letter-spacing: normal;
 $btn-transition: all .32s ease;
 
-$btn-hover-background-color: darken($color: $color255, $amount: 1);
-$btn-hover-color: $color0;
+$btn-hover-background-color: darken($color: $color0, $amount: 1);
+$btn-hover-color: $color255;
 
 %btn {
     position: relative;

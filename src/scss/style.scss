@@ -23,6 +23,7 @@
 @import 'layout/footer';
 @import 'layout/pages';
 @import 'layout/product-list';
+@import 'layout/product-detail';
 
 
 //DESKTOP
@@ -44,6 +45,7 @@
         @import 'layout/footer-desktop';
         @import 'layout/pages-desktop';
         @import 'layout/product-list-desktop';
+        @import 'layout/product-detail-desktop';
         
     }
 }

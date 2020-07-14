@@ -1,0 +1,12 @@
+.ems-prdd {
+    &-grid {
+        grid-template-columns: minmax(auto, 60%) minmax(auto, 40%) #{$d-container-gap};
+        grid-template-areas: "ga1 ga2 .";
+    }
+    &-media {}
+    &-body {
+        padding: 0 10px;
+        max-width: 355px;
+        margin-top: 170px;
+    }
+}
