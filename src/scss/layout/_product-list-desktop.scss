@@ -13,6 +13,8 @@
             text-align: right;
             img{
                 max-width: 730px;
+                position: relative;
+                z-index: 5;
             }
         }
     }
@@ -34,15 +36,23 @@
     .modal-body{
         max-height: 160px;
     }
-
+    
+    ul.lvl-1{
+        > li{
+            &:not(:first-child){
+                margin-top: 0;
+            }
+        }
+    }
     ul.lvl-2{
         @extend .d-ems-flex;
         @extend .d-ems-flex-wrap;
     }
 
-    &-animate & {
-        @extend %modal-animate-wrapper-y;
+    &-animate{
+        @extend %modal-animate;
     }
+    
 }
 
 .filter-tree{

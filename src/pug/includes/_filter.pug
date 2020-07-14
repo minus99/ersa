@@ -2,17 +2,16 @@ include __imports.pug
 
 //FILTER
 .ems-filter-overlay.ems-overlay(data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="remove")
-.ems-filter.modal-bottom
-    .modal-header.ems-mobile Düzenle
-        span.ems-qty.ems-qty-dark 5
+.ems-filter.modal.modal-bottom
+    .modal-header.ems-mobile Filters
         //CLOSE
         +icon('close')(href="javascript:void(0);" class="modal-close" data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="toggle")
-    .modal-body
+    .modal-body.p-20.p-lg-t-0.p-lg-l-0.p-lg-b-0
         ul.lvl-1.filter-tree.d-ems-flex.d-ems-flex-left
             li
                 +link('Features')(href="javascript:void(0);")
                 ul.lvl-2
-                    li.col-2.d-ems-flex.d-ems-flex-wrap
+                    li.col-2.ems-flex.ems-flex-column.d-ems-flex-row.d-ems-flex-wrap
                         +link('<span></span> Height adjustable')(href="javascript:void(0);" class="filter_link")
                         +link('<span></span> Sled base')(href="javascript:void(0);" class="filter_link")
                         +link('<span></span> 4 leg')(href="javascript:void(0);" class="filter_link selected")
@@ -21,12 +20,11 @@ include __imports.pug
             li
                 +link('Usage')(href="javascript:void(0);")
                 ul.lvl-2
-                    li.col-1.d-ems-flex.d-ems-flex-wrap
+                    li.col-1.ems-flex.ems-flex-column.d-ems-flex-row.d-ems-flex-wrap
                         +link('<span></span> Meeting Room')(href="javascript:void(0);" class="filter_link")
                         +link('<span></span> Library')(href="javascript:void(0);" class="filter_link selected")
                         +link('<span></span> Hospitality')(href="javascript:void(0);" class="filter_link")
     .modal-footer.ems-mobile
-        .ga1
+        .ems-flex.ems-flex-middle.ems-flex-center
             +link('Clean All')(href="javascript:void(0);" class="btn-filter-clear ems-link")
-        .ga2
-            +link('Apply')(href="javascript:void(0);" class="btn btn-medium btn-filter-apply")
+            +link('Apply')(href="javascript:void(0);" class="btn btn-border btn-size02 btn-filter-apply")

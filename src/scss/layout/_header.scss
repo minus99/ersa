@@ -15,17 +15,43 @@ $m20:20px;
         width: 100%;
         min-height: $site-header-height;
         z-index: 2;
+
     }
+
     //not if fixed
     &:not(.fixed){
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+        z-index: 5;
+        background: $color255;
+        display: flex;
+        padding: 4px 20px;
+
+        //LOGO
         .site-header-logo{
+            position: inherit;
             svg path{
                 fill: $color1;
             }
         }
+        //MOBILE MENU
+        .ems-menu-mobile{
+            i.color-white{
+                color: $color1;
+            }
+        }
+        
+    }
+
+    //LOGO
+    &-logo{
+        position: fixed;
+        top: 4px;
+        left: 20px;
+        z-index: 1;
+        width: 100%;
+        max-width: 112px;
     }
 
     //Animation extend
@@ -43,15 +69,6 @@ $m20:20px;
         padding-bottom: 25px;
         @extend %modal-full-animate-wrapper;
     }
-    //LOGO
-    &-logo{
-        position: fixed;
-        top: 4px;
-        left: 20px;
-        z-index: 1;
-        width: 100%;
-        max-width: 112px;
-    }
 
     //ANIMATED
     
@@ -60,7 +77,7 @@ $m20:20px;
         //LOGO CHANGE COLOR
         .site-header{
             background-color: $color255;
-            z-index: $z-index-drop2;
+            z-index: 6;
             &-logo{
                 svg path{
                     fill: $color1;

@@ -13,9 +13,21 @@
         font-size: $font-size-13;
         margin-top: 10px;
     }
-    
-    .modal-header {
-        font-size: 16px;
+
+    .modal-footer{
+        a{
+            width: 50%;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            &.btn-filter-clear{
+                max-width: 140px;
+            }
+            &.btn-filter-apply{
+                max-width: 190px;
+            }
+            
+        }
     }
     
     ul{
@@ -53,6 +65,9 @@
     }
     ul.lvl-1{
         > li{
+            &:not(:first-child){
+                margin-top: 10px;
+            }
             > a{
                 font-family: $font-family2;
                 font-size: 17px;
@@ -70,13 +85,15 @@
 
     &-ready & {
         @extend %modal-full-ready-wrapper;
+        @extend %modal-animate-wrapper-y;
     }
 
     &-animate {
-        @extend %modal-full-animate;     
+        @extend %modal-full-animate;
     }
     &-animate & {
-        @extend %modal-full-animate-wrapper;
+        @extend %modal-full-animate-wrapper-y;
+        opacity: 1;
     }
 }
 

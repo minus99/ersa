@@ -16,6 +16,12 @@ $m20:20px;
     }
     //not if fixed
     &:not(.fixed){
+        padding: 0;
+
+        .site-header-logo{
+            position: fixed;
+        }
+
         .ems-menu{
             > ul > li >a{
                 color: $color1;
@@ -32,6 +38,17 @@ $m20:20px;
             }
         }
     }
+
+    //LOGO
+    &-logo{
+        position: fixed;
+        top: 20px;
+        left: 0;
+        right: 0;
+        width: 120px;
+        margin: auto;
+    }
+
     &-inner{
         position: relative;
         top: inherit;
@@ -43,14 +60,6 @@ $m20:20px;
         padding-top: 0;
         padding-bottom: 0;
         @extend %modal-animate-wrapper-x;
-    }
-
-    &-logo{
-        top: 20px;
-        left: 0;
-        right: 0;
-        width: 120px;
-        margin: auto;
     }
 
     //ANIMATED

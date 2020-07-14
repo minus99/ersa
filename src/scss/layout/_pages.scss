@@ -18,6 +18,10 @@ $m20:20px;
 //VARIEBLES BACKGROUND 
 .background-dark-light{
     background-color: $color2;
+    .btn-border{
+        color: $color3;
+        border-color: $color3;
+    }
 }
 
 //PAGE TITLE

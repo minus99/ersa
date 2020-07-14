@@ -98,9 +98,9 @@ $btn-hover-color: $color0;
     &-border{
         font-family: $btn-font-family2;
         background: none;
-        color: $color3;
+        color: $color1;
         font-size: $font-size-14;
-        border: 1px solid $color3;
+        border: 1px solid $color1;
         border-radius: 4px;
         padding-left: 10px;
         padding-right: 10px;
@@ -108,7 +108,6 @@ $btn-hover-color: $color0;
         line-height: 40px;
         &:hover {
             @extend %btn-transparent-hover;
-            color: $color3;
         }
     }
 
@@ -130,7 +129,7 @@ $btn-hover-color: $color0;
     &-size01 {
         min-width: 170px;
     }
-
+    
     &-size100 {
         width: 100%;
     }
