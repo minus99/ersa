@@ -85,9 +85,6 @@
 
     //news
     &05 {
-        .prm-title{
-            color: $color3;
-        }
         div:not(.prm-title){
             color: $color255;
         }

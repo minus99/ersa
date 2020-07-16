@@ -347,8 +347,8 @@ iframe {
     &-section {
         position: relative;
         &-title {
-            font-family: $font-family2;
-            font-size: $font-size-32;
+            font-family: $font-family;
+            font-size: 15px;
             color: $color1;
         }
         &-desc {}
@@ -838,6 +838,14 @@ iframe {
     //FULL 20
     &-20{
         padding: $p20 $p20 $p20 $p20; 
+    }
+    //FULL 30
+    &-30{
+        padding: $p30 $p30 $p30 $p30; 
+    }
+    //FULL 40
+    &-40{
+        padding: $p40 $p40 $p40 $p40; 
     }
 
     // LEFT TO RIGHT

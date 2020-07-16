@@ -23,12 +23,6 @@
         /*border: 1px solid $color26;*/
     }
     
-    //SECTION
-    &-section{
-        &-title{
-            color: $color255;
-        }
-    }
 }
 
 //EMOS FRAMEWORK DESKTOP
@@ -484,7 +478,15 @@
     &-20{
         padding: $p20 $p20 $p20 $p20; 
     }
-
+    //FULL 30
+    &-30{
+        padding: $p30 $p30 $p30 $p30; 
+    }
+    //FULL 40
+    &-40{
+        padding: $p40 $p40 $p40 $p40; 
+    }
+    
     //PADDING TOP 5
     &-t-5{
         padding-top: $p5;

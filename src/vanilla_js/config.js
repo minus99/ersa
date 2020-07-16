@@ -102,6 +102,18 @@ var SITE_CONFIG = {
                 slidesPerView:'auto',
                 allowTouchMove: false,
                 disableOnInteraction: true
+            },
+
+            WidgetProgressbar: {
+                slidesPerView: 1.5,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'progressbar',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             }
         },
 
