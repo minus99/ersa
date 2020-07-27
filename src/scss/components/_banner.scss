@@ -119,6 +119,15 @@
         line-height: 1.1;
     }
 
+    .prm-title-medium{
+        font-family: $font-family2;
+        font-size: $font-size-20;
+    }
+
+    .prm-title-small{
+        font-size: $font-size-14;
+    }
+
     .prm-desc {
         margin-top: 10px;
         line-height: 1.1;
@@ -260,5 +269,17 @@
     //single bottom
     &07{
         @include aspect-ratio(375, 375);
+    }
+}
+
+.related-projects{
+    background-image: linear-gradient(#f3f1ef 80%, #fff 20%);
+    ul {
+        li{
+            width: 100%;
+            &:not(:first-child){
+                margin-top: 20px;
+            }
+        }
     }
 }

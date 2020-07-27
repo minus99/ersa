@@ -92,16 +92,20 @@ var SITE_CONFIG = {
             },
 
             WidgetMarquee: {
-                spaceBetween: 0,
-                centeredSlides: true,
-                speed: 6000,
-                autoplay: {
-                    delay: 1,
-                },
+                paginationClickable: true,
+                preloadImages: false,
+                lazyLoading: true,
+                slidesPerView: 'auto',
                 loop: true,
-                slidesPerView:'auto',
-                allowTouchMove: false,
-                disableOnInteraction: true
+                centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             },
 
             WidgetProgressbar: {

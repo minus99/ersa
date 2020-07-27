@@ -1,3 +1,22 @@
+//- utilities
+    - 1x1 rgba(238,238,238,0.5): data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vw8AAmEBb87E6jIAAAAASUVORK5CYII=
+    - 1x1 rgba(238,238,238,0.5) png: frontend/images/1x1.png
+    - dummy image: https://via.placeholder.com/335x522/ff0/f00
+    - loop: - for (var x = 1; x <= 10; x++)
+    - random selected: li(class=Math.random() > .5 ? 'selected' : null)
+    - item selected li(class=x == 3 ? 'selected' : null)
+    - toggle - add - remove class: data-target="body" data-ready="x-ready" data-animate="x-animate" data-type="toggle"
+
+//- picture
+    wrapperClass
+        dg-responsive = wrapper'a 'dg-responsive', img'ye 'dg-responsive-item' class'ı atar.
+    lazyMode
+        no = lazy olmaz (source 5000px eklemez)
+        lazy = varsayılan
+        lazy-swiper = swiper içerisindeyse
+        lazy-mobi-swiper = mobilde düz desktopta swiper
+        lazy-desktop-swiper = mobilde swiper desktopta düz
+        
 mixin picture(wrapperClass, lazyMode, small, small2x, large)
     .prm-media(class=wrapperClass + ' ' + lazyMode)
         picture

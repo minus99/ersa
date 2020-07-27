@@ -294,5 +294,4 @@ for (var i = 0; i < accordionItem.length; i++) {
 }
 /*basic menu accordion*/
 
-
 DOM.setClassToTarget();

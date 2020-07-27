@@ -1,8 +1,7 @@
 .ems-breadcrumb {
     padding: 0 20px;
-    > ol {
-        overflow: auto;
-        > li {
+    ol {
+        li {
             flex-shrink: 0;
             display: flex;
             align-items: center;
@@ -27,6 +26,28 @@
             &.selected {
                 text-decoration: none;
             }
+        }
+    }
+    &-absolute{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: $z-index-drop;
+        ol li{
+            &:not(:first-child) {
+                &::before {
+                    color:rgba(255,255,255,0.7);
+                }
+            }
+            >a{
+                color:rgba(255,255,255,0.7);
+            }
+        }
+        .swiper-slide{
+            width: auto;
+            height: auto;
         }
     }
 }

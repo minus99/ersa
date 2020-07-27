@@ -1,4 +1,20 @@
 .ems-breadcrumb {
     margin-left: -5px;
     padding: 0;
+    &-absolute{
+        max-width: 50%;
+        top: 90px;
+        left: 80px;
+        width: auto;
+        ol li{
+            &:not(:first-child) {
+                &::before {
+                    color: rgba(43,42,42,0.7);
+                }
+            }
+            >a{
+                color: rgba(43,42,42,0.7);
+            }
+        }
+    }
 }

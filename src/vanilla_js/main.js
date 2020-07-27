@@ -59,3 +59,15 @@ new Main();
   
 }());
 /*read me more*/
+
+
+/*product detail materials accordion*/
+function addTopBtn(){
+    this.parentElement.parentElement.classList.toggle('selected');
+}
+
+var elSe = document.querySelectorAll('.ems-tab-materials-head > a');
+elSe.forEach(function(e){
+    e.addEventListener('click', addTopBtn);
+});
+/*product detail materials accordion*/

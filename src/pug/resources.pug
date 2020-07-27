@@ -1,0 +1,25 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page resources-page"
+
+block content
+    .ems-container-lg
+        .d-ems-grid.d-ems-grid-cover-top
+            .d-ems-area-a
+                include includes/_breadcrumb.pug
+        .ems-flex.p-t-80.p-b-40
+            h1.font-size-32.font-weight-bold Resources
+
+        .ems-prd-list.ems-prd-list-page.ems-section.m-t-10.m-lg-t-0
+            ul.ems-flex.ems-flex-wrap.ems-flex-prd-list-wrapper
+                -for (var y = 1; y <= 3; y++)
+                    li.ems-prd
+                        .ems-prd-inner.m-b-20
+                            .ems-prd-media.ems-responsive
+                                +image('lazy', 'https://via.placeholder.com/400x435/DDDDDD/000000')(class="ems-responsive-item")
+                            .ems-flex.ems-flex-between.ems-flex-middle.m-l-20.m-r-20
+                                .ems-prd-title.font-size-24.font-weight-bold Catalogs
+                                .ems-prd-desc.m-t-10
+                                    +icon('right-arrow m-l-5')
+                            +link('')(href="product-detail.html" class="ems-prd-link btn-full")

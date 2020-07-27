@@ -1,5 +1,5 @@
 
-var CACHE_NAME = 'Machka';
+var CACHE_NAME = 'Ersa';
 var urlsToCache = [
   '/'
 ];

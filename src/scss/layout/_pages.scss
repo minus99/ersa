@@ -15,20 +15,6 @@ $m20:20px;
     }
 }
 
-//VARIEBLES BACKGROUND 
-.background-dark-light{
-    background-color: $color2;
-    .ems-section-title {
-        font-family: $font-family2;
-        font-size: $font-size-32;
-        color: $color1;
-    }
-    .btn-border{
-        color: $color3;
-        border-color: $color3;
-    }
-}
-
 //PAGE TITLE
 .page-title{
     &-h1,
@@ -40,5 +26,19 @@ $m20:20px;
     }
     &-h3{
         font-size: $font-size-20;
+    }
+}
+
+//VARIEBLES BACKGROUND 
+.background-dark-light{
+    background-color: $color2;
+    .ems-section-title {
+        font-family: $font-family2;
+        font-size: $font-size-32;
+        color: $color1;
+    }
+    .btn-border{
+        color: $color3;
+        border-color: $color3;
     }
 }

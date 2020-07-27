@@ -1,0 +1,7 @@
+.ems-tab{
+    &-content{
+        > div:not(.selected){
+            display: none;
+        }
+    }
+}

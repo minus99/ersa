@@ -1,17 +1,18 @@
 include __imports.pug
 
 //BREADCRUMB
-.ems-breadcrumb.ems-section
-    ol(itemscope itemtype="//schema.org/BreadcrumbList").ems-section-wrapper.ems-flex.ems-flex-middle
-        li(itemprop="itemListElement" itemscope itemtype="//schema.org/ListItem" class="lvl-1 nav-home")
-            a(itemprop="item" href="/")
-                span(itemprop="name") Home
-            meta(itemprop="position" content="1")
-        li(itemprop="itemListElement" itemscope itemtype="//schema.org/ListItem" class="lvl-2")
-            a(itemprop="item" href="#lvl2")
-                span(itemprop="name") Level 2
-            meta(itemprop="position" content="2")
-        li(itemprop="itemListElement" itemscope itemtype="//schema.org/ListItem" class="lvl-3 selected")
-            a(itemprop="item" href="#lvl3")
-                span(itemprop="name") Level 3
-            meta(itemprop="position" content="3")
+.swiper-container.ems-breadcrumb.ems-section(data-swiper="widgetAuto")
+    .swiper-inner
+        ol(itemscope itemtype="//schema.org/BreadcrumbList").swiper-wrapper.ems-section-wrapper.ems-flex.ems-flex-middle
+            li(itemprop="itemListElement" itemscope itemtype="//schema.org/ListItem" class="swiper-slide lvl-1 nav-home")
+                a(itemprop="item" href="/")
+                    span(itemprop="name") Home
+                meta(itemprop="position" content="1")
+            li(itemprop="itemListElement" itemscope itemtype="//schema.org/ListItem" class="swiper-slide lvl-2")
+                a(itemprop="item" href="#lvl2")
+                    span(itemprop="name") Level 2
+                meta(itemprop="position" content="2")
+            li(itemprop="itemListElement" itemscope itemtype="//schema.org/ListItem" class="swiper-slide lvl-3 selected")
+                a(itemprop="item" href="#lvl3")
+                    span(itemprop="name") Level 3
+                meta(itemprop="position" content="3")

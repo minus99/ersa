@@ -72,13 +72,13 @@ ol {
     list-style: none;
 }
 
-/*input,
+input,
 select,
 textarea {
     &:disabled {
-        background: $color27 !important;
+        background: $color2 !important;
     }
-}*/
+}
 
 table {
     border-collapse: collapse;
@@ -351,6 +351,10 @@ iframe {
             font-size: 15px;
             color: $color1;
         }
+        &-title1{
+            font-family: $font-family2;
+            font-size: 24px;
+        }
         &-desc {}
         //section wrapper related objects are here > 'components/section'
     }
@@ -371,10 +375,10 @@ iframe {
     //OVERFLOW
     &-overflow {
         &-visible {
-            overflow: visible;
+            overflow: visible !important;
         }
         &-hidden {
-            overflow: hidden;
+            overflow: hidden !important;
         }
     }
 
@@ -818,6 +822,7 @@ iframe {
     //VARIABLES
     $p5:5px;
     $p10:10px;
+    $p15:15px;
     $p20:20px;
     $p30:30px;
     $p40:40px;
@@ -895,6 +900,23 @@ iframe {
     //PADDING BOTTOM 10
     &-b-10{
         padding-bottom: $p10;
+    }
+
+    //PADDING TOP 15
+    &-t-15{
+        padding-top: $p15;
+    }
+    //PADDING RIGHT 15
+    &-r-15{
+        padding-right: $p15;
+    }
+    //PADDING LEFT 15
+    &-l-15{
+        padding-left: $p15;
+    }
+    //PADDING BOTTOM 15
+    &-b-10{
+        padding-bottom: $p15;
     }
 
     //PADDING TOP 20

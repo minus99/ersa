@@ -1,17 +1,22 @@
-.swiper-pagination {
-    padding: 85px $d-container-gap;
+//CUSTOM CFG
+
+// Progress
+.swiper-pagination-progressbar{
+    width: calc(100% - 100px) !important;
 }
 
-//CUSTOM CFG
 //product widget
 .swiper-product {
-    $p: 30px;
-    .swiper-inner {
-        margin-left: #{-$p};
-    }
+    $p: 20px;
     .swiper-slide {
-        padding-left: #{$p};
         width: calc(100% / 3);
+    }
+    .ems-prd-inner{
+        padding-left: 20px;
+        padding-right: 20px;
+        &:before{
+            display: none;
+        }
     }
 }
 
@@ -55,3 +60,10 @@
         }
     }
 }
+
+//Detail Groups
+.swiper-container-groups{
+    .swiper-slide {
+      width: 33.333%;
+    }
+  }

@@ -1,0 +1,14 @@
+include __imports.pug
+
+.widget-products.ems-section.m-t-40.m-lg-t-80
+    .ems-container-full.p-l-10.p-r-10.p-lg-l-60.p-lg-r-60
+        .ems-section-title1.p-r-10.p-l-10.p-b-10.p-lg-r-20.p-lg-l-20.p-lg-b-20 Variants
+        .swiper-container.swiper-product(data-swiper="widgetAuto")
+            .swiper-inner
+                ul.swiper-wrapper
+                    +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                    +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                    +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+            .swiper-button-next
+            .swiper-button-prev
+            .swiper-pagination

@@ -13,6 +13,26 @@ $m20:20px;
                 color: $color255;
             }
         }
+        &-dark{
+            .ems-menu{
+                > ul > li >a{
+                    color: $color1;
+                }
+                &-right{
+                    a.menu-link{
+                        color: $color1;
+                        &-shop{
+                            color: $color3;
+                        }
+                    }
+                    a.menu-link-small{
+                        &:not(.selected){
+                            color: $color7;
+                        }
+                    }
+                }
+            }   
+        }
     }
     //not if fixed
     &:not(.fixed){
@@ -112,7 +132,7 @@ $m20:20px;
             min-height: 400px;
             max-height: calc(100vh - 90px);
             background: red;
-            z-index: $z-index-drop;
+            z-index: 10;
             padding: 25px 80px;
             margin-bottom: 0;
             > li{

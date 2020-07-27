@@ -1,0 +1,20 @@
+.our-stores {
+    .ems-prd-list {
+        .ems-prd {
+            width: 33.333%;
+            margin: unset;
+            border: unset;
+            &-inner {
+                &:before {
+                    border: unset !important;
+                }
+            }
+        }
+        img {
+            width: 100%;
+        }
+        .ems-prd-link {
+            text-decoration: underline;
+        }
+    }
+}

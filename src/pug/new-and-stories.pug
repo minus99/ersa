@@ -1,0 +1,20 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page new-and-stories-page"
+
+block content
+    .ems-container-lg
+        .d-ems-grid.d-ems-grid-cover-top
+            .d-ems-area-a
+                include includes/_breadcrumb.pug
+        .ems-flex.ems-flex-column.p-t-80.p-b-40.new-and-stories-content
+            .ems-prd-title
+                h1.font-size-32.font-weight-bold How Are Offices Evolving?
+            .ems-prd-info.ems-flex.ems-flex-row.ems-flex-between.m-t-40
+                .ems-prd-info-left.ems-flex.ems-flex-column.font-size-15.font-weight-bold
+                    span.p-b-10 Posted
+                    span Category
+                .ems-prd-info-right.ems-flex.ems-flex-column.font-size-15
+                    span.p-b-10 March 21, 2019
+                    span Article

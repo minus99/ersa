@@ -3,10 +3,39 @@
         grid-template-columns: minmax(auto, 60%) minmax(auto, 40%) #{$d-container-gap};
         grid-template-areas: "ga1 ga2 .";
     }
-    &-media {}
+    &-media {
+        height: 100vh;
+        .swiper-slide {
+            img{
+                width: 100vw;
+                height: 100vh;
+            }
+        }
+    }
     &-body {
-        padding: 0 10px;
         max-width: 355px;
         margin-top: 170px;
     }
+    &-groups{
+        > div{
+            width: 50%;
+            > span{
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &-options{
+        li{
+            width: 33.333%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+//Tab
+.ems-tab{
+    &-prdd{
+        max-width: 740px;
+        margin:50px auto;
+    }   
 }

@@ -11,6 +11,7 @@
 //COMPONENTS
 @import 'components/button';
 @import 'components/form';
+@import 'components/tab';
 @import 'components/modal';
 @import 'components/breadcrumb';
 
@@ -24,6 +25,10 @@
 @import 'layout/pages';
 @import 'layout/product-list';
 @import 'layout/product-detail';
+@import 'layout/contact-us';
+@import 'layout/new-and-strories';
+@import 'layout/our-stores';
+@import 'layout/resources';
 
 
 //DESKTOP
@@ -46,6 +51,10 @@
         @import 'layout/pages-desktop';
         @import 'layout/product-list-desktop';
         @import 'layout/product-detail-desktop';
+        @import 'layout/contact-us-desktop';
+        @import 'layout/new-and-stories-desktop';
+        @import 'layout/our-stores-desktop';
+        @import 'layout/resources-desktop';
         
     }
 }

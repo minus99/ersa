@@ -14,7 +14,22 @@ $m20:20px;
         left: 0;
         width: 100%;
         min-height: $site-header-height;
-        z-index: 2;
+        z-index: $z-index-drop2;
+        &-dark{
+            //LOGO
+            .site-header-logo{
+                position: inherit;
+                svg path{
+                    fill: $color1;
+                }
+            }
+            //MOBILE MENU
+            .ems-menu-mobile{
+                i.color-white{
+                    color: $color1;
+                }
+            }
+        }
 
     }
 

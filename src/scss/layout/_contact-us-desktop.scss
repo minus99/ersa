@@ -1,0 +1,48 @@
+.contact-us {
+    .new-and-stories {
+        span {
+            width: 700px;
+            line-height: 30px;
+        }
+    }
+    &-content {
+        flex-direction: row;
+        padding: 0 220px;
+        form {
+            width: 100%;
+        }
+        .form-group {
+            position: relative;
+            width: 50%;
+        }
+        .icon {
+            position: absolute;
+            right: 30px;
+            top: 22px;
+        }
+        textarea {
+            height: 200px;
+            border: unset !important;
+        }
+        input {
+            width: 330px !important;
+            border: unset !important;
+        }
+    }
+    .font-size {
+        &-32 {
+            font-size: 32px;
+        }
+        &-20 {
+            font-size: 20px;
+        }
+        &-14 {
+            font-size: 14px;
+        }
+    }
+    .font-weight {
+        &-bold {
+            font-weight: bold;
+        }
+    }
+}

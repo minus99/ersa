@@ -104,3 +104,17 @@
         @include aspect-ratio(1240, 930);
     }
 }
+
+.related-projects{
+    ul {
+        li{
+            width: 50%;
+            &:not(:first-child){
+                margin-top: inherit;
+            }
+            &:nth-child(even){
+                margin-top: 50px;
+            }
+        }
+    }
+}

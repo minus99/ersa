@@ -88,6 +88,7 @@ $btn-hover-color: $color255;
         }
         &:hover {
             @extend %btn-transparent-hover;
+            color: $color1;
         }
     }
 
