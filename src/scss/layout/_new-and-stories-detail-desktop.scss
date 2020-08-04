@@ -1,0 +1,28 @@
+.new-and-stories-detail-page {
+    .new-and-stories-detail-content {
+        width: 50%;
+        margin-left: 25%;
+        .new-and-stories-border {
+            width: 20px;
+            height: 4px;
+            background-color: $color3;
+            margin-top: 120px;
+        }
+    }
+    .font-size {
+        &-32 {
+            font-size: 32px;
+        }
+        &-24 {
+            font-size: 24px;
+        }
+        &-15 {
+            font-size: 15px;
+        }
+    }
+    .font-weight {
+        &-bold {
+            font-weight: bold;
+        }
+    }
+}

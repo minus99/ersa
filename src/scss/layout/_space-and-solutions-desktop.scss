@@ -1,0 +1,54 @@
+.space-and-solutions {
+    &-logo {
+        img {
+            max-width: 230px;
+        }
+        span {
+            max-width: 700px;
+            line-height: 24px;
+        }
+    }
+    .ems-tab-space-and-solutions-header {
+        a {
+            font-family: UntitledReg, arial, sans-serif;
+            font-size: 24px;
+            padding: 20px 10px;
+            color: #babfc2;
+        }
+        a.selected {
+            color: #c54644;
+        }
+    }
+    .ems-tab-content {
+        .ems-space-and-sollutions-tab {
+            .col-1 {
+                padding-left: 0;
+                padding-right: 20px;
+            }
+            .col-2 {
+                padding-right: 0px;
+            }
+            .ems-tab-space-and-solutions-content {
+                bottom: 60px;
+                left: 50px;
+                .ems-tab-link {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .tab-2 {
+            .col-1 {
+                padding-right: 0;
+            }
+            .col-2 {
+                padding-right: 20px;
+            }
+            .ems-flex-tab-line {
+                padding: 40px 0px;
+            }
+        }
+    }
+    .p-l-0 {
+        padding-left: 0px;
+    }
+}

@@ -8,13 +8,35 @@ block content
         .d-ems-grid.d-ems-grid-cover-top
             .d-ems-area-a
                 include includes/_breadcrumb.pug
-        .ems-flex.ems-flex-column.p-t-80.p-b-40.new-and-stories-content
-            .ems-prd-title
-                h1.font-size-32.font-weight-bold How Are Offices Evolving?
-            .ems-prd-info.ems-flex.ems-flex-row.ems-flex-between.m-t-40
-                .ems-prd-info-left.ems-flex.ems-flex-column.font-size-15.font-weight-bold
-                    span.p-b-10 Posted
-                    span Category
-                .ems-prd-info-right.ems-flex.ems-flex-column.font-size-15
-                    span.p-b-10 March 21, 2019
-                    span Article
+        .ems-flex.ems-flex-column
+            .p-t-80
+                h1.font-size-32.font-weight-bold News & Stories
+            .new-and-stories-tabs.m-t-40
+                ul.ems-flex
+                    li.p-r-20
+                        a(href="#").active View All
+                    li.p-r-20
+                        a(href="#") News
+                    li.p-r-20
+                        a(href="#") Ideas
+                    li.p-r-20
+                        a(href="#") Article
+                    li.p-r-20
+                        a(href="#") Press
+            .ems-prd-list.ems-prd-list-page.ems-section.m-t-30.m-lg-t-60
+                ul.ems-flex.ems-flex-wrap.ems-flex-prd-list-wrapper
+                    -for (var y = 1; y <= 9; y++)
+                        li.ems-prd
+                            .ems-prd-inner
+                                +image('no', 'https://via.placeholder.com/800x670/DDDDDD/000000')
+                                .new-and-stories-type.font-weight-bold.m-t-25 ARTICLE
+                                .ems-prd-title.font-size-20.font-weight-bold.m-t-5.p-t-0 Ersa Completes Its Transformation
+                                .ems-prd-desc.line-height-1-5.p-t-15 What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the …
+                                .ems-flex.font-size-15.p-t-20.ems-flex-middle.font-weight-bold Read more
+                                    +icon('right-arrow m-l-5')
+                                +link('')(href="product-detail.html" class="ems-prd-link btn-full")
+            .ems-flex.ems-flex-center
+                .btn.btn-transparent.btn-icon.show-more
+                    span.color-red Show more
+                        +icon('plus m-l-5') 
+    

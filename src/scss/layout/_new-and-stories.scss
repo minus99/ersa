@@ -1,0 +1,34 @@
+.new-and-stories-page {
+    .new-and-stories-tabs {
+        .active {
+            color: $color3;
+        }
+        ul {
+            li {
+                a {
+                    color: $color7;
+                    &:hover {
+                        color: $color3;
+                    }
+                }
+            }
+        }
+    }
+    .ems-prd-list {
+        .ems-flex-prd-list-wrapper {
+            li {
+                .ems-prd-inner {
+                    &:before {
+                        border: unset;
+                    }
+                    .new-and-stories-type {
+                        color: $color3;
+                    }
+                    .ems-prd-desc {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,16 @@
 .our-stores {
+    .ems-breadcrumb-absolute {
+        ol {
+            li {
+                a {
+                    color: #fff;
+                }
+                &:before {
+                    color: #fff;
+                }
+            }
+        }
+    }
     .ems-prd-list {
         .ems-prd {
             width: 33.333%;

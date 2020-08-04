@@ -11,46 +11,47 @@ block content
         .ems-flex.ems-flex-column.p-t-80.p-b-80.new-and-stories
             h1.font-size-32.font-weight-bold.p-b-20 News & Stories
             span.font-size-20 For more information on products, career information, investor relations, corporate information, or general questions, please use the form below to contact us.
-        .ems-flex.contact-us-content
+        .ems-flex.contact-us-content.m-l-20.m-r-20
             form
-                .ems-flex.ems-flex-row.p-b-40
-                    .form-group
+                .ems-flex.ems-flex-column.d-ems-flex-row.p-b-40
+                    .form-group.m-b-30.m-lg-b-0
                         label.font-weight-bold.p-b-10 *First Name
                         input(type='text' name='firstName' placeholder="Enter your name")
-                    .form-group
+                    .form-group.m-b-30.m-lg-b-0
                         label.font-weight-bold.p-b-10 *Last Name
                         input(type='text' name='lastName' placeholder="Enter your last name")
-                .ems-flex.ems-flex-row.p-b-40
-                    .form-group
+                .ems-flex.ems-flex-column.d-ems-flex-row.p-b-40
+                    .form-group.m-b-30.m-lg-b-0
                         label.font-weight-bold.p-b-10 *E-mail
                         input(type='text' name='email' placeholder="john@mail.com")
-                    .form-group
+                    .form-group.m-b-30.m-lg-b-0
                         label.font-weight-bold.p-b-10 *phone
                         input(type='number' name='phone' placeholder="(05XX) XXX XX XX")
-                .ems-flex.ems-flex-row.p-b-40
-                    .form-group
+                .ems-flex.ems-flex-column.d-ems-flex-row.p-b-40
+                    .form-group.m-b-30.m-lg-b-0
                         label.font-weight-bold.p-b-10 *Sector
                         select(name="sector")
                             option(value="sector-one") Choose your sector
                             option(value="sector-one") Sector One
                             option(value="sector-one") Sector two
                         +icon('down m-l-5 icon')
-                    .form-group
+                    .form-group.m-b-30.m-lg-b-0
                         label.font-weight-bold.p-b-10 *Sector
                         select(name="sector")
                             option(value="sector-one") Choose your sector
                             option(value="sector-one") Sector One
                             option(value="sector-one") Sector two
                         +icon('down m-l-5 icon')
-                .ems-flex.ems-flex-row.p-b-40
-                    .form-group.width-100
+                .ems-flex.ems-flex-column.d-ems-flex-row.p-b-40
+                    .form-group.m-b-30.m-lg-b-0.width-100
                         label.font-weight-bold.p-b-10 *Message
                         textarea(name="message", cols="30", rows="10" placeholder="Write your message here")
-                .ems-flex.ems-flex-row.p-b-40
-                    .form-group
+                .ems-flex.ems-flex-column.d-ems-flex-row.p-b-40
+                    .form-group.m-b-30.m-lg-b-0
                         label.font-weight-bold.p-b-10 *Attachment
                         input(type='file' name='attachment' placeholder="No file chosen")
-                .ems-flex.ems-flex-row.p-b-40
-                    .form-group
-                        input(type='checkbox')
-                        label.font-weight-bold.p-b-10 I accept the Privacy Policy and consent to the processing of my personal data.
+                .ems-flex.ems-flex-column.d-ems-flex-row.p-b-40.contact-us-privacy
+                    .form-group.m-b-30.m-lg-b-0.ems-flex.ems-flex-middle
+                        +link('<span></span> <p class="m-0"> I accept the <a href="#" class="privacy-title"> Privacy Policy</a> and consent to the processing of my personal data.</p>')(href="javascript:void(0);" class="privacy_link selected")
+                    .form-group.m-b-30.m-lg-b-0
+                        button(class="btn btn-size01 width-100" type="submit") Send

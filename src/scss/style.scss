@@ -1,24 +1,20 @@
 //ABSTRACTS
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
-
 //BASE
 @import 'base/typography';
 @import 'base/icons';
 @import 'base/animations';
 @import 'base/global';
-
 //COMPONENTS
 @import 'components/button';
 @import 'components/form';
 @import 'components/tab';
 @import 'components/modal';
 @import 'components/breadcrumb';
-
 @import 'components/swiper';
 @import 'components/bulletin';
 @import 'components/banner';
-
 //LAYOUT
 @import 'layout/header';
 @import 'layout/footer';
@@ -26,25 +22,23 @@
 @import 'layout/product-list';
 @import 'layout/product-detail';
 @import 'layout/contact-us';
-@import 'layout/new-and-strories';
+@import 'layout/new-and-stories-detail';
+@import 'layout/new-and-stories';
 @import 'layout/our-stores';
 @import 'layout/resources';
-
-
+@import 'layout/space-and-solutions';
+@import 'layout/space-and-solutions-detail';
 //DESKTOP
 @supports (display: grid) {
     @include setMediaScreen(min-width, $breakpoint-medium) {
-        
         //BASE
         @import 'base/global-desktop';
-
         //COMPONENTS
         @import 'components/button-desktop';
         @import 'components/swiper-desktop';
         @import 'components/modal-desktop';
         @import 'components/breadcrumb-desktop';
         @import 'components/banner-desktop';
-
         //LAYOUT
         @import 'layout/header-desktop';
         @import 'layout/footer-desktop';
@@ -52,9 +46,11 @@
         @import 'layout/product-list-desktop';
         @import 'layout/product-detail-desktop';
         @import 'layout/contact-us-desktop';
+        @import 'layout/new-and-stories-detail-desktop';
         @import 'layout/new-and-stories-desktop';
         @import 'layout/our-stores-desktop';
         @import 'layout/resources-desktop';
-        
+        @import 'layout/space-and-solutions-desktop';
+        @import 'layout/space-and-solutions-detail-desktop';
     }
 }
