@@ -1,0 +1,10 @@
+.ems-dp {
+    &-grid {
+        grid-template-columns: minmax(auto, 60%) minmax(auto, 40%) #{$d-container-gap};
+        grid-template-areas: "ga1 ga2 .";
+    }
+    &-body {
+        max-width: 470px;
+        margin: 116px auto 0 auto;
+    }
+}

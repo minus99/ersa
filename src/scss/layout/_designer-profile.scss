@@ -1,0 +1,18 @@
+.ems-dp {
+    &-title {
+        font-family: $font-family2;
+        font-size: $font-size-32;
+    }
+    &-desc {
+        font-size: $font-size-20;
+        line-height: 28px;
+        margin-top: 79px;
+    }
+}
+
+.view-more {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 22px;
+    color: $color3;
+}

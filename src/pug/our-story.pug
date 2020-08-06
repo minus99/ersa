@@ -1,0 +1,38 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page our-story"
+    - var fixedClass = " fixed"
+
+block content
+    .ems-breadcrumb-absolute
+        include includes/_breadcrumb.pug
+    a(href="#1" class="banner display-block")
+        .banner-image
+            +picture('ems-responsive', 'no', 'http://via.placeholder.com/375x667', 'http://via.placeholder.com/750x1334', 'http://via.placeholder.com/2880x1580')
+        .banner-content
+            h1.color-white.font-size-36.line-height-37.font-weight-bold Our Story
+    .m-t-80
+        .ems-container-small.m-auto
+            nav.nav-tab
+                ul.nav-tab-list
+                    li.nav-tab-item.active
+                        a(href="#").nav-tab-link Who we are
+                    li.nav-tab-item
+                        a(href="#").nav-tab-link Our values
+                    li.nav-tab-item
+                        a(href="#").nav-tab-link Craftmanship
+                    li.nav-tab-item
+                        a(href="#").nav-tab-link Sustainability
+                    li.nav-tab-item
+                        a(href="#").nav-tab-link Designers
+                    li.nav-tab-item
+                        a(href="#").nav-tab-link Awards
+            .m-t-82
+                article
+                    p.m-0.font-size-20.line-height-28 Ersa, founded by Metin Atabey Ata in 1958, Sivas, has raised one of the pioneers of the furniture sector in Turkey with giving importance to innovation and design. The simple architectural design of the factory in harmony with the environment is a reflection of the sustainable production approach that Ersa adopts. Spread on approximately 60,000 square meters and equipped with state-of-the-art production technologies, the factory has the capacity to process 4.5 million square meters of panel boards, 500,000 running meters of laminated panels, and 530,000 pieces of furniture in one shift.
+                    p.m-t-40.m-b-0.font-size-16.line-height-24 Ersa, which offers innovative and high quality solutions for architectural needs of its users in Turkey and all around the world, has a noteworthy export success in the international arena with the average export rate three times more than the industry average of Turkey. 
+    .m-t-100
+        .ems-container
+            .ems-grid
+                +picture('ems-responsive', 'no', 'http://via.placeholder.com/375x667', 'http://via.placeholder.com/750x1334', 'http://via.placeholder.com/2880x1580')

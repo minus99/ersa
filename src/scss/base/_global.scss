@@ -570,6 +570,7 @@ iframe {
 //MARGIN ELEMENTS
 .m {
     //VARIABLES
+    $m0: 0;
     $m5: 5px;
     $m10: 10px;
     $m15: 15px;
@@ -579,6 +580,10 @@ iframe {
     $m35: 35px;
     $m40: 40px;
     $m50: 50px;
+    $m80: 80px;
+    $m82: 82px;
+    $m100: 100px;
+    
     //VARIABLES
     //AUTO
     &-auto {
@@ -632,6 +637,16 @@ iframe {
     &-t-10 {
         margin-top: $m10;
     }
+    &-t-80 {
+        margin-top: $m80;
+    }
+    &-t-82 {
+        margin-top: $m82;
+    }
+    &-t-100 {
+        margin-top: $m100;
+    }
+    
     //MARGIN RIGHT 10
     &-r-10 {
         margin-right: $m10;
@@ -783,6 +798,9 @@ iframe {
     //BOTTOM AUTO
     &-b-auto {
         margin-bottom: auto;
+    }
+    &-b-0 {
+        margin-bottom: 0;
     }
 }
 
@@ -1121,7 +1139,20 @@ iframe {
     &-1-4 {
         line-height: 1.4;
     }
+
     &-1-5 {
         line-height: 1.5;
+    }
+
+    &-24 {
+        line-height: 24px;
+    }
+
+    &-28 {
+        line-height: 28px;
+    }
+
+    &-37 {
+        line-height: 37px;
     }
 }

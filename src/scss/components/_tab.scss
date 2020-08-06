@@ -5,3 +5,48 @@
         }
     }
 }
+
+.nav-tab {
+    .nav-tab-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -16px;
+        margin-right: -16px;
+
+        .nav-tab-item {
+            flex: 0 0 auto;
+            max-width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+
+            .nav-tab-link {
+                color: #babfc2;
+                font-size: 17px;
+                position: relative;
+
+                &:before {
+                    content : "";
+                    display: block;
+                    background-color: $color3;
+                    width: 0;
+                    height: 2px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    transition: 0.5s;
+                }
+            }
+            
+            &:hover,
+            &.active {
+                .nav-tab-link {
+                    color: #2b2a2a;
+
+                   &:before {
+                        width: 17px;
+                   }
+                }
+            }
+        }
+    }
+}
