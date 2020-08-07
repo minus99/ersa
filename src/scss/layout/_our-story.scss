@@ -10,3 +10,76 @@ body.our-story {
         }
     }
 }
+
+.our-story {
+    &-tab {
+        .ems-tab-header {
+            a {
+                color: #babfc2;
+                font-size: 17px;
+                position: relative;
+
+                &:before {
+                    content : "";
+                    display: block;
+                    background-color: $color3;
+                    width: 0;
+                    height: 2px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    transition: 0.5s;
+                }
+
+                &:hover,
+                &.selected {
+                    color: #2b2a2a;
+
+                    &:before {
+                        width: 17px;
+                    }
+                }
+            }
+        }
+
+        .ems-tab-content {
+            margin-top: 82px;
+        }
+    }
+
+    &-row-2,
+    &-row-3,
+    &-row-4 {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $color2;
+            z-index: -1;
+            height: 100%;
+        }
+    }
+}
+
+.our-history {
+    h1 {
+        text-align: center;
+    }
+
+    &-tab {
+        .ems-tab-header {
+            a {
+                font-size: 17px;
+                color: $color7;
+
+                &:hover,
+                &.selected {
+                    color: $color3;
+                }
+            }
+        }
+    }
+}

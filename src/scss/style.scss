@@ -15,6 +15,8 @@
 @import 'components/swiper';
 @import 'components/bulletin';
 @import 'components/banner';
+@import 'components/list';
+@import 'components/card';
 
 //LAYOUT
 @import 'layout/header';
@@ -32,6 +34,8 @@
 @import 'layout/designer-profile';
 @import 'layout/designer-profile-desktop';
 @import 'layout/our-story';
+@import 'layout/our-story-desktop';
+
 //DESKTOP
 @supports (display: grid) {
     @include setMediaScreen(min-width, $breakpoint-medium) {

@@ -320,6 +320,10 @@ iframe {
         >* {
             overflow: hidden;
         }
+
+        &-item {
+
+        }
     }
     @at-root {
         @for $i from 1 through 12 {
@@ -572,8 +576,10 @@ iframe {
     //VARIABLES
     $m0: 0;
     $m5: 5px;
+    $m8: 8px;
     $m10: 10px;
     $m15: 15px;
+    $m17: 17px;
     $m20: 20px;
     $m25: 25px;
     $m30: 30px;
@@ -621,6 +627,10 @@ iframe {
     &-t-5 {
         margin-top: $m5;
     }
+    // MARGIN TOP 8
+    &-t-8 {
+        margin-top: $m8;
+    }
     //MARGIN RIGHT 5
     &-r-5 {
         margin-right: $m5;
@@ -662,6 +672,10 @@ iframe {
     //MARGIN TOP 15
     &-t-15 {
         margin-top: $m15;
+    }
+    // MARGIN TOP 17
+    &-t-17 {
+        margin-top: $m17;
     }
     //MARGIN RIGHT 15
     &-r-15 {
@@ -818,7 +832,11 @@ iframe {
     $p60: 60px;
     $p70: 70px;
     $p80: 80px;
-    //VARIABLES
+
+    // PADDING FULL 0
+    &-0 {
+        padding: $p0;
+    }
     //FULL 5
     &-5 {
         padding: $p5 $p5 $p5 $p5;

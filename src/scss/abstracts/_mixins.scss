@@ -65,3 +65,23 @@
         }
     }
 }
+
+@mixin ourStoryGrid($left, $right, $gap, $i) {
+    .our-story-grid-#{$i} {
+        grid-template-columns: $left $right;
+        grid-gap: $gap;
+    }
+}
+
+@mixin flexList($name, $gutter, $item) {
+    .ems-flex-#{$name}-list {
+        margin-left: -$gutter;
+        margin-right: -$gutter;
+    
+        .ems-list-item {
+            padding-left: $gutter;
+            padding-right: $gutter;
+            flex: 0 0 calc(100% / #{$item});
+        }
+    }
+}
