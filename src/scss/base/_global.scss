@@ -828,6 +828,15 @@ iframe {
     $p60: 60px;
     $p70: 70px;
     $p80: 80px;
+    //PADDING RESET
+    &-l-r-0
+    {
+        padding-left: 0 ;
+        padding-right: 0;
+    }
+    &-0 {
+        padding: $p0 $p0 $p0 $p0;
+    }
     //VARIABLES
     //FULL 5
     &-5 {
