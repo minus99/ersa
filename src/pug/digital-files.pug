@@ -1,0 +1,148 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page digital-files-page"
+
+block content
+    .ems-container-lg
+        .d-ems-grid.d-ems-grid-cover-top
+            .d-ems-area-a
+                include includes/_breadcrumb.pug
+        .ems-flex.ems-flex-column.d-ems-flex-row.d-f-pages
+            .ems-flex.ems-flex-column.p-t-30.p-lg-t-80.p-lg-b-40.d-f-filter.p-l-20.p-r-20.p-lg-l-0.p-lg-r-0
+                h1.font-size-32.font-weight-bold Digital Files
+
+                a(href="javascript:void(0);" class="ems-flex ems-flex-middle ems-flex-between p-y-10 ems-filter-trigger font-size-20" data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="toggle")
+                    |Work
+                    +icon('down')
+                //FILTER
+                .ems-filter-overlay.ems-overlay(data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="remove")
+                .ems-filter.modal.modal-bottom
+                    .modal-header.ems-mobile Filters
+                        //CLOSE
+                        +icon('close')(href="javascript:void(0);" class="modal-close" data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="toggle")
+                    .p-20.p-lg-t-0.p-lg-l-0.p-lg-b-0
+                        ul.lvl-1.filter-tree.d-ems-flex.ems-flex-column.p-l-20
+                            li
+                                a(href="javascript:void(0);" class="ems-flex ems-flex-middle ems-flex-between")
+                                    |Office
+                                    +icon('minus')
+                                ul.lvl-2
+                                    li.ems-grid
+                                        +link('<span></span> Desks & Tables')(href="javascript:void(0);" class="filter_link")
+                                        +link('<span></span> Task Chairs')(href="javascript:void(0);" class="filter_link selected")
+                                        +link('<span></span> Sofas & Chairs')(href="javascript:void(0);" class="filter_link")
+                                        +link('<span></span> Storage')(href="javascript:void(0);" class="filter_link")
+                                        +link('<span></span> Side & Coffee Tables')(href="javascript:void(0);" class="filter_link")
+                                        +link('<span></span> Common Spaces')(href="javascript:void(0);" class="filter_link")
+                                        +link('<span></span> All Office')(href="javascript:void(0);" class="filter_link")
+                            li
+                                a(href="javascript:void(0);" class="ems-flex ems-flex-middle ems-flex-between")
+                                    |Education
+                                    +icon('plus')
+                    .modal-footer.ems-mobile
+                        .ems-flex.ems-flex-middle.ems-flex-center
+                            +link('Clean All')(href="javascript:void(0);" class="btn-filter-clear ems-link")
+                            +link('Apply')(href="javascript:void(0);" class="btn btn-border btn-size02 btn-filter-apply")
+
+                a(href="javascript:void(0);" class="ems-flex ems-flex-middle ems-flex-between p-y-10 ems-filter-trigger font-size-20")
+                    |Life
+                    +icon('down')
+            .ems-flex.ems-flex-column.p-t-10.p-lg-t-80.p-lg-b-40.d-f-content.p-l-20.p-r-20.p-lg-l-0.p-lg-r-0
+                .filter-search.ems-flex.ems-flex-middle
+                    +icon('search')
+                    input(type="text" placeholder="Search product name" class="font-size-24")
+                .ems-container-full
+                    .ems-tab.ems-overflow-hidden.p-t-80
+                        .swiper-container.swiper-auto(data-swiper="widgetAuto")
+                            .swiper-inner.ems-overflow-visible
+                                ul.swiper-wrapper.ems-tab-header.ems-tab-space-and-solutions-header.p-0
+                                    a(href="javascript:void(0);" rel="tab-1" class="swiper-slide selected") All Formats
+                                    a(href="javascript:void(0);" rel="tab-2" class="swiper-slide") 2D Models
+                                    a(href="javascript:void(0);" rel="tab-3" class="swiper-slide") 3D Models
+                                    a(href="javascript:void(0);" rel="tab-4" class="swiper-slide") CAT Data
+                        .ems-tab-content
+                            div(rel="tab-1" class="selected tab-1")
+                                .ems-flex.ems-flex-column.d-ems-flex-row.m-t-40.digital-files-tab
+                                    .width-100.d-f-tab-content
+                                        .d-f-tab-content-file.m-b-40
+                                            .font-size-20.font-weight-bold.m-b-20 2D Models
+                                            ul
+                                                li
+                                                    -for (var y = 1; y <= 5; y++)
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                            p.font-size-17 1962
+                                                            p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
+                                                                +icon('download p-l-5')
+                                                    .btn.btn-transparent.btn-icon.show-more.m-t-20
+                                                        span.color-red Show more
+                                                            +icon('plus m-l-5') 
+                                        .d-f-tab-content-file.m-b-40
+                                            .font-size-20.font-weight-bold.m-b-20 3D Models
+                                            ul
+                                                li
+                                                    -for (var y = 1; y <= 5; y++)
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                            p.font-size-17 1962
+                                                            p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
+                                                                +icon('download p-l-5')
+                                                    .btn.btn-transparent.btn-icon.show-more.m-t-20
+                                                        span.color-red Show more
+                                                            +icon('plus m-l-5') 
+                                        .d-f-tab-content-file.m-b-40
+                                            .font-size-20.font-weight-bold.m-b-20 CAT Data
+                                            ul
+                                                li
+                                                    -for (var y = 1; y <= 5; y++)
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                            p.font-size-17 1962
+                                                            p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
+                                                                +icon('download p-l-5')
+                                                    .btn.btn-transparent.btn-icon.show-more.m-t-20
+                                                        span.color-red Show more
+                                                            +icon('plus m-l-5') 
+                            div(rel="tab-2" class="tab-2")
+                                 .ems-flex.ems-flex-column.d-ems-flex-row.m-t-40.digital-files-tab
+                                    .width-100.d-f-tab-content
+                                       .d-f-tab-content-file.m-b-40
+                                            .font-size-20.font-weight-bold.m-b-20 2D Models
+                                            ul
+                                                li
+                                                    -for (var y = 1; y <= 5; y++)
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                            p.font-size-17 1962
+                                                            p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
+                                                                +icon('download p-l-5')
+                                                    .btn.btn-transparent.btn-icon.show-more.m-t-20
+                                                        span.color-red Show more
+                                                            +icon('plus m-l-5') 
+                            div(rel="tab-3" class="tab-3")
+                                 .ems-flex.ems-flex-column.d-ems-flex-row.m-t-40.digital-files-tab
+                                    .width-100.d-f-tab-content
+                                       .d-f-tab-content-file.m-b-40
+                                            .font-size-20.font-weight-bold.m-b-20 3D Models
+                                            ul
+                                                li
+                                                    -for (var y = 1; y <= 5; y++)
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                            p.font-size-17 1962
+                                                            p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
+                                                                +icon('download p-l-5')
+                                                    .btn.btn-transparent.btn-icon.show-more.m-t-20
+                                                        span.color-red Show more
+                                                            +icon('plus m-l-5') 
+                            div(rel="tab-4" class="tab-4")
+                                 .ems-flex.ems-flex-column.d-ems-flex-row.m-t-40.digital-files-tab
+                                    .width-100.d-f-tab-content
+                                       .d-f-tab-content-file.m-b-40
+                                            .font-size-20.font-weight-bold.m-b-20 CAT Data
+                                            ul
+                                                li
+                                                    -for (var y = 1; y <= 5; y++)
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                            p.font-size-17 1962
+                                                            p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
+                                                                +icon('download p-l-5')
+                                                    .btn.btn-transparent.btn-icon.show-more.m-t-20
+                                                        span.color-red Show more
+                                                            +icon('plus m-l-5') 

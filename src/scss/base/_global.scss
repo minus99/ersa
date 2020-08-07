@@ -1096,7 +1096,10 @@ iframe {
         font-size: 24px;
     }
     &-20 {
-        font-size: 20px;
+        font-size: 20px !important;
+    }
+    &-17 {
+        font-size: 17px;
     }
     &-16 {
         font-size: 16px;
