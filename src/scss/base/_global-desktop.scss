@@ -167,19 +167,26 @@
 //MARGIN DESKTOP ELEMENTS
 .m-lg {
     //VARIABLES
+    $m0: 0px;
     $m5: 5px;
     $m10: 10px;
     $m15: 15px;
     $m20: 20px;
+    $m21: 21px;
     $m25: 25px;
     $m30: 30px;
     $m35: 35px;
     $m40: 40px;
+    $m42: 42px;
     $m50: 50px;
     $m60: 60px;
     $m80: 80px;
     //VARIABLES
     //RESET
+    &-b-0
+    {
+        margin-bottom:  $m0;
+    }
     &-0 {
         margin: 0 0 0 0;
     }
@@ -210,6 +217,15 @@
     //MARGIN TOP 5
     &-t-5 {
         margin-top: $m5;
+    }
+    //MARGIN TOP 21
+    &-t-21 {
+        margin-top: $m21;
+    }
+    //MARGIN TOP 42
+    &-t-42
+    {
+        margin-top: $m42;
     }
     //MARGIN RIGHT 5
     &-r-5 {
@@ -371,6 +387,9 @@
     &-t-80 {
         margin-top: $m80;
     }
+    &-t-183 {
+        margin-top: 183px;
+    }
     //MARGIN RIGHT 80
     &-r-80 {
         margin-right: $m80;
@@ -424,6 +443,7 @@
 //PADDING ELEMENTS
 .p-lg {
     //VARIABLES
+    $p0: 0px;
     $p5: 5px;
     $p10: 10px;
     $p20: 20px;
@@ -454,6 +474,10 @@
     //FULL 40
     &-40 {
         padding: $p40 $p40 $p40 $p40;
+    }
+    //PADDING TOP 0
+    &-t-0 {
+        padding-top: $p0;
     }
     //PADDING TOP 5
     &-t-5 {
@@ -686,6 +710,7 @@
     }
 }
 
+//GRİD
 .grid-area {
     &-a {
         grid-area: A;
@@ -701,5 +726,52 @@
     }
     &-e {
         grid-area: E;
+    }
+}
+
+//FONT SİZE
+.d-font-size {
+    &-24
+    {
+        font-size: 24px;
+    }
+    &-20
+    {
+        font-size: 20px;
+    }
+    &-16
+    {
+        font-size: 16px;
+    }
+    &-17
+    {
+        font-size: 17px;
+    }
+    &-32
+    {
+        font-size: 32px;
+    }
+    &-36
+    {
+        font-size: 36px;
+    }
+}
+
+// Line Height
+.d-line-height {
+    &-1-4
+    {
+        line-height: 1.4;
+    }
+    &-1-5 {
+        line-height: 1.5;
+    }
+    &-24
+    {
+        line-height: 24px;
+    }
+    &-37
+    {
+        line-height: 37px;
     }
 }

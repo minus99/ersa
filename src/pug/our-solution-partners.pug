@@ -1,0 +1,35 @@
+extends includes/_layout.pug
+
+
+block prepend head
+    - var pageClass = "page our-solution-partners"
+    
+
+block content
+    .ems-container-lg
+        .d-ems-grid.d-ems-grid-cover-top
+            .d-ems-area-a
+                include includes/_breadcrumb.pug
+            .d-ems-area-c
+                div(class="m-lg-t-80 p-l-20 p-r-20 p-lg-l-0 p-lg-r-0")
+                    h1.new-m-title-h1 Our Solution Partners
+    //OUR BANNER GRID
+    .ems-container-lg
+        .ems-flex.ems-flex-column
+            .col-1
+                ul.ems-flex.ems-flex-column.d-ems-flex-row
+                    li.p-lg-r-20
+                        +image('no','https://via.placeholder.com/1240x1440')
+                        .ems-flex.ems-flex-row.d-ems-flex-column.d-ems-flex-left
+                            .prm-link-text
+                                .btn.btn-transparent.btn-icon.cappa
+                                    span Cappellini
+                                        +icon('right-arrow')
+                    li.p-lg-l-20
+                        +image('no','https://via.placeholder.com/1240x1440')
+                        .ems-flex.ems-flex-row.d-ems-flex-column.d-ems-flex-left
+                            .prm-link-text
+                                .btn.btn-transparent.btn-icon.cappa
+                                    span Quadrifoglio
+                                        +icon('right-arrow')
+    

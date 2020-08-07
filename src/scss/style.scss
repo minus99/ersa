@@ -28,6 +28,8 @@
 @import 'layout/resources';
 @import 'layout/space-and-solutions';
 @import 'layout/space-and-solutions-detail';
+@import 'layout/our-solution-partners-cappellini';
+@import 'layout/our-solution-partners';
 //DESKTOP
 @supports (display: grid) {
     @include setMediaScreen(min-width, $breakpoint-medium) {
@@ -52,5 +54,7 @@
         @import 'layout/resources-desktop';
         @import 'layout/space-and-solutions-desktop';
         @import 'layout/space-and-solutions-detail-desktop';
+        @import 'layout/our-solution-partners-desktop';
+        @import 'layout/our-solution-partners-cappellini-desktop';
     }
 }

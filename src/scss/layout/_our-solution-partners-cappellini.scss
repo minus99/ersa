@@ -1,0 +1,56 @@
+
+.page-title-white
+{
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    
+    
+}
+.mobile-renctangle
+{
+    
+    width: 2px;
+    height: 60px;
+    opacity: 0.3;
+    background-color: #ffffff;
+    position: absolute;
+    top: 58%;
+    content: '';
+    left: 93%;
+   
+    
+}
+.mobile-mini-renctangle
+{
+
+    
+    width: 2px;
+    height: 26px;
+    background-color: #ffffff;
+    top: 58%;
+    left: 93%;
+    content: '';
+    position: absolute;
+    
+}
+.cappellini-mobile-text
+{
+    
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 43px;
+
+}
+.mobile-logo-size {
+    img {
+        width: 200px;
+    }
+}
+.auto-scroll
+{
+    overflow: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+}
