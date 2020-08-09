@@ -675,6 +675,62 @@
     }
 }
 
+
+// FONT SIZE
+.font-size-lg {
+    &-32 {
+        font-size: 32px;
+    }
+    &-36 {
+        font-size: 36px;
+    }
+    &-32 {
+        font-size: 32px;
+    }
+    &-24 {
+        font-size: 24px;
+    }
+    &-20 {
+        font-size: 20px;
+    }
+    &-16 {
+        font-size: 16px;
+    }
+    &-15 {
+        font-size: 15px;
+    }
+    &-14 {
+        font-size: 14px;
+    }
+}
+
+// LINE HEIGHT
+.line-height-lg {
+    &-normal {
+        line-height: normal;
+    }
+    
+    &-1-4 {
+        line-height: 1.4;
+    }
+
+    &-1-5 {
+        line-height: 1.5;
+    }
+
+    &-24 {
+        line-height: 24px;
+    }
+
+    &-28 {
+        line-height: 28px;
+    }
+
+    &-37 {
+        line-height: 37px;
+    }
+}
+
 //ORDER ELEMENTS
 .order-lg {
     &-1 {

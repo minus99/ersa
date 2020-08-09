@@ -586,6 +586,7 @@ iframe {
     $m35: 35px;
     $m40: 40px;
     $m50: 50px;
+    $m60: 60px;
     $m80: 80px;
     $m82: 82px;
     $m100: 100px;
@@ -785,6 +786,11 @@ iframe {
     &-b-50 {
         margin-bottom: $m50;
     }
+    // MARGIN TOP 60
+    &-t-60 {
+        margin-top: $m60;
+    }
+
     //LEFT 0
     &-l-0 {
         margin-left: 0;
@@ -1122,6 +1128,9 @@ iframe {
 
 // FONT SIZE
 .font-size {
+    &-32 {
+        font-size: 32px;
+    }
     &-36 {
         font-size: 36px;
     }
@@ -1154,6 +1163,10 @@ iframe {
 
 // LINE HEIGHT
 .line-height {
+    &-normal {
+        line-height: normal;
+    }
+    
     &-1-4 {
         line-height: 1.4;
     }

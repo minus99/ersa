@@ -32,9 +32,7 @@
 @import 'layout/space-and-solutions';
 @import 'layout/space-and-solutions-detail';
 @import 'layout/designer-profile';
-@import 'layout/designer-profile-desktop';
 @import 'layout/our-story';
-@import 'layout/our-story-desktop';
 
 //DESKTOP
 @supports (display: grid) {
@@ -60,5 +58,7 @@
         @import 'layout/resources-desktop';
         @import 'layout/space-and-solutions-desktop';
         @import 'layout/space-and-solutions-detail-desktop';
+        @import 'layout/our-story-desktop';
+        @import 'layout/designer-profile-desktop';
     }
 }
