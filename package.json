@@ -26,6 +26,7 @@
     "bootstrap": "^4.0.0",
     "bootstrap-input-spinner": "^1.13.4",
     "clipboard": "^2.0.6",
-    "gulp-run": "^1.7.1"
+    "gulp-run": "^1.7.1",
+    "run": "^1.4.0"
   }
 }
