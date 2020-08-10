@@ -586,6 +586,7 @@ iframe {
     $m35: 35px;
     $m40: 40px;
     $m50: 50px;
+    $m55: 55px;
     $m60: 60px;
     $m80: 80px;
     $m82: 82px;
@@ -623,6 +624,10 @@ iframe {
     //FULL 40
     &-40 {
         margin: $m40 $m40 $m40 $m40;
+    }
+    // MARGIN TOP 0
+    &-t-0 {
+        margin-top: $m0;
     }
     //MARGIN TOP 5
     &-t-5 {
@@ -773,6 +778,10 @@ iframe {
     //MARGIN TOP 50
     &-t-50 {
         margin-top: $m50;
+    }
+    // MARGIN TOP 55
+    &-t-55 {
+        margin-top: $m55;
     }
     //MARGIN RIGHT 50
     &-r-50 {
@@ -1137,11 +1146,32 @@ iframe {
     &-32 {
         font-size: 32px;
     }
+    &-25 {
+        font-size: 25px;
+    }
     &-24 {
         font-size: 24px;
     }
+    &-23 {
+        font-size: 23px;
+    }
+    &-22 {
+        font-size: 22px;
+    }
+    &-21 {
+        font-size: 21px;
+    }
     &-20 {
         font-size: 20px;
+    }
+    &-19 {
+        font-size: 19px;
+    }
+    &-18 {
+        font-size: 18px;
+    }
+    &-17 {
+        font-size: 17px;
     }
     &-16 {
         font-size: 16px;
@@ -1186,4 +1216,9 @@ iframe {
     &-37 {
         line-height: 37px;
     }
+}
+
+.no-gutters {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }

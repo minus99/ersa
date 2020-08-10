@@ -458,6 +458,7 @@
     $p20: 20px;
     $p30: 30px;
     $p40: 40px;
+    $p45: 45px;
     $p50: 50px;
     $p60: 60px;
     $p65: 65px;
@@ -569,6 +570,10 @@
     &-b-40 {
         padding-bottom: $p40;
     }
+    // PADDING LEFT 45
+    &-l-45 {
+        padding-left: $p45;
+    }
     //PADDING TOP 50
     &-t-50 {
         padding-top: $p50;
@@ -596,6 +601,10 @@
     //PADDING LEFT 60
     &-l-60 {
         padding-left: $p60;
+    }
+    // PADDING LEFT 65
+    &-l-65 {
+        padding-left: $p65;
     }
     //PADDING BOTTOM 60
     &-b-60 {

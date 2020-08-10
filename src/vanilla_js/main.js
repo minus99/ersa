@@ -16,7 +16,7 @@ Main.prototype = {
         target = scope.querySelectorAll('select, input');
         if (utils.detectEl(target) && typeof iStyler !== 'undefined')
             utils.forEach(target, function (index, value) {
-                new iStyler({ ID: value });
+                //new iStyler({ ID: value });
             });
 
         target = scope.querySelectorAll('.ems-tab');

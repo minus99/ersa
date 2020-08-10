@@ -18,4 +18,40 @@
             display: none;
         }
     }
+
+    &-vertical {
+        .ems-tab-content {
+            > div {
+                .ems-tab-inner-header {
+                    position: relative;
+                    cursor: pointer;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+
+                    &:before {
+                        content: "";
+                        font-family: 'icomoon' !important;
+                        font-size: $font-size-24;
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 0;
+                    }
+                }
+
+                .ems-tab-inner-content {
+                    padding-bottom: 40px;
+                }
+
+                &:not(.selected) {
+                    display: block !important;
+    
+                    .ems-tab-inner-content {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
