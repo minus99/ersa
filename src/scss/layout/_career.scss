@@ -1,0 +1,70 @@
+body.career {
+    .ems-tab{
+        &-vertical {
+            .ems-tab-content {
+                > div {
+                    border-bottom: 1px solid $color2;
+    
+                    .ems-tab-inner-header {
+
+                        &:before {
+                            content: "\e90f";
+                        }
+                    }
+
+                    &:not(.selected) {
+                        .ems-tab-inner-header {
+                            &:before {
+                                content: "\e911";
+                            }
+                        }
+                    }
+    
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.career-form {
+    background-color: $color6;
+    
+    .career-form-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        .ems-flex {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -20px;
+            margin-right: -20px;
+
+            .ems-flex-item {
+                padding-left: 20px;
+                padding-right: 20px;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    form {
+        .form-group {
+            margin-bottom: 40px;
+        }
+        
+        label {
+            color: $color1;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+}
+
+.career-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}

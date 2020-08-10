@@ -1,0 +1,23 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page price-request"
+    - var fixedClass = " fixed color-dark"
+
+block content
+    .ems-container-full
+        //
+        .ems-price-request.ems-section
+            .ems-flex.ems-flex-wrap
+                .ems-flex-item.ems-flex-auto
+                    .ems-breadcrumb-absolute
+                        include includes/_breadcrumb.pug
+                    .banner
+                        .prm-media.ems-responsive
+                            +image('lazy-swiper', 'https://via.placeholder.com/1620x1400/ddd/000')(class="ems-responsive-item" alt='title')
+                .ems-flex-item.ems-flex-1.p-l-15.p-r-15
+                    .ems-flex.ems-flex-wrap.ems-flex-middle.ems-flex-between.p-lg-l-20.p-lg-r-20
+                        h1.font-size-20.font-weight-bold Price Request
+                        button.btn X
+                    .ems-price-request-body
+                                //- +icon('icon-close')
