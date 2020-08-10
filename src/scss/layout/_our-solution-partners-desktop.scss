@@ -12,3 +12,24 @@
 {
     max-width: 240px;
 }
+
+// İTEM CENTER
+
+.d-items-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.d-color-white {
+    color: #fff;
+    font-size: 32px;
+   
+}
+
+.new-m-title-h1 {
+    font-size: 32px;
+    line-height: 36px;
+    color: #2b2a2a;
+    font-weight: bold;
+}
