@@ -1,0 +1,59 @@
+.digital-files-page,
+.ems-filter-ready {
+    .d-f-filter {
+        .ems-filter-trigger {
+            .icon-top:before {
+                content: "\e917";
+            }
+        }
+    }
+}
+
+.digital-files-page {
+    .d-f-pages {
+        .d-f-filter {
+            width: 400px;
+            .ems-filter-trigger {
+                max-width: 300px;
+            }
+            .ems-filter {
+                border-bottom: unset;
+            }
+            .lvl-1 {
+                max-width: 280px;
+            }
+        }
+        .d-f-content {
+            .filter-search {
+                input {
+                    font-size: 24px;
+                    border: unset;
+                    padding-left: 15px;
+                }
+            }
+            .ems-tab {
+                &-header {
+                    font-size: 17px;
+                    a {
+                        padding-right: 20px;
+                    }
+                    .selected {
+                        color: $color3;
+                    }
+                }
+                &-content {
+                    .d-f-tab-content {
+                        width: 500px;
+                        ul {
+                            li {
+                                a {
+                                    background-color: $color6;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

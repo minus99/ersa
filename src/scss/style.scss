@@ -15,7 +15,6 @@
 @import 'components/swiper';
 @import 'components/bulletin';
 @import 'components/banner';
-
 //LAYOUT
 @import 'layout/header';
 @import 'layout/footer';
@@ -56,5 +55,6 @@
         @import 'layout/resources-desktop';
         @import 'layout/space-and-solutions-desktop';
         @import 'layout/space-and-solutions-detail-desktop';
+        @import 'layout/digital-files-desktop';
     }
 }
