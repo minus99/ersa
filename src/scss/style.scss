@@ -34,11 +34,16 @@
 @import 'layout/resources';
 @import 'layout/space-and-solutions';
 @import 'layout/space-and-solutions-detail';
+<<<<<<< HEAD
 @import 'layout/designer-profile';
 @import 'layout/our-story';
 @import 'layout/career';
 @import 'layout/price-request';
 
+=======
+@import 'layout/our-solution-partners-cappellini';
+@import 'layout/our-solution-partners';
+>>>>>>> origin/ersa-new-pages
 //DESKTOP
 @supports (display: grid) {
     @include setMediaScreen(min-width, $breakpoint-medium) {
@@ -64,6 +69,7 @@
         @import 'layout/space-and-solutions-desktop';
         @import 'layout/space-and-solutions-detail-desktop';
 <<<<<<< HEAD
+<<<<<<< HEAD
         @import 'layout/digital-files-desktop';
 =======
         @import 'layout/our-story-desktop';
@@ -71,5 +77,9 @@
         @import 'layout/career-desktop';
         @import 'layout/price-request-desktop';
 >>>>>>> origin/new-pages
+=======
+        @import 'layout/our-solution-partners-desktop';
+        @import 'layout/our-solution-partners-cappellini-desktop';
+>>>>>>> origin/ersa-new-pages
     }
 }

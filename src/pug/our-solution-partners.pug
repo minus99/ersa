@@ -1,0 +1,37 @@
+extends includes/_layout.pug
+
+
+block prepend head
+    - var pageClass = "page our-solution-partners"
+    
+
+block content
+    .ems-container-lg
+        .d-ems-grid.d-ems-grid-cover-top
+            .d-ems-area-a
+                include includes/_breadcrumb.pug
+            .d-ems-area-c
+                div(class="m-lg-t-80 p-l-20 p-r-20 p-lg-l-0 p-lg-r-0 m-lg-b-40")
+                    h1.new-m-title-h1.m-b-0 Our Solution Partners
+    //OUR BANNER GRID
+    .ems-container-lg
+        .ems-flex.ems-flex-column
+            .col-1
+                ul.ems-flex.ems-flex-column.d-ems-flex-row
+                    li.p-lg-r-20.d-position-relative
+                        +image('no','https://via.placeholder.com/1240x1440')
+                        .ems-flex-row.d-ems-flex-column.d-ems-flex-left
+                            .prm-link-text.mobile-title-cap.p-l-20.p-t-20.p-b-40.p-r-20.width-100.p-lg-l-0.p-lg-r-0.p-lg-b-0.p-lg-t-0
+                                .btn-transparent.btn-icon.d-position-absolute.d-items-center
+                                    span.d-color-white.font-size-24.ems-flex Cappellini
+                                        span.m-l-auto
+                                            +icon('right-arrow m-lg-l-15 ')
+                    li.p-lg-l-20.d-position-relative
+                        +image('no','https://via.placeholder.com/1240x1440')
+                        .ems-flex-row.d-ems-flex-column.d-ems-flex-left
+                            .prm-link-text.mobile-title-cap.p-l-20.p-t-20.p-b-40.p-r-20.width-100.p-lg-l-0.p-lg-r-0.p-lg-b-0.p-lg-t-0
+                                .btn-transparent.btn-icon.d-position-absolute.d-items-center
+                                    span.d-color-white.font-size-24.ems-flex  Quadrifoglio
+                                        span.m-l-auto
+                                            +icon('right-arrow m-lg-l-15')
+    

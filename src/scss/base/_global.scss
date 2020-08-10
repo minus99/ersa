@@ -320,10 +320,7 @@ iframe {
         >* {
             overflow: hidden;
         }
-
-        &-item {
-
-        }
+        &-item {}
     }
     @at-root {
         @for $i from 1 through 12 {
@@ -585,13 +582,13 @@ iframe {
     $m30: 30px;
     $m35: 35px;
     $m40: 40px;
+    $m42: 42px;
     $m50: 50px;
     $m55: 55px;
     $m60: 60px;
     $m80: 80px;
     $m82: 82px;
     $m100: 100px;
-    
     //VARIABLES
     //AUTO
     &-auto {
@@ -600,6 +597,18 @@ iframe {
     //RESET
     &-0 {
         margin: 0 0 0 0;
+    }
+    &-b-0 {
+        margin-bottom: 0;
+    }
+    &-t-0 {
+        margin-top: 0;
+    }
+    &-l-0 {
+        margin-left: 0;
+    }
+    &-r-0 {
+        margin-right: 0;
     }
     //FULL 5
     &-5 {
@@ -662,7 +671,6 @@ iframe {
     &-t-100 {
         margin-top: $m100;
     }
-    
     //MARGIN RIGHT 10
     &-r-10 {
         margin-right: $m10;
@@ -763,6 +771,10 @@ iframe {
     &-t-40 {
         margin-top: $m40;
     }
+    //MARGIN TOP 42
+    &-t-42 {
+        margin-top: $m42;
+    }
     //MARGIN RIGHT 40
     &-r-40 {
         margin-right: $m40;
@@ -799,7 +811,6 @@ iframe {
     &-t-60 {
         margin-top: $m60;
     }
-
     //LEFT 0
     &-l-0 {
         margin-left: 0;
@@ -847,7 +858,6 @@ iframe {
     $p60: 60px;
     $p70: 70px;
     $p80: 80px;
-
     // PADDING FULL 0
     &-0 {
         padding: $p0;
@@ -1185,6 +1195,12 @@ iframe {
     &-14 {
         font-size: 14px;
     }
+    &-17 {
+        font-size: 17px;
+    }
+    &-32 {
+        font-size: 32px;
+    }
 }
 
 // FONT WEIGHT
@@ -1199,23 +1215,18 @@ iframe {
     &-normal {
         line-height: normal;
     }
-    
     &-1-4 {
         line-height: 1.4;
     }
-
     &-1-5 {
         line-height: 1.5;
     }
-
     &-24 {
         line-height: 24px;
     }
-
     &-28 {
         line-height: 28px;
     }
-
     &-37 {
         line-height: 37px;
     }
