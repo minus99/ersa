@@ -1,0 +1,117 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page career"
+    - var fixedClass = " fixed"
+
+block content
+    .ems-breadcrumb-absolute
+        include includes/_breadcrumb.pug
+    a(href="#1" class="banner display-block")
+        .banner-image
+            +picture('ems-responsive', 'no', 'http://via.placeholder.com/375x667', 'http://via.placeholder.com/750x1334', 'http://via.placeholder.com/2880x1580')
+        .banner-content
+            h1.color-white.font-size-32.font-size-lg-36.line-height-37.font-weight-bold Join Us
+    .ems-container.m-t-30.m-lg-t-80
+        .ems-container-small.p-lg-r-60
+            article
+                p.font-size-20.line-height-28.m-0 We’re always seeking motivated and passionate individuals to join our team. If you’re looking for a reliable company – one that allows you to do your best work as a part of a passionate team, contact us even if your occupation is not listed in the category of current openings.
+    .career-wrapper.m-t-55.m-lg-t-80
+        article
+            h2.font-size-32.line-height-32.font-weight-bold 2 Open
+            p.font-size-20.line-height-32.m-b-0.m-t-10 Positions
+        .ems-tab.ems-tab-vertical.m-lg-t-60
+                .ems-tab-content
+                    .selected(rel="tab-1")
+                        .ems-tab-inner-header
+                            h3.font-size-20.font-weight-bold Accounting Manager
+                        .ems-tab-inner-content
+                            article
+                                p.font-size-16.line-height-24.m-0 As a company specializing in office furniture since the very beginning, Ersa offers a variety of solutions for clients’ projects, always acting on the principle of constantly raising the quality and reliability bar.  <br> <br> The candidate will be working as Accounting Manager, based in Ankara Sincap.
+                                .m-t-40.m-lg-t-40
+                                    strong.font-size-17 Desired Skills & Experience
+                                    ul.ems-list.p-l-15
+                                        li 
+                                            p.m-t-0.m-b-5 Bachelor's degree in Business Administration, Finance, Sales, or related field.
+                                        li
+                                            p.m-t-0.m-b-5 Proven experience in key account management.
+                                        li
+                                            p.m-t-0.m-b-5 Proficient in all Microsoft Office applications as well as CRM software.
+                                        li
+                                            p.m-t-0.m-b-5 The ability to build rapport with key clients.
+                                        li 
+                                            p.m-t-0.m-b-5 The ability to handle multiple client accounts.
+                                        li 
+                                            p.m-t-0.m-b-5 Strong negotiation and leadership skills.
+                                        li 
+                                            p.m-t-0.m-b-5 Exceptional customer service skills.
+                                        li 
+                                            p.m-t-0.m-b-5 Excellent communication skills.
+
+                                .m-t-40
+                                    strong.font-size-17 We Offer
+                                    ul.ems-list.p-l-15
+                                        li 
+                                            p.m-t-0.m-b-5 A challenging position in a young and highly ambitious furniture company
+                                        li 
+                                            p.m-t-0.m-b-5 An attractive and reliable work culture where creativity and joined responsibility is highly valued
+                                        li 
+                                            p.m-t-0.m-b-5 A full-time position, based in Ankara, Turkey
+                                        li 
+                                            p.m-t-0.m-b-5 Salary according to qualifications
+                                        li 
+                                            p.m-t-0.m-b-5 Start date: As soon as possible.
+                                    p.font-size-16.line-height-24.m-b-0.m-lg-t-40 If you think we might be the perfect match, come <br> and join our team.
+                    div(rel="tab-2")
+                        .ems-tab-inner-header
+                            h3.font-size-20.font-weight-bold Supply Chain Specialist
+                        .ems-tab-inner-content
+                            p.font-size-16.line-height-24 If you would like to add new perspectives to our team, come and join our team. If you do not find an opening, we suggest that you to send a general application so you will automatically receive openings fitting your preferences as soon as they become available.
+    .career-form.p-t-40.p-lg-t-80.p-lg-b-80.m-lg-t-100
+        .career-form-container
+            form(method="POST")
+                .ems-flex
+                    .ems-flex-item
+                        .form-group
+                            label(for="name") *First Name
+                            input(type="text" name="name" placeholder="Enter your name")
+                        .form-group
+                            label(for="email") *E-Mail
+                            input(type="email" name="email" placeholder="John@mail.com")
+                        .form-group
+                            label(for="sector") *Sector
+                            select(name="sector")
+                                option(value="" disabled selected) Choose Your Sector
+                        .form-group
+                            label(for="city") *City
+                            select(name="city")
+                                option(value="İstanbul" selected) İstanbul
+                    .ems-flex-item
+                        .form-group
+                            label(for="surname") *Last Name
+                            input(type="text" name="surname" placeholder="Enter your last name")
+                        .form-group
+                            label(for="phone") *Phone
+                            input(type="tel" name="phone" placeholder="(05XX) XXX XX XX")
+                        .form-group
+                            label(for="country") *Country
+                            select(name="country")
+                                option(value="Turkey" selected) Turkey
+                        .form-group
+                            label(for="inquiry") *Type of Inquiry 
+                            select(name="inquiry")
+                                option(value="0" selected) Suggestions, requests, questions
+                .form-group
+                    label(for="message") *Message
+                    textarea(placeholder="Write your message here")
+                .form-group
+                    label(for="attachment")
+                    input(type="file" name="attachment" placeholder="No file chosen")
+                .ems-flex
+                    .ems-flex-item
+                        .form-group.ems-flex.ems-flex-middle.no-gutters
+                            input(type="checkbox" name="privacy_policy")
+                            label(for="privacy_policy") I accept the Privacy Policy and consent to the <br> processing of my personal data.
+                    .ems-flex-item
+                        .form-group.p-lg-l-45
+                            button(type="submit").btn.width-100 Send

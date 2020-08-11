@@ -1,0 +1,19 @@
+.career-form {
+    .career-form-container {
+        max-width: 840px;
+        margin: 0 auto;
+
+        .ems-flex {
+            .ems-flex-item {                
+                flex: 0 0 calc(100% / 2);
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.career-wrapper {
+    width: 100%;
+    padding-right: 300px;
+    padding-left: 300px;
+}
