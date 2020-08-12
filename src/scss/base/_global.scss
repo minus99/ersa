@@ -117,6 +117,7 @@ iframe {
     &-none0 {
         display: none;
     }
+    
     //OVERLAY
     &-overlay {
         display: none;
@@ -260,6 +261,7 @@ iframe {
         &-inline {
             display: inline-flex;
         }
+        
         //horizontal align
         &-left {
             justify-content: flex-start;
@@ -273,6 +275,7 @@ iframe {
         &-between {
             justify-content: space-between;
         }
+
         //vertical align
         &-top {
             align-items: flex-start;
@@ -283,6 +286,7 @@ iframe {
         &-bottom {
             align-items: flex-end;
         }
+
         //direction
         &-row {
             flex-direction: row;
@@ -296,10 +300,12 @@ iframe {
         &-column-reverse {
             flex-direction: column-reverse;
         }
+
         //wrap
         &-wrap {
             flex-wrap: wrap;
         }
+
         //item size
         &-none {
             flex: none;

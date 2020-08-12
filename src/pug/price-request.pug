@@ -15,9 +15,46 @@ block content
                     .banner
                         .prm-media.ems-responsive
                             +image('lazy-swiper', 'https://via.placeholder.com/1620x1400/ddd/000')(class="ems-responsive-item" alt='title')
-                .ems-flex-item.ems-flex-1.p-l-15.p-r-15
+                .ems-flex-item.ems-flex-1.p-l-15.p-r-15.p-lg-t-110
                     .ems-flex.ems-flex-wrap.ems-flex-middle.ems-flex-between.p-lg-l-20.p-lg-r-20
                         h1.font-size-20.font-weight-bold Price Request
                         button.btn X
-                    .ems-price-request-body
-                                //- +icon('icon-close')
+                    .ems-price-request-body.ems-text-center
+                        .ems-responsive.m-b-20
+                            +image('lazy-swiper', 'https://via.placeholder.com/188x200/ddd/000')(class="ems-responsive-item" alt='title')
+                        h1.font-size-20.line-height-36.font-weight-bold Magnolia
+                        p.font-size-13.m-t-5.m-b-0 by Studio Balutto Associati
+                        p.font-size-14.m-b-0.m-t-30 Please submit the below information and we’ll get back to you as soon as possible.
+
+                        form.ems-text-left.m-lg-t-60
+                            .form-group.m-b-20
+                                label(for="name").font-size-14.font-weight-bold *First Name
+                                input(type="text" placeholder="Enter your name" name="name")
+                            .form-group.m-b-20
+                                label(for="surname").font-size-14.font-weight-bold *Last Name
+                                input(type="text" placeholder="Enter your last name" name="surname")
+                            .form-group.m-b-20
+                                label(for="email").font-size-14.font-weight-bold *E-Mail
+                                input(type="email" placeholder="john@mail.com" name="surname")
+                            .form-group.m-b-20
+                                label(for="phone").font-size-14.font-weight-bold *Phone
+                                input(type="tel" placeholder="(05XX) XXX XX XX" name="phone")
+                            .form-group.m-b-20
+                                label(for="sector").font-size-14.font-weight-bold *Sector
+                                select(name="sector")
+                                    option(value="0" disabled selected) Choose your sector
+                            .form-group.m-b-20
+                                label(for="country").font-size-14.font-weight-bold *Country
+                                select(name="country")
+                                    option(value="Turkey" selected) Turkey
+                            .form-group.m-b-20
+                                label(for="city").font-size-14.font-weight-bold *City
+                                select(name="city")
+                                    option(value="İstanbul" selected) İstanbul
+                            .form-group.m-b-40
+                                label(for="message").font-size-14.font-weight-bold *Message
+                                textarea(placeholder="Write your message here" name="message")
+                            .form-group.ems-flex.ems-flex-middle.m-b-20
+                                input(type="checkbox" name="privacy_policy")
+                                label I accept the Privacy Policy and consent to the processing of my personal data.
+                            button(type="submit").btn.width-100 Apply
