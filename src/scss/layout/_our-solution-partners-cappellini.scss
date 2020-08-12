@@ -14,7 +14,7 @@
     width: 2px;
     height: 60px;
     opacity: 0.3;
-    background-color: #ffffff;
+    background-color: rgba(43, 42, 42, 0.4);
     position: absolute;
     top: 40%;
     content: '';
@@ -29,12 +29,13 @@
     width: 2px;
     height: 26px;
     background-color: #ffffff;
-    top: 40%;
-    left: 93%;
     content: '';
-    position: absolute;
     z-index: 999;
     
+}
+.mobile-mini-renctangle {
+    position: relative;
+    animation: mymove 1s infinite;
 }
 .cappellini-mobile-text
 {
