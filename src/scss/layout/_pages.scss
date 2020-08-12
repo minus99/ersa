@@ -30,8 +30,7 @@ $m20:20px;
 }
 
 //VARIEBLES BACKGROUND 
-.background-dark-light{
-    background-color: $color2;
+.ems-change-colors {
     .ems-section-title {
         font-family: $font-family2;
         font-size: $font-size-32;
@@ -40,5 +39,14 @@ $m20:20px;
     .btn-border{
         color: $color3;
         border-color: $color3;
+    }
+
+    &:not(.background-dark-light) {
+        .prm-desc,
+        .prm-sub-title,
+        .prm-link-text,
+        .btn-icon {
+            color: $color1;
+        }
     }
 }

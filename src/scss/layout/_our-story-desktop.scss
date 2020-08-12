@@ -30,6 +30,12 @@
         &:before{
             width: calc(100% - 160px);
         }
+
+        .banner-absolute {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
     }
 
     &-row-3 {
@@ -56,6 +62,21 @@
 
     &-minus-content {
         margin-top: -190px;
+    }
+
+    &-grid-2 {
+        .banner {
+            .banner-content {
+                h2 {
+                    font-size: 72px;
+                    line-height: 65px;
+                    
+                    span {
+                        font-size: 42px;
+                    }
+                }
+            }
+        }
     }
 }
 

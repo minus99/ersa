@@ -12,30 +12,27 @@ block content
             +picture('ems-responsive', 'no', 'http://via.placeholder.com/375x667', 'http://via.placeholder.com/750x1334', 'http://via.placeholder.com/2880x1580')
         .banner-content
             h1.color-white.font-size-32.font-size-lg-36.line-height-37.font-weight-bold Our Story
+    .sticky-menu
+        .ems-container-small.m-r-auto.m-l-auto.p-lg-l-30.p-lg-r-30
+            .swiper-container(data-swiper="widgetAuto")
+                .swiper-inner
+                    ul.swiper-wrapper
+                        li(rel="who-we-are").swiper-slide.selected
+                            a(href="#") Who we are
+                        li(rel="our-values").swiper-slide
+                            a(href="#") Our values
+                        li(rel="craftmanship").swiper-slide
+                            a(href="#") Craftmanship
+                        li(rel="sustainability").swiper-slide
+                            a(href="#") Sustainability
+                        li(rel="designers").swiper-slide
+                            a(href="#") Designers
+                        li(rel="awards").swiper-slide
+                            a(href="#") Awards
     .ems-container-small.m-r-auto.m-l-auto.m-lg-t-80.p-lg-l-30.p-lg-r-30
-        .our-story-tab.ems-tab
-            .ems-tab-header
-                a(href="javascript:void(0);" rel="tab-1").selected Who we are
-                a(href="javascript:void(0);" rel="tab-2") Our values
-                a(href="javascript:void(0);" rel="tab-3") Craftmanship
-                a(href="javascript:void(0);" rel="tab-4") Sustainability
-                a(href="javascript:void(0);" rel="tab-5") Designers
-                a(href="javascript:void(0);" rel="tab-6") Awards
-            .ems-tab-content
-                div(rel="tab-1").selected
-                    article
-                        p.m-0.font-size-20.line-height-28 Ersa, founded by Metin Atabey Ata in 1958, Sivas, has raised one of the pioneers of the furniture sector in Turkey with giving importance to innovation and design. The simple architectural design of the factory in harmony with the environment is a reflection of the sustainable production approach that Ersa adopts. Spread on approximately 60,000 square meters and equipped with state-of-the-art production technologies, the factory has the capacity to process 4.5 million square meters of panel boards, 500,000 running meters of laminated panels, and 530,000 pieces of furniture in one shift.
-                        p.m-t-40.m-b-0.font-size-16.line-height-24 Ersa, which offers innovative and high quality solutions for architectural needs of its users in Turkey and all around the world, has a noteworthy export success in the international arena with the average export rate three times more than the industry average of Turkey. 
-                div(rel="tab-2") 
-                    p.m-0.font-size-20.line-height-28 tab-content 2
-                div(rel="tab-3") 
-                    p.m-0.font-size-20.line-height-28 tab-content 3
-                div(rel="tab-4") 
-                    p.m-0.font-size-20.line-height-28 tab-content 4
-                div(rel="tab-5")
-                    p.m-0.font-size-20.line-height-28 tab-content 5
-                div(rel="tab-6") 
-                    p.m-0.font-size-20.line-height-28 tab-content 6
+        article
+            p.m-0.font-size-20.line-height-28 Ersa, founded by Metin Atabey Ata in 1958, Sivas, has raised one of the pioneers of the furniture sector in Turkey with giving importance to innovation and design. The simple architectural design of the factory in harmony with the environment is a reflection of the sustainable production approach that Ersa adopts. Spread on approximately 60,000 square meters and equipped with state-of-the-art production technologies, the factory has the capacity to process 4.5 million square meters of panel boards, 500,000 running meters of laminated panels, and 530,000 pieces of furniture in one shift.
+            p.m-t-40.m-b-0.font-size-16.line-height-24 Ersa, which offers innovative and high quality solutions for architectural needs of its users in Turkey and all around the world, has a noteworthy export success in the international arena with the average export rate three times more than the industry average of Turkey. 
 
     .ems-container.m-t-30.m-lg-t-100
         .ems-grid.our-story-grid-1
@@ -63,7 +60,12 @@ block content
                         .ems-container
                             .ems-grid.our-story-grid-2
                                 .ems-grid-item
-                                    +picture('ems-responsive', 'no', 'http://via.placeholder.com/730x610', 'http://via.placeholder.com/1460x1220', 'http://via.placeholder.com/2190x1830')
+                                    .banner
+                                        .banner-image
+                                            +picture('ems-responsive', 'no', 'http://via.placeholder.com/730x610', 'http://via.placeholder.com/1460x1220')
+                                        .banner-content
+                                            h2 
+                                                <span>The</span> 50s & 60s
                                 .ems-grid-item.p-lg-r-65.m-t-30.m-lg-t-0
                                     div
                                         small.font-size-14 1958
@@ -71,28 +73,6 @@ block content
                                     div.m-t-20
                                         small.font-size-14 1962
                                         h2.font-size-24.line-height-normal.line-height-lg-24.font-weight-bold.m-t-8 Obtaining of First Commericial Order From the State Materials Directorate (DMO)
-                    .our-story-row-2.m-t-60.m-lg-t-0
-                        .ems-container
-                            .ems-flex.ems-flex-wrap
-                                .ems-flex-item
-                                    .p-lg-r-80
-                                        h3.font-size-32.font-weight-bold Our values
-                                        p.font-size-20.line-height-25.m-b-0.m-t-10 A brand driven by the ultimate satisfaction of its employees and customers...
-                                        h4.m-t-40.m-lg-t-80.font-size-20.line-height-28.font-weight-bold Pioneer In Innovation With High Added Value In The Furniture Sector for 60 Years
-                                        p.font-size-16.line-height-24 From workspaces to living areas, representing high qualified manufacture principle with a wide range design products and leading innovation with high added value, Ersa has the vision to raise its brand to compete with worldwide brands.
-                                        p.font-size-16.line-height-24.m-b-0 With the mission of providing the most appropriate furniture solution to the needs of its users and spaces with the production techniques and design products developed within the framework of design and production concept based on the principles of sustainability which are high-qualified, long-term use, ergonomic, functional and within aesthetic concerns.
-                                .ems-flex-item.m-t-40.m-lg-t-80
-                                        h5.font-size-20.font-weight-bold We, as our business ethics:
-                                        ul.m-t-20.ems-list.p-l-20
-                                            li.font-size-16.line-height-24 Follow the principle of working by adhering to its commitments. 
-                                            li.font-size-16.line-height-24 Value the importance of delivering on its stpromises and acting fairly and respectfully.
-                                            li.font-size-16.line-height-24 Believe in teamwork and spirit, ensuring that all activities are carried out in line with these beliefs.
-                                            li.font-size-16.line-height-24 Take care to communicate effectively with all stakeholders.
-                                            li.font-size-16.line-height-24 Listen to its clients and suppliers, and strives to meet their demands and needs in the shortest time possible.
-                                            li.font-size-16.line-height-24 Consider the creation of new ideas, designs, products and services as the basis for competition.
-                                            li.font-size-16.line-height-24 Adopt a production approach that respects people and the environment with its sustainability philosophy.
-                                .ems-flex-item
-                                    +picture('ems-responsive', 'no', 'http://via.placeholder.com/510x594')
                 div(rel="tab-2") 
                     .ems-container-large.m-r-auto.m-l-auto.m-lg-t-100.p-lg-l-110.p-lg-r-110 
                         p.font-size-20.line-height-24 tab content 2
@@ -102,6 +82,28 @@ block content
                 div(rel="tab-4")
                     .ems-container-large.m-r-auto.m-l-auto.m-lg-t-100.p-lg-l-110.p-lg-r-110
                         p.font-size-20.line-height-24 tab content 4
+        .our-story-row-2.m-t-60.m-lg-t-0
+            .ems-container
+                .position-relative
+                    .ems-container-small.p-lg-r-60
+                        .p-lg-r-80
+                            h3.font-size-32.font-weight-bold Our values
+                            p.font-size-20.line-height-25.m-b-0.m-t-10 A brand driven by the ultimate satisfaction of its employees and customers...
+                            h4.m-t-40.m-lg-t-80.font-size-20.line-height-28.font-weight-bold Pioneer In Innovation With High Added Value In The Furniture Sector for 60 Years
+                            p.font-size-16.line-height-24 From workspaces to living areas, representing high qualified manufacture principle with a wide range design products and leading innovation with high added value, Ersa has the vision to raise its brand to compete with worldwide brands.
+                            p.font-size-16.line-height-24.m-b-0 With the mission of providing the most appropriate furniture solution to the needs of its users and spaces with the production techniques and design products developed within the framework of design and production concept based on the principles of sustainability which are high-qualified, long-term use, ergonomic, functional and within aesthetic concerns.
+                    .banner-absolute.m-t-40.m-lg-t-0
+                        img(src="http://via.placeholder.com/510x594" alt="Our Values")
+                    .ems-container-small.m-t-40.m-lg-t-80.p-lg-r-60
+                        h5.font-size-20.font-weight-bold We, as our business ethics:
+                        ul.m-t-20.ems-list.p-l-20
+                            li.font-size-16.line-height-24 Follow the principle of working by adhering to its commitments. 
+                            li.font-size-16.line-height-24 Value the importance of delivering on its stpromises and acting fairly and respectfully.
+                            li.font-size-16.line-height-24 Believe in teamwork and spirit, ensuring that all activities are carried out in line with these beliefs.
+                            li.font-size-16.line-height-24 Take care to communicate effectively with all stakeholders.
+                            li.font-size-16.line-height-24 Listen to its clients and suppliers, and strives to meet their demands and needs in the shortest time possible.
+                            li.font-size-16.line-height-24 Consider the creation of new ideas, designs, products and services as the basis for competition.
+                            li.font-size-16.line-height-24 Adopt a production approach that respects people and the environment with its sustainability philosophy.
     .ems-container.m-t-40.m-lg-t-100
             .p-lg-l-110
                 .ems-container-small.p-lg-l-30.p-lg-r-30
@@ -115,19 +117,19 @@ block content
                     .m-lg-t-80
                         p.font-size-16.line-height-24 The factory, with state-of-the-art and environmentally friendly technologies and equipment, is among the most modern and advanced production facilities in Europe that generates minimum waste. <br> <br> As the holder of ISO 9001:2008, ISO 14001, ISO 10002, OHSAS 18001, Q-Mark BS 476-22 and all necessary TSI conformity certifications, Ersa test lifecycles of raw materials and accessories in five fields. <br> <br> Ersa exports its quality assured products to various markets in Europe, Americas, Africa, and the Middle East.
                         .m-lg-t-82
-                            a(href="#").ems-flex.ems-flex-middle
+                            a(href="#").ems-flex.ems-flex-middle.color-red.font-weight-bold
                                 span Certification ISO 50001:2018
                                 +icon('right-arrow')
-                            a(href="#").ems-flex.ems-flex-middle.m-t-17
+                            a(href="#").ems-flex.ems-flex-middle.m-t-17.color-red.font-weight-bold
                                 span Certification ISO 10002:2004
                                 +icon('right-arrow')
-                            a(href="#").ems-flex.ems-flex-middle.m-t-17
+                            a(href="#").ems-flex.ems-flex-middle.m-t-17.color-red.font-weight-bold
                                 span Certification ISO 9001:201
                                 +icon('right-arrow')
-                            a(href="#").ems-flex.ems-flex-middle.m-t-17
+                            a(href="#").ems-flex.ems-flex-middle.m-t-17.color-red.font-weight-bold
                                 span Certification OHSAS 18001:2007
                                 +icon('right-arrow')
-                            a(href="#").ems-flex.ems-flex-middle.m-t-17
+                            a(href="#").ems-flex.ems-flex-middle.m-t-17.color-red.font-weight-bold
                                 span Certification ISO 14001:2015
                                 +icon('right-arrow')
             .our-story-row-3.m-t-60.m-lg-t-100.p-t-60.p-lg-t-100.p-lg-b-100.p-lg-l-80
@@ -136,7 +138,7 @@ block content
                         h3.font-size-32.font-weight-bold Sustainability
                         p.font-size-20.line-height-28.m-b-0.m-t-10 BoXer, Turkey’s cutting-edge design company focusing on innovation and strategy joined its  forces with PE International, the global leader in product sustainability services and solutions.
                         p.font-size-16.line-height-24 The Eco Design Project for Ersa” is one the first implementations of this fruitful collaboration. The project focuses on green product design as well as green business model design. Taking into consideration the fact that 80% of environmental impacts can be influenced during the product design stage, the benefits of eco design are significant in terms of environmental sustainability. <br> <br> In addition to that, it provides companies with measurable advantages compared to other actors in the same sector; such as brand enhacement, product innovation, compliance, risk management, product differention and cost reductions. <br> <br>In compliance with the above cited criteria and in full cooperation with Ersa’s design and production teams, BoXer and PE International are currently working on the project.<br><br>The future outcome of the latter; “Ersa’s Green Line” could consist of some the “greenest” furnitures ever produced and marketed in Turkey.
-                        a(href="#").ems-flex.ems-flex-middle.m-lg-t-62
+                        a(href="#").ems-flex.ems-flex-middle.m-lg-t-62.color-red.font-weight-bold
                                 span Sustainability Report
                                 +icon('right-arrow')
                     .ems-grid-item
@@ -174,6 +176,6 @@ block content
                                     .ems-card-title GEO
                                     +link('')(href="#" class="ems-prd-link btn-full")
                     .ems-flex.ems-flex-center
-                        a(href="#").ems-flex.ems-flex-middle.m-t-60.m-lg-t-40
+                        a(href="#").ems-flex.ems-flex-middle.m-t-60.m-lg-t-40.color-red.font-weight-bold
                             span Show more
                             +icon('plus')
