@@ -224,3 +224,39 @@ textarea {
         margin-top: -5px;
     }
 }
+
+form {
+    .form-group {
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea,
+        select,
+        input {
+            border: none;
+            background-color: transparent !important;
+            height: auto !important;
+
+            &[type="text"],
+            &[type="tel"],
+            &[type="email"] {
+                width: 100%;
+            }
+
+            &[type="checkbox"] {
+                flex: 0 0 20px;
+                max-width: 20px;
+                height: 20px !important;
+                // box-shadow: inset 10px 10px rgba(0,0,0,0.15);
+
+                & + label {
+                    flex: 1 0 0;
+                    max-width: 100%;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}

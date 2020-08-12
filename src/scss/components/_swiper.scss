@@ -271,11 +271,11 @@ button.swiper-pagination-bullet {
   background: $color2;
   position: absolute;
   top: inherit !important;
-  left: 20px !important;
   bottom: 0;
   width: calc(100% - 40px) !important;
   min-height: 2px;
   padding: 0;
+  margin-left: 20px;
 }
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: $color1;

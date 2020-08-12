@@ -283,3 +283,15 @@
         }
     }
 }
+
+.banner {
+    .banner-content {
+        position: absolute;
+        width: 100%;
+        left: 20px;
+        top: auto;
+        bottom: 40px;
+        transform: none;
+        text-align: left;
+    }
+}

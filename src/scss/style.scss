@@ -15,6 +15,9 @@
 @import 'components/swiper';
 @import 'components/bulletin';
 @import 'components/banner';
+@import 'components/list';
+@import 'components/card';
+
 //LAYOUT
 @import 'layout/header';
 @import 'layout/footer';
@@ -28,17 +31,17 @@
 @import 'layout/resources';
 @import 'layout/space-and-solutions';
 @import 'layout/space-and-solutions-detail';
+@import 'layout/designer-profile';
+@import 'layout/our-story';
+@import 'layout/career';
+@import 'layout/price-request';
 @import 'layout/our-solution-partners-cappellini';
 @import 'layout/our-solution-partners';
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-@import 'layout/product-images';
 @import 'layout/privacy-policy';
-=======
->>>>>>> 9ba845be83c79ebf80bcb84d833acaad133a95e3
+@import 'layout/projects';
+@import 'layout/projects-detail';
 
->>>>>>> Stashed changes
+
 //DESKTOP
 @supports (display: grid) {
     @include setMediaScreen(min-width, $breakpoint-medium) {
@@ -63,14 +66,14 @@
         @import 'layout/resources-desktop';
         @import 'layout/space-and-solutions-desktop';
         @import 'layout/space-and-solutions-detail-desktop';
+        @import 'layout/digital-files-desktop';
+        @import 'layout/our-story-desktop';
+        @import 'layout/designer-profile-desktop';
+        @import 'layout/career-desktop';
+        @import 'layout/price-request-desktop';
         @import 'layout/our-solution-partners-desktop';
         @import 'layout/our-solution-partners-cappellini-desktop';
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-        @import 'layout/product-images-desktop';
-=======
->>>>>>> 9ba845be83c79ebf80bcb84d833acaad133a95e3
->>>>>>> Stashed changes
+        @import 'layout/projects-desktop';
+        @import 'layout/projects-detail-desktop';
     }
 }

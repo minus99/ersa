@@ -1,51 +1,52 @@
 extends includes/_layout.pug
 
 block prepend head
-    - var pageClass = "page career"
+    - var pageClass = "page privacy-policy"
    
 
 block content
-    .ems-container-lg
-        .d-ems-grid.d-ems-grid-cover-top
-            .d-ems-area-a
-                include includes/_breadcrumb.pug
-    .ems-container-medium.m-auto.p-lg-l-30.p-lg-r-30
+    .ems-container-full.p-lg-l-80
+        include includes/_breadcrumb.pug
+    .ems-container-medium.m-auto.p-lg-l-30.p-lg-r-30.p-l-20.p-r-20 
         .ems-container-lg
-            h1.m-lg-t-68.m-lg-b-40.font-weight-bold.font-size-32.line-height-lg-32 Privacy Policy
-            ul 
-                li.m-lg-b-30.font-size-lg-16.line-height-lg-24.
-                    Ersa Mobilya Sanayi ve Tic. A.Ş. tarafından, tüm temel hak ve özgürlüklerinizle birlikte kişisel verilerinizin korunmasına azami hassasiyet gösterilmekte olup, Şirket olarak hizmetlerimizden faydalanan kişiler, ticari ilişki içerisinde bulunulan kişiler ve çalışanlarımızın, her türlü kişisel verileri ve özel nitelikli kişisel verileri, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVK Kanunu”)’na uygun olarak işlenerek, muhafaza edilmektedir.
-                li.m-lg-b-30.font-size-lg-16.line-height-lg-24.
-                    Kişisel verileriniz ve özel nitelikli kişisel verileriniz, Şirketimiz tarafından sağlanan hizmet sebebiyle, bağlı kuruluşlarla, kamu kurum ve kuruluşları aracılığıyla, otomatik ya da otomatik olmayan yöntemlerle, şirketimiz birimleri, mağazaları ve ofisleri, internet sitesi, çağrı merkezi, sosyal medya mecraları, mobil uygulamaları, iş ortakları,servis sağlayıcıları, tedarikçileri, ve benzeri vasıtalarla sözlü, yazılı ya da elektronik olarak toplanabilir, işlenebilir, kaydedilebilir, depolanabilir, değiştirilebilir, güncellenebilir, periyodik olarak kontrol edilebilir, yeniden düzenlenebilir, sınıflandırılabilir ve muhafaza edilir.
-                li.m-lg-b-30.font-size-lg-16.line-height-lg-24.
-                    Toplanan kişisel verileriniz, Şirketimiz tarafından sunulan hizmetlerden sizleri faydalandırmak için, kayıtları saklamaya ilişkin yasal yükümlülüklerimiz sebebiyle, gerekli çalışmaların iş birimlerimiz tarafından yapılması, Şirketimiz tarafından sunulanhizmetlerin sizlerin beğeni, kullanım alışkanlıkları ve ihtiyaçlarına göre özelleştirilereksizlere önerilmesi, Şirketimizin, ve Şirketimizle iş ilişkisi içerisinde olan kişilerin hukuki ve ticari güvenliğinin temini, amaçlarıyla KVK Kanunu’nun 4. Maddesindeki usul ve esaslara uygun olarak ve 5. ve 6. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları dahilinde işlenmektedir.
-                li.m-lg-b-30.font-size-lg-16.line-height-lg-24.
-                    Toplanan kişisel verileriniz; gerek genel gerekse kişiye özel imkanlardan faydalanmanız, şirketimizin veri toplama ve kaydetmeye yönelik yasal yükümlülüklerinin yerine getirilmesi ve bağlı kuruluş ve tedarikçiler ile birlikte çalışılan kamu kurum ve kuruluşları ile koordinasyonun sağlanması, insan kaynakları politikalarının yürütülmesinin temini, verilen hizmetin sürekliliğinin sağlanması amaçlarıyla, şirketimizin bağlı kuruluşları, çalışılan sigorta kuruluşları, yurt içi ve yurt dışındaki şirket ve kuruluşlar, kamu kurum ve kuruluşları ile Şirketimizle iş ilişkisi içerisinde olan özel kuruluşlar, iş ortakları, tedarikçi ve servis sağlayıcıları ve bunların belirleyeceği üçüncü kişiler/kuruluşlara KVK Kanunu’nun 8. ve 9. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları çerçevesinde aktarılabilecektir.
-                li.m-lg-b-30.font-size-lg-16.line-height-lg-24.
-                    Kişisel verileriniz ve özel nitelikli kişisel verileriniz, şirketimiz bünyesinde ilgili mevzuatın düzenlediği sürelere uygun olarak saklanmaktadır.
-                li.font-size-lg-16.line-height-lg-24.
-                    Bu kapsamda kişisel veri sahipleri;
-                li.m-lg-b-30
-                    ul
-                        li.font-size-lg-16.line-height-lg-24.
-                            * Kişisel veri işlenip işlenmediğini öğrenme,
-                        li.font-size-lg-16.line-height-lg-24.
-                            * Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,
-                        li.font-size-lg-16.line-height-lg-24.
-                            * Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
-                        li.font-size-lg-16.line-height-lg-24.
-                            * Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,
-                        li.font-size-lg-16.line-height-lg-24.
-                            * Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
-                            * KVK Kanunu’nun ve ilgili diğer kanun hükümlerine uygun olarak işlenmiş olmasına rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde kişisel verilerin silinmesini veya yok edilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
-                        li.font-size-lg-16.line-height-lg-24.
-                            * İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,
-                        li.font-size-lg-16.line-height-lg-24.
-                            * Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini talep etme haklarına sahiptir.    
-                li.m-lg-b-30.font-size-lg-16.line-height-lg-24.
-                    KVK Kanunu’nun 13. maddesinin 1. fıkrası gereğince, yukarıda belirtilen haklarınızı kullanmak ile ilgili talebinizi, info@ersamobilya.com adresine güvenli elektronik imzalı olarak ya da yazılı ıslak imzalı olarak iletebilirsiniz. Şirketimiz talebin niteliğine göre talebi en geç otuz gün içinde ücretsiz olarak sonuçlandıracaktır. Ancak, işlemin ayrıca bir maliyet gerektirmesi halinde tarafımızca Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücret alınacaktır.
-                li.m-lg-b-30.font-size-lg-16.line-height-lg-24.
-                    Ersa Mobilya Sanayi ve Tic. A.Ş
+            h1.m-lg-t-68.m-lg-b-40.font-weight-bold.font-size-32.line-height-lg-32.m-t-30.m-b-20 Privacy Policy
+            article
+                ul
+                    li.m-lg-b-30.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24.m-b-30
+                        p.m-0 Ersa Mobilya Sanayi ve Tic. A.Ş. tarafından, tüm temel hak ve özgürlüklerinizle birlikte kişisel verilerinizin korunmasına azami hassasiyet gösterilmekte olup, Şirket olarak hizmetlerimizden faydalanan kişiler, ticari ilişki içerisinde bulunulan kişiler ve çalışanlarımızın, her türlü kişisel verileri ve özel nitelikli kişisel verileri, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVK Kanunu”)’na uygun olarak işlenerek, muhafaza edilmektedir.
+                    li.m-lg-b-30.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24.m-b-30
+                        p.m-0 Kişisel verileriniz ve özel nitelikli kişisel verileriniz, Şirketimiz tarafından sağlanan hizmet sebebiyle, bağlı kuruluşlarla, kamu kurum ve kuruluşları aracılığıyla, otomatik ya da otomatik olmayan yöntemlerle, şirketimiz birimleri, mağazaları ve ofisleri, internet sitesi, çağrı merkezi, sosyal medya mecraları, mobil uygulamaları, iş ortakları,servis sağlayıcıları, tedarikçileri, ve benzeri vasıtalarla sözlü, yazılı ya da elektronik olarak toplanabilir, işlenebilir, kaydedilebilir, depolanabilir, değiştirilebilir, güncellenebilir, periyodik olarak kontrol edilebilir, yeniden düzenlenebilir, sınıflandırılabilir ve muhafaza edilir.
+                    li.m-lg-b-30.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24.m-b-30
+                        p Toplanan kişisel verileriniz, Şirketimiz tarafından sunulan hizmetlerden sizleri faydalandırmak için, kayıtları saklamaya ilişkin yasal yükümlülüklerimiz sebebiyle, gerekli çalışmaların iş birimlerimiz tarafından yapılması, Şirketimiz tarafından sunulanhizmetlerin sizlerin beğeni, kullanım alışkanlıkları ve ihtiyaçlarına göre özelleştirilereksizlere önerilmesi, Şirketimizin, ve Şirketimizle iş ilişkisi içerisinde olan kişilerin hukuki ve ticari güvenliğinin temini, amaçlarıyla KVK Kanunu’nun 4. Maddesindeki usul ve esaslara uygun olarak ve 5. ve 6. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları dahilinde işlenmektedir.
+                    li.m-lg-b-30.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24.m-b-30
+                        p.m-0 Toplanan kişisel verileriniz; gerek genel gerekse kişiye özel imkanlardan faydalanmanız, şirketimizin veri toplama ve kaydetmeye yönelik yasal yükümlülüklerinin yerine getirilmesi ve bağlı kuruluş ve tedarikçiler ile birlikte çalışılan kamu kurum ve kuruluşları ile koordinasyonun sağlanması, insan kaynakları politikalarının yürütülmesinin temini, verilen hizmetin sürekliliğinin sağlanması amaçlarıyla, şirketimizin bağlı kuruluşları, çalışılan sigorta kuruluşları, yurt içi ve yurt dışındaki şirket ve kuruluşlar, kamu kurum ve kuruluşları ile Şirketimizle iş ilişkisi içerisinde olan özel kuruluşlar, iş ortakları, tedarikçi ve servis sağlayıcıları ve bunların belirleyeceği üçüncü kişiler/kuruluşlara KVK Kanunu’nun 8. ve 9. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları çerçevesinde aktarılabilecektir.
+                    li.m-lg-b-30.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24.m-b-30
+                        p.m-0 Kişisel verileriniz ve özel nitelikli kişisel verileriniz, şirketimiz bünyesinde ilgili mevzuatın düzenlediği sürelere uygun olarak saklanmaktadır.
+                    li.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                        p.m-0 Bu kapsamda kişisel veri sahipleri;
+                    li.m-lg-b-30.m-b-30
+                        ul
+                            li.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                                p.m-0 * Kişisel veri işlenip işlenmediğini öğrenme,
+                            li.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                                p.m-0 * Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,
+                            li.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                                p.m-0 * Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
+                            li.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                                p.m-0 * Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,
+                            li.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                                p.m-0 * Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+                                p.m-0 * KVK Kanunu’nun ve ilgili diğer kanun hükümlerine uygun olarak işlenmiş olmasına rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde kişisel verilerin silinmesini veya yok edilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+                            li.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                                p.m-0 * İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,
+                            li.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                                p.m-0 * Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini talep etme haklarına sahiptir.    
+                    li.m-lg-b-30.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24.m-b-30
+                        p.m-0 KVK Kanunu’nun 13. maddesinin 1. fıkrası gereğince, yukarıda belirtilen haklarınızı kullanmak ile ilgili talebinizi, 
+                        p.blue-color.m-0 info@ersamobilya.com 
+                        p.m-0 adresine güvenli elektronik imzalı olarak ya da yazılı ıslak imzalı olarak iletebilirsiniz. Şirketimiz talebin niteliğine göre talebi en geç otuz gün içinde ücretsiz olarak sonuçlandıracaktır. Ancak, işlemin ayrıca bir maliyet gerektirmesi halinde tarafımızca Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücret alınacaktır.
+                    li.m-lg-b-30.font-size-lg-16.line-height-lg-24.font-size-16.line-height-24
+                        p.m-0 Ersa Mobilya Sanayi ve Tic. A.Ş
         
 
                 

@@ -178,14 +178,19 @@
     $m35: 35px;
     $m40: 40px;
     $m42: 42px;
+    $m43: 43px;
     $m50: 50px;
     $m60: 60px;
+    $m62: 62px;
     $m80: 80px;
+    $m82: 82px;
+    $m100: 100px;
+    $m115: 115px;
+    $m120: 120px;
     //VARIABLES
     //RESET
-    &-b-0
-    {
-        margin-bottom:  $m0;
+    &-b-0 {
+        margin-bottom: $m0;
     }
     &-0 {
         margin: 0 0 0 0;
@@ -223,8 +228,7 @@
         margin-top: $m21;
     }
     //MARGIN TOP 42
-    &-t-42
-    {
+    &-t-42 {
         margin-top: $m42;
     }
     //MARGIN RIGHT 5
@@ -242,6 +246,17 @@
     //MARGIN TOP 10
     &-t-10 {
         margin-top: $m10;
+    }
+    // MARGIN TOP 40
+    &-t-40 {
+        margin-top: $m40;
+    }
+    // MARGIN TOP 100
+    &-t-100 {
+        margin-top: $m100;
+    }
+    &-t-120 {
+        margin-top: $m120;
     }
     //MARGIN RIGHT 10
     &-r-10 {
@@ -351,9 +366,17 @@
     &-b-40 {
         margin-bottom: $m40;
     }
+    //MARGIN BOTTOM 40
+    &-b-43 {
+        margin-bottom: $m43;
+    }
     //MARGIN TOP 50
     &-t-50 {
         margin-top: $m50;
+    }
+    // MARGIN TOP 62
+    &-t-62 {
+        margin-top: $m62;
     }
     //MARGIN RIGHT 50
     &-r-50 {
@@ -371,6 +394,10 @@
     &-t-60 {
         margin-top: $m60;
     }
+     //MARGIN TOP 68
+     &-t-68 {
+         margin-top: 68px;
+     }
     //MARGIN RIGHT 50
     &-r-60 {
         margin-right: $m60;
@@ -387,8 +414,21 @@
     &-t-80 {
         margin-top: $m80;
     }
-    &-t-183 {
-        margin-top: 183px;
+    // MARGIN TOP 81
+    &-t-81 {
+        margin-top: 81px;
+    }
+    // MARGIN TOP 82
+    &-t-82 {
+        margin-top: $m82;
+    }
+    // MARGIN TOP 115
+    &-t-115 {
+        margin-top: $m115;
+    }
+    // MARGIN TOP 115
+    &-t-116 {
+        margin-top: 116px;
     }
     //MARGIN RIGHT 80
     &-r-80 {
@@ -398,6 +438,12 @@
     &-l-80 {
         margin-left: $m80;
     }
+    //MARGIN LEFT 150
+    &-l-150
+    {
+        margin-left: 150px;
+    }
+
     //MARGIN BOTTOM 80
     &-b-80 {
         margin-bottom: $m80;
@@ -449,11 +495,14 @@
     $p20: 20px;
     $p30: 30px;
     $p40: 40px;
+    $p45: 45px;
     $p50: 50px;
     $p60: 60px;
+    $p65: 65px;
     $p70: 70px;
     $p80: 80px;
     $p100: 100px;
+    $p110: 110px;
     //VARIABLES
     //FULL 5
     &-5 {
@@ -551,6 +600,9 @@
     &-r-40 {
         padding-right: $p40;
     }
+    &-r-65 {
+        padding-right: $p65;
+    }
     //PADDING LEFT 40
     &-l-40 {
         padding-left: $p40;
@@ -558,6 +610,10 @@
     //PADDING BOTTOM 40
     &-b-40 {
         padding-bottom: $p40;
+    }
+    // PADDING LEFT 45
+    &-l-45 {
+        padding-left: $p45;
     }
     //PADDING TOP 50
     &-t-50 {
@@ -586,6 +642,10 @@
     //PADDING LEFT 60
     &-l-60 {
         padding-left: $p60;
+    }
+    // PADDING LEFT 65
+    &-l-65 {
+        padding-left: $p65;
     }
     //PADDING BOTTOM 60
     &-b-60 {
@@ -631,9 +691,17 @@
     &-r-100 {
         padding-right: $p100;
     }
+    //PADDING RIGHT 110
+    &-r-110 {
+        padding-right: $p110;
+    }
     //PADDING LEFT 100
     &-l-100 {
         padding-left: $p100;
+    }
+    //PADDING LEFT 110
+    &-l-110 {
+        padding-left: $p110;
     }
     //PADDING BOTTOM 100
     &-b-100 {
@@ -657,13 +725,8 @@
     }
 }
 
-<<<<<<< Updated upstream
-=======
 // FONT SIZE
 .font-size-lg {
-    &-32 {
-        font-size: 32px;
-    }
     &-36 {
         font-size: 36px;
     }
@@ -704,18 +767,17 @@
     &-28 {
         line-height: 28px;
     }
-<<<<<<< HEAD
     &-32 {
         line-height: 32px;
     }
-=======
->>>>>>> 9ba845be83c79ebf80bcb84d833acaad133a95e3
+    &-36 {
+        line-height: 36px;
+    }
     &-37 {
         line-height: 37px;
     }
 }
 
->>>>>>> Stashed changes
 //ORDER ELEMENTS
 .order-lg {
     &-1 {
@@ -790,47 +852,38 @@
 
 //FONT SİZE
 .d-font-size {
-    &-24
-    {
+    &-24 {
         font-size: 24px;
     }
-    &-20
-    {
+    &-20 {
         font-size: 20px;
     }
-    &-16
-    {
+    &-16 {
         font-size: 16px;
     }
-    &-17
-    {
+    &-17 {
         font-size: 17px;
     }
-    &-32
-    {
+    &-32 {
         font-size: 32px;
     }
-    &-36
-    {
+    &-36 {
         font-size: 36px;
     }
 }
 
 // Line Height
 .d-line-height {
-    &-1-4
-    {
+    &-1-4 {
         line-height: 1.4;
     }
     &-1-5 {
         line-height: 1.5;
     }
-    &-24
-    {
+    &-24 {
         line-height: 24px;
     }
-    &-37
-    {
+    &-37 {
         line-height: 37px;
     }
 }
@@ -839,6 +892,13 @@
 .d-position-relative {
     position: relative;
 }
+
 .d-position-absolute {
     position: absolute;
+}
+// MAX-WİDTH
+.max-width-lg {
+    &-700 {
+        max-width: 700px;
+    }
 }
