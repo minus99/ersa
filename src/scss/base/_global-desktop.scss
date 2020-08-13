@@ -178,6 +178,7 @@
     $m35: 35px;
     $m40: 40px;
     $m42: 42px;
+    $m43: 43px;
     $m50: 50px;
     $m60: 60px;
     $m62: 62px;
@@ -365,6 +366,10 @@
     &-b-40 {
         margin-bottom: $m40;
     }
+    //MARGIN BOTTOM 40
+    &-b-43 {
+        margin-bottom: $m43;
+    }
     //MARGIN TOP 50
     &-t-50 {
         margin-top: $m50;
@@ -389,6 +394,10 @@
     &-t-60 {
         margin-top: $m60;
     }
+     //MARGIN TOP 68
+     &-t-68 {
+         margin-top: 68px;
+     }
     //MARGIN RIGHT 50
     &-r-60 {
         margin-right: $m60;
@@ -421,6 +430,12 @@
     &-l-80 {
         margin-left: $m80;
     }
+    //MARGIN LEFT 150
+    &-l-150
+    {
+        margin-left: 150px;
+    }
+
     //MARGIN BOTTOM 80
     &-b-80 {
         margin-bottom: $m80;
@@ -713,9 +728,6 @@
     }
     &-36 {
         font-size: 36px;
-    }
-    &-32 {
-        font-size: 32px;
     }
     &-24 {
         font-size: 24px;

@@ -1,11 +1,19 @@
 //CUSTOM CFG
 
 // Progress
-.swiper-pagination-progressbar{
-    width: calc(100% - 100px) !important;
-}
+
 
 //product widget
+.swiper-pagination-progressbar {
+    background: $color2;
+    position: absolute;
+    top: inherit !important;
+    bottom: 0;
+    width: calc(100% - 160px) !important;
+    min-height: 2px;
+    padding: 0;
+  }
+  
 .swiper-product {
     $p: 20px;
     .swiper-slide {

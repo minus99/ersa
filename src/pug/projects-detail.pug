@@ -1,0 +1,79 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page projects-detail"
+    - var fixedClass = " fixed color-dark"
+
+block content
+    .ems-container-full
+        .ems-designer-profile.ems-section
+            .ems-dp
+                .ems-dp-grid.d-ems-grid
+                    .ga1
+                        .ems-breadcrumb-absolute
+                            include includes/_breadcrumb.pug
+                        //NAV END
+                        .ems-dp-media
+                            .banner
+                                .prm-media.ems-responsive
+                                    +image('lazy-swiper', 'https://via.placeholder.com/1620x1400/ddd/000')(class="ems-responsive-item" alt='title')
+                    .ga2.p-l-20.p-r-20
+                        .m-lg-t-116.m-lg-l-150
+                            div
+                                h1.font-size-lg-32.font-weight-bold.page-title-white.font-size-32.line-height-37 Jackson Park
+                                div.mobile-renctangle.display-lg-none
+                                    div.mobile-mini-renctangle.display-lg-none
+                            h3.font-size-lg-14.sector-id.m-lg-t-81.font-size-15.m-t-30 Sector
+                            h3.m-lg-t-5.font-size-lg-24.font-weight-bold.font-size-24.m-t-5 Residental
+                            h3.font-size-lg-14.sector-id.m-lg-t-20.font-size-15.m-t-20 Location
+                            h3.m-lg-t-5.font-size-lg-24.font-weight-bold.font-size-24.m-t-5 Queens, United States
+                            h3.font-size-lg-14.sector-id.m-lg-t-20.font-size-15.m-t-20 Year
+                            h3.m-lg-t-5.font-size-lg-24.font-weight-bold.font-size-24.m-t-5 24
+                            h3.font-size-lg-14.sector-id.m-lg-t-20.font-size-15.m-t-20 Architectural Office
+                            h3.m-lg-t-5.font-size-lg-24.font-weight-bold.font-size-24.m-t-5 Turner Global Sourcing
+                            h3.font-size-lg-14.sector-id.m-lg-t-20.font-size-15.m-t-20   Applied Spaces
+                            h3.m-lg-t-5.font-size-lg-24.font-weight-bold.font-size-24.m-t-5 Kitchen, Bathroom
+    .ems-container-lg.p-l-20.p-r-20
+        .max-width-lg-700
+            p.m-lg-t-80.m-lg-b-80.font-size-lg-20.line-height-lg-28.color-dark.font-size-20.line-height-28.m-0.m-b-40.m-t-60 Ersa Furniture reflects its 60 years of experience in the design and implementation of  Jackson Park’s kitchen and bathroom areas. The products are included in the living spaces within the framework of high quality and detailed workmanship philosophy. Designed for its users in the most efficient way, large volumes of storage spaces provide convenience in bathrooms and kitchens and bring quality and stylish appearance.
+    .ems-container-full
+        .ems-section.m-t-30.m-lg-t-60.ems-overflow-hidden
+            .swiper-container.slider-pagination.slider-progressbar.p-b-20.p-lg-b-30.p-r-15.p-lg-l-0.p-lg-r-0(data-swiper="WidgetProgressbar")
+                .swiper-inner.ems-overflow-visible
+                    ul.swiper-wrapper
+                        li.swiper-slide
+                            .banner.p-lg-r-40.p-r-10
+                                .prm-media.ems-responsive
+                                    +image('lazy-swiper', 'https://via.placeholder.com/840x627/ff0/f00')(class="ems-responsive-item" alt='title')
+                        li.swiper-slide
+                            .banner.p-lg-r-40.p-r-10
+                                .prm-media.ems-responsive
+                                    +image('lazy-swiper', 'https://via.placeholder.com/840x627/ff0/f00')(class="ems-responsive-item" alt='title')
+                        li.swiper-slide
+                            .banner
+                                .prm-media.ems-responsive
+                                    +image('lazy-swiper', 'https://via.placeholder.com/840x627/ff0/f00')(class="ems-responsive-item" alt='title')
+                .swiper-button-next.ems-none
+                .swiper-button-prev.ems-none
+                .ems-container-lg
+                    .swiper-pagination
+    .ems-container-lg
+        h1.font-size-lg-24.font-weight-bold.m-lg-t-100.p-l-20.p-r-20.font-size-24.font-weight-bold.m-t-60 Products in this project
+        //PRODUCT LIST GRID
+        .ems-prd-list.ems-prd-list-page.ems-section.m-lg-t-42
+            ul.ems-flex.ems-flex-wrap.ems-flex-prd-list-wrapper
+                +product('', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                +product('', 'Likhia', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
+                +product('', 'Risus', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+    //PRODUCT SWİPER            
+    .widget-products.ems-section.m-t-30.m-lg-t-80
+        .ems-container-full
+            .swiper-container.p-r-l-0.swiper-product(data-swiper="widgetAuto")
+                .swiper-inner.swipper-reset
+                    ul.swiper-wrapper
+                        +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                        +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                        +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+                .swiper-button-next
+                .swiper-button-prev
+                .swiper-pagination  
