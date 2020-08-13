@@ -73,10 +73,10 @@
     }
 }
 
-@mixin flexList($name, $gutter, $item) {
+@mixin flexList($name, $gutter, $desktop, $mobile) {
     .ems-flex-#{$name}-list {
         .ems-list-item {
-            flex: 0 0 calc(100% / 2);
+            flex: 0 0 calc(100% / #{$mobile});
         }
     
         @media (min-width: 1025px) {
@@ -85,8 +85,9 @@
 
             .ems-list-item {
                 padding-left: $gutter;
+
                 padding-right: $gutter;
-                flex: 0 0 calc(100% / #{$item});
+                flex: 0 0 calc(100% / #{$desktop});
             }
         }   
     }

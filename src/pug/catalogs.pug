@@ -1,0 +1,20 @@
+extends includes/_layout.pug
+
+block prepend head
+    - var pageClass = "page catalogs"
+
+block content
+    .ems-container
+        include includes/_breadcrumb.pug
+        .m-b-40.m-t-30.m-lg-t-80
+            h1.font-size-32.line-height-36.font-weight-bold Catalogs
+        .ems-flex-catalog-list.ems-flex.ems-flex-wrap
+            -for (var y = 1; y <= 6; y++)
+                .ems-list-item.m-b-30
+                    .ems-card
+                        .ems-card-image.ems-responsive
+                            +image('lazy', 'https://via.placeholder.com/400x435/DDDDDD/000000')(class="ems-responsive-item")
+                        .ems-card-title.ems-flex.ems-flex-wrap.ems-flex-middle.ems-flex-between
+                            span.font-size-24.line-height-36.font-weight-bold Catalog Work 2020
+                            +icon('download')
+                        +link('')(href="#" class="ems-prd-link btn-full")
