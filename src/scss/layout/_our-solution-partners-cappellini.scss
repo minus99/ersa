@@ -1,16 +1,4 @@
-
-.page-title-white
-{
-    color: #fff;
-    position: absolute;
-    top: 40%;
-    z-index: 999;
-    
-    
-}
-.mobile-renctangle
-{
-    
+.mobile-renctangle {
     width: 2px;
     height: 60px;
     opacity: 0.3;
@@ -20,44 +8,33 @@
     content: '';
     left: 93%;
     z-index: 999;
-    
 }
-.mobile-mini-renctangle
-{
 
-    
+.mobile-mini-renctangle {
     width: 2px;
     height: 26px;
     background-color: #ffffff;
     content: '';
     z-index: 999;
-    
 }
+
 .mobile-mini-renctangle {
     position: relative;
     animation: mymove 1s infinite;
 }
-.cappellini-mobile-text
-{
-    
-    margin-bottom: 0;
-    font-weight: bold;
-    font-size: 43px;
 
-}
-.mobile-logo-size {
-    img {
-        width: 200px;
+body.our-solution-partners-cappellini {
+    .ems-tab {
+        .ems-tab-header {
+            a {
+                font-size: 17px;
+                color: $color7;
+
+                &.selected,
+                &:hover {
+                    color: $color3; 
+                }
+            }
+        }
     }
-}
-.auto-scroll
-{
-    overflow: auto;
-    overflow-y: hidden;
-    max-width: 100%;
-    white-space: nowrap;
-}
-.swipper-reset .ems-prd-inner
-{
-    padding: 0px !important;
 }

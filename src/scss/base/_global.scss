@@ -255,6 +255,14 @@ iframe {
             }
         }
     }
+    // BLOCK
+    &-block {
+        display: block;
+    }
+    &-inline-block {
+        display: inline-block;
+    }
+
     //FLEX
     &-flex {
         display: flex;
@@ -812,6 +820,10 @@ iframe {
     //MARGIN BOTTOM 50
     &-b-50 {
         margin-bottom: $m50;
+    }
+    // MARGIN BOTTOM 60
+    &-b-60 {
+        margin-bottom: $m60;
     }
     // MARGIN TOP 60
     &-t-60 {

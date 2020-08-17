@@ -49,7 +49,7 @@ block content
         h1.font-size-32.font-weight-bold Our History
 
         .our-history-tab.ems-tab
-            .ems-tab-header.m-lg-t-40
+            .ems-tab-header.m-lg-t-40.no-gutters
                 a(href="javascript:void(0);" rel="tab-1").selected The 50s & 60s
                 a(href="javascript:void(0);" rel="tab-2") The 70s & 80s
                 a(href="javascript:void(0);" rel="tab-3") The 90s
@@ -152,9 +152,9 @@ block content
                         -for (var y = 1; y <= 12; y++)
                             li.ems-list-item.m-b-30.m-lg-b-80
                                 .ems-card
-                                    .ems-card-image.ems-responsive
+                                    .ems-card-image.ems-responsive.m-b-30
                                         +image('lazy', 'https://via.placeholder.com/290x308/DDDDDD/000000')(class="ems-responsive-item")
-                                    .ems-card-title Burak Kocak
+                                    .ems-card-title.font-size-15.ems-text-center Burak Kocak
                                     +link('')(href="#" class="ems-prd-link btn-full")
     .our-story-row-4.p-t-60.p-b-30.p-lg-t-80.p-lg-b-0.m-b-30.m-lg-b-0.m-t-100.m-lg-t-0
         .ems-container
@@ -171,9 +171,9 @@ block content
                         -for (var y = 1; y <= 16; y++)
                             li.ems-list-item.m-b-10.m-lg-b-30
                                 .ems-card
-                                    .ems-card-image.ems-responsive
+                                    .ems-card-image.ems-responsive.m-b-30
                                         +image('lazy', 'https://via.placeholder.com/220x335/DDDDDD/000000')(class="ems-responsive-item")
-                                    .ems-card-title GEO
+                                    .ems-card-title.font-size-15.ems-text-center GEO
                                     +link('')(href="#" class="ems-prd-link btn-full")
                     .ems-flex.ems-flex-center
                         a(href="#").ems-flex.ems-flex-middle.m-t-60.m-lg-t-40.color-red.font-weight-bold

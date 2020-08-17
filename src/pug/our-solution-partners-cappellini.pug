@@ -6,73 +6,45 @@ block prepend head
     - var fixedClass = " fixed "
 
 block content
-    .ems-flex
-            +picture('ems-responsive', 'no', 'upload/home-page-slide/mnSlide1x1.jpg', 'upload/home-page-slide/mnSlide1x2.jpg', 'upload/home-page-slide/mnSlide1.jpg')
-    .ems-container-lg
-        .d-ems-grid.d-ems-grid-cover-top
-            .ems-breadcrumb-absolute
-                include includes/_breadcrumb.pug
-    .d-ems-container-full
-        div
-            h1.page-title-white.d-line-height-37.d-ems-text-center.d-font-size-36.m-l-20.font-size-32.m-b-0 Cappellini
-            div.mobile-renctangle.display-lg-none
-            div.mobile-mini-renctangle.display-lg-none
+    .ems-breadcrumb-absolute
+        include includes/_breadcrumb.pug
+    a(href="#1" class="banner display-block")
+        .banner-image
+            +picture('ems-responsive', 'no', 'http://via.placeholder.com/375x667', 'http://via.placeholder.com/750x1334', 'http://via.placeholder.com/2880x1580')
+        .banner-content
+            h1.color-white.font-size-32.font-size-lg-36.line-height-37.font-weight-bold Cappellini
+    
     //OUR PARTNER CAPPELLİNİ GRID
-    .ems-container-lg
-        .ems-container-small.m-auto.p-l-20.p-r-20.p-lg-r-30.p-lg-l-30
-            p.cappellini-text.m-lg-t-80.d-line-height-24.d-font-size-20.m-lg-b-0.m-t-30.m-b-0.line-height-1-4.font-size-20 ERSA is a reseller of Italian design firm Cappellini in Turkey since 2015.
-            .m-lg-t-60.m-t-60.m-b-0.mobile-logo-size
-                +picture('', 'no', 'upload/logo/cappellini.svg', 'upload/logo/cappellini.svg', 'upload/logo/cappellini.svg')
-            .m-lg-t-20.m-t-20
-                p.cappellini-desc.d-font-size-16.d-line-height-24.m-lg-b-0.font-size-16.line-height-24.m-b-0 Founded in 1946, Cappellini has evolved through the years into a sought-after brand of contemporary and avant-garde design by manufacturing innovative furniture of the highest quality. Cappellini, which manufactures modular furniture and provides solutions for residential and office spaces, is known for combining design and advanced technologies with traditional craftsmanship. Cappellini collections, characterized by experimentation and exploration of new ways of living, can furnish the whole domestic landscape from the living room to the studio…
-                p.display-lg-none.color-red.font-size-15.m-t-42.m-b-0.ems-flex.ems-flex-middle View More
-                    +icon('plus')
-    .ems-container-lg
-        div.m-lg-t-80.m-t-63
-            p.d-font-size-17.m-lg-b-0.m-lg-t-0.p-l-20.p-r-20.p-lg-0.font-size-17.m-b-10 Products from <br> 
-            p.d-font-size-32.font-weight-bold.m-lg-b-0.m-lg-t-10.p-l-20.p-r-20.p-lg-0.font-size-32.m-t-0  Cappellini
-    .ems-container-lg.p-l-20
-        .m-lg-t-40.m-t-40
-            nav
-                ul.d-ems-flex.ems-flex.auto-scroll.p-b-30
-                    li.p-r-20.d-font-size-17.color-red.font-size-17
-                        a(href="").
-                            All Products
-                    li.p-r-20.d-font-size-17.color-gray.font-size-17
-                        a(href="").
-                            Sofas & Chairs     
-                    li.p-r-20.d-font-size-17.color-gray.font-size-17
-                        a(href="").
-                            Desks & Tables
-                    li.d-font-size-17.color-gray.font-size-17
-                        a(href="").
-                            Accessories
-    .ems-container-lg.m-lg-t-40.p-l-20
-        //PRODUCT LIST GRID
-        .ems-prd-list.ems-prd-list-page.ems-section.m-t-10.m-lg-t-0
-            ul.ems-flex.ems-flex-wrap.ems-flex-prd-list-wrapper
-                +product('', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                +product('', 'Likhia', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
-                +product('', 'Risus', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                +product('', 'Dark', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
-                +product('', 'Magnolia', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                +product('', 'Denver', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
-                +product('', 'Dark', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
-                +product('', 'Magnolia', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                +product('', 'Denver', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
-        
-    .widget-products.ems-section.m-t-40.m-lg-t-80
-        .ems-container-full
-            .swiper-container.p-r-l-0.swiper-product(data-swiper="widgetAuto")
-                .swiper-inner.swipper-reset.m-l-20
-                    ul.swiper-wrapper
-                        +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                        +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                        +product('swiper-slide', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                .swiper-button-next
-                .swiper-button-prev
-                .swiper-pagination        
-                            
-                                    
-     
-            
+    .ems-container-small.m-r-auto.m-l-auto.p-lg-r-60.m-lg-t-80.m-t-30
+        article.p-l-20.p-r-20.p-lg-l-0.p-lg-r-0
+            .m-b-60
+                h4.font-size-20.line-height-24 ERSA is a reseller of Italian design firm Cappellini in Turkey since 2015.
+            article
+                .m-b-20
+                    +image('lazy', 'upload/logo/cappellini.svg')(alt="cappelini")
+                p.font-size-16.line-height-24.m-0 Founded in 1946, Cappellini has evolved through the years into a sought-after brand of contemporary and avant-garde design by manufacturing innovative furniture of the highest quality. Cappellini, which manufactures modular furniture and provides solutions for residential and office spaces, is known for combining design and advanced technologies with traditional craftsmanship. Cappellini collections, characterized by experimentation and exploration of new ways of living, can furnish the whole domestic landscape from the living room to the studio…
+            p.display-lg-none.color-red.font-size-15.m-t-42.m-b-0.ems-flex.ems-flex-middle View More
+                +icon('plus')
+    .ems-container-lg.m-t-60.m-lg-t-80
+        .p-l-20.p-r-20.p-lg-l-0.p-lg-r-0
+            article
+                p.font-size-17.m-0 Products from <br> 
+                h3.font-size-32.font-weight-bold.m-t-10 Cappellini
+            .ems-tab.m-t-40
+                .ems-tab-header
+                    a(href="javascript:void(0);" rel="tab-1").selected All Products
+                    a(href="javascript:void(0);" rel="tab-2") Sofas & Chairs
+                    a(href="javascript:void(0);" rel="tab-3") Desks & Tables
+                    a(href="javascript:void(0);" rel="tab-4") Accessories
+                .ems-tab-content.m-t-40
+                    div(rel="tab-1").selected
+                        .ems-flex.ems-flex-wrap.ems-flex-cappellini-list
+                            -for (var y = 1; y <= 9; y++)
+                                .ems-list-item.m-b-40
+                                    .ems-card
+                                        .ems-card-image.m-b-20
+                                            +picture('ems-responsive', 'no', 'http://via.placeholder.com/400x400', 'http://via.placeholder.com/800x800', 'http://via.placeholder.com/1200x1200')
+                                        .ems-card-title.ems-text-center.font-size-16 Magnolia
+                    div(rel="tab-2") tab content 2
+                    div(rel="tab-3") tab content 3
+                    div(rel="tab-4") tab content 4

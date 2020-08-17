@@ -26,13 +26,14 @@ block content
                 include includes/_filter.pug
         //PRODUCT LIST GRID
         .ems-prd-list.ems-prd-list-page.ems-section.m-t-10.m-lg-t-0
-            ul.ems-flex.ems-flex-wrap.ems-flex-prd-list-wrapper
-                +product('', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                +product('', 'Likhia', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
-                +product('', 'Risus', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                +product('', 'Dark', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
-                +product('', 'Magnolia', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
-                +product('', 'Denver', 'https://via.placeholder.com/800x800/DDDDDD/000000', '')
+            ul.ems-flex.ems-flex-wrap.ems-flex-product-list
+                -for (var y = 1; y <= 6; y++)
+                    li.ems-list-item.m-b-30
+                        .ems-card.position-relative
+                            .ems-card-image.ems-responsive.m-b-20
+                                +image('lazy', 'https://via.placeholder.com/800x800')(class="ems-responsive-item")
+                            .ems-card-title.ems-text-center.font-size-16 Polar
+                            +link('')(href="#" class="ems-prd-link btn-full")
         //PRODUCT FOOTER
         .ems-seo.m-t-40.m-lg-t-80
             .ems-seo-text
