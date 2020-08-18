@@ -4,77 +4,26 @@ block prepend head
     - var pageClass = "page projects"
    
 
-block content
-    .ems-container.p-0
+block content    
+    .ems-container-lg
         include includes/_breadcrumb.pug
-    .ems-container-lg
-        h1.font-size-lg-32.font-size-32.line-height-lg-36.line-height-36.m-lg-t-80.m-lg-b-20.font-weight-bold Projects
-        .ems-container-small
-            p.m-lg-b-80.font-size-lg-20.line-height-lg-28.m-lg-r-60 Providing comfortable seating with its curved back design and seating font that surrounds the user, Polar family chair series…
-    .ems-container-lg
-        nav
-            ul.d-ems-flex.ems-flex.auto-scroll.m-lg-b-43
-                li.p-r-20.d-font-size-17.color-red.font-size-17
-                    p All Projects
-                li.p-r-20.d-font-size-17.color-gray.font-size-17
-                    p.display-lg-inline-flex.d-ems-flex-center Sector 
-                        +icon('plus')
-    .related-projects.ems-section.bg-color-grid
-        .p-l-20.p-r-20.p-lg-l-60.p-lg-r-60
-            ul.ems-flex.ems-flex-wrap.width-100
-                li.p-lg-20
-                    .banner
-                        a(href="javascript:void(0)" class="display-block")
-                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
-                            .banner-inset.p-t-20.p-b-20.p-lg-t-40.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                span.prm-title-medium.m-r-20 Zai Bodrum
-                                span.prm-title-small Bodrum, Turkey
-                li.p-lg-20
-                    .banner
-                        a(href="javascript:void(0)" class="display-block")
-                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
-                            .banner-inset.p-t-20.p-b-20.p-lg-t-40.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                span.prm-title-medium.m-r-20 Zai Jackson Park
-                                span.prm-title-small Queens, USA
-                li.p-lg-20
-                    .banner
-                        a(href="javascript:void(0)" class="display-block")
-                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
-                            .banner-inset.p-t-20.p-b-20.p-lg-t-40.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                span.prm-title-medium.m-r-20 Bodrum Mariot Edition
-                                span.prm-title-small Minsk, Belarus
-                li.p-lg-20
-                    .banner
-                        a(href="javascript:void(0)" class="display-block")
-                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
-                            .banner-inset.p-t-20.p-b-20.p-lg-t-40.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                span.prm-title-medium.m-r-20 Ronesans Medikal İnsaat
-                                span.prm-title-small Ronesans Medikal İnsaat
-                li.p-lg-20
-                    .banner
-                        a(href="javascript:void(0)" class="display-block")
-                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
-                            .banner-inset.p-t-20.p-b-20.p-lg-t-40.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                span.prm-title-medium.m-r-20 Ronesans Medikal İnsaat
-                                span.prm-title-small Ronesans Medikal İnsaat
-                li.p-lg-20
-                    .banner
-                        a(href="javascript:void(0)" class="display-block")
-                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
-                            .banner-inset.p-t-20.p-b-20.p-lg-t-40.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                span.prm-title-medium.m-r-20 Ronesans Medikal İnsaat
-                                span.prm-title-small Ronesans Medikal İnsaat
-                li.p-lg-20
-                    .banner
-                        a(href="javascript:void(0)" class="display-block")
-                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
-                            .banner-inset.p-t-20.p-b-20.p-lg-t-40.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                span.prm-title-medium.m-r-20 Ronesans Medikal İnsaat
-                                span.prm-title-small Ronesans Medikal İnsaat
-                li.p-lg-20
-                    .banner
-                        a(href="javascript:void(0)" class="display-block")
-                            +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
-                            .banner-inset.p-t-20.p-b-20.p-lg-t-40.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                span.prm-title-medium.m-r-20 Ronesans Medikal İnsaat
-                                span.prm-title-small Ronesans Medikal İnsaat
+    .ems-container
+        .ems-container-small.m-lg-t-80.m-lg-b-40.p-lg-r-60
+            h1.font-weight-bold.font-size-32.line-height-36.m-b-20 Projects
+            p.font-size-20.line-height-28.m-0 Providing comfortable seating with its curved back design and seating font that surrounds the user, Polar family chair series…
+            nav.m-t-40.m-t-lg-80
+                ul.ems-flex.ems-flex-wrap.ems-flex-middle
+                    li.p-r-20
+                        a(href="#") All Projects
+                    li.p-r-20
+                        a(href="#") Sector
+                            +icon('plus')
+        .ems-flex.ems-flex-wrap.ems-flex-projects-list
+            -for (var y = 1; y <= 8; y++)
+                .ems-list-item.m-b-40
+                    .ems-card
+                        .ems-card-image.ems-responsive.m-lg-b-40.m-b-20
+                            +image('lazy', 'http://via.placeholder.com/1240x1036')(class="ems-responsive-item")
+                        .ems-card-title.ems-flex.ems-flex-wrap.ems-flex-top.d-ems-flex-middle.ems-flex-column.d-ems-flex-row
+                            span.font-size-20.font-weight-bold.m-lg-r-20.m-b-5.m-lg-b-0 Catalog Work 2020
+                            small.font-size-14 Bodrum, Turkey

@@ -2,17 +2,21 @@
     &-header {
         display: flex;
         flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
 
         > a {
             flex: 0 0 auto;
             max-width: 100%;
-            margin-right: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
 
             &:last-child {
                 margin-right: 0;
             }
         }
     }
+
     &-content{
         > div:not(.selected){
             display: none;

@@ -1,35 +1,12 @@
-.new-m-title-h1
-{
-    color: #2b2a2a;
-    font-size: 32px;
-    line-height: 36px;
-    letter-spacing: 0;
-    width: 100%;
-    font-weight: bold;;
-
-}
-.prm-link-text
-{
-    max-width: 240px;
-}
-
-// İTEM CENTER
-
-.d-items-center {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-.d-color-white {
-    color: #fff;
-    font-size: 32px;
-   
-}
-
-.new-m-title-h1 {
-    font-size: 32px;
-    line-height: 36px;
-    color: #2b2a2a;
-    font-weight: bold;
+body.our-solution-partners {
+    .ems-card {
+        .ems-card-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            z-index: 2;
+        }
+    }
 }

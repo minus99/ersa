@@ -1,62 +1,70 @@
-
-.page-title-white
-{
-    color: #fff;
-    position: absolute;
-    top: 40%;
-    z-index: 999;
-    
-    
-}
-.mobile-renctangle
-{
-    
+.mobile-renctangle {
     width: 2px;
     height: 60px;
     opacity: 0.3;
-    background-color: #ffffff;
+    background-color: rgba(43, 42, 42, 0.4);
     position: absolute;
     top: 40%;
     content: '';
     left: 93%;
     z-index: 999;
-    
 }
-.mobile-mini-renctangle
-{
 
-    
+.mobile-mini-renctangle {
     width: 2px;
     height: 26px;
     background-color: #ffffff;
-    top: 40%;
-    left: 93%;
     content: '';
-    position: absolute;
     z-index: 999;
-    
 }
-.cappellini-mobile-text
-{
-    
-    margin-bottom: 0;
-    font-weight: bold;
-    font-size: 43px;
 
+.mobile-mini-renctangle {
+    position: relative;
+    animation: mymove 1s infinite;
 }
-.mobile-logo-size {
-    img {
-        width: 200px;
+
+body.our-solution-partners-cappellini {
+    .ems-tab {
+        .ems-tab-header {
+            a {
+                font-size: 17px;
+                color: $color7;
+
+                &.selected,
+                &:hover {
+                    color: $color3; 
+                }
+            }
+        }
     }
 }
-.auto-scroll
-{
-    overflow: auto;
-    overflow-y: hidden;
-    max-width: 100%;
-    white-space: nowrap;
+
+.m-width-jackson {
+    max-width: 363px;
+    overflow: hidden;
 }
-.swipper-reset .ems-prd-inner
+.jackson-h1 {
+    width: 2px;
+    height: 74px;
+    opacity: 0.3;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    left: 50%;
+    
+}
+.jackson-small {
+    width: 2px;
+    height: 26px;
+    background-color: #ffffff;
+    animation: mymove 1s infinite;
+    position: absolute;
+    right: 0;
+    left: 50%;
+}
+.scroll-down
 {
-    padding: 0px !important;
+    position: absolute;
+    left: 50%;
+    top: 255px;
 }

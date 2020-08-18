@@ -31,6 +31,7 @@
             max-width: none;
         }
     }
+
     //FLEX
     &-flex {
         display: flex;
@@ -414,10 +415,6 @@
     &-t-80 {
         margin-top: $m80;
     }
-    // MARGIN TOP 81
-    &-t-81 {
-        margin-top: 81px;
-    }
     // MARGIN TOP 82
     &-t-82 {
         margin-top: $m82;
@@ -425,10 +422,6 @@
     // MARGIN TOP 115
     &-t-115 {
         margin-top: $m115;
-    }
-    // MARGIN TOP 115
-    &-t-116 {
-        margin-top: 116px;
     }
     //MARGIN RIGHT 80
     &-r-80 {
@@ -687,6 +680,10 @@
     &-t-100 {
         padding-top: $p100;
     }
+    // PADDING TOP 110
+    &-t-110 {
+        padding-top: $p110;
+    }
     //PADDING RIGHT 100
     &-r-100 {
         padding-right: $p100;
@@ -727,11 +724,11 @@
 
 // FONT SIZE
 .font-size-lg {
-    &-36 {
-        font-size: 36px;
-    }
     &-32 {
         font-size: 32px;
+    }
+    &-36 {
+        font-size: 36px;
     }
     &-24 {
         font-size: 24px;
@@ -766,12 +763,6 @@
     }
     &-28 {
         line-height: 28px;
-    }
-    &-32 {
-        line-height: 32px;
-    }
-    &-36 {
-        line-height: 36px;
     }
     &-37 {
         line-height: 37px;
@@ -814,24 +805,18 @@
 
 //DISPLAY ELEMENTS
 .display {
+    &-lg-block {
+        display: block !important;
+    }
     &-lg-none {
         display: none;
-    }
-    &-lg-block {
-        display: block;
     }
     &-lg-inline-block {
         display: inline-block;
     }
-    &-lg-flex {
-        display: flex;
-    }
-    &-lg-inline-flex {
-        display: flex;
-    }
 }
 
-//GRİD
+// Grid
 .grid-area {
     &-a {
         grid-area: A;
@@ -847,58 +832,5 @@
     }
     &-e {
         grid-area: E;
-    }
-}
-
-//FONT SİZE
-.d-font-size {
-    &-24 {
-        font-size: 24px;
-    }
-    &-20 {
-        font-size: 20px;
-    }
-    &-16 {
-        font-size: 16px;
-    }
-    &-17 {
-        font-size: 17px;
-    }
-    &-32 {
-        font-size: 32px;
-    }
-    &-36 {
-        font-size: 36px;
-    }
-}
-
-// Line Height
-.d-line-height {
-    &-1-4 {
-        line-height: 1.4;
-    }
-    &-1-5 {
-        line-height: 1.5;
-    }
-    &-24 {
-        line-height: 24px;
-    }
-    &-37 {
-        line-height: 37px;
-    }
-}
-
-// POSİTİON
-.d-position-relative {
-    position: relative;
-}
-
-.d-position-absolute {
-    position: absolute;
-}
-// MAX-WİDTH
-.max-width-lg {
-    &-700 {
-        max-width: 700px;
     }
 }

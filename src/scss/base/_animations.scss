@@ -48,3 +48,8 @@
         opacity: 1;
     }
 }
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 48px;}
+}

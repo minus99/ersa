@@ -1,1 +1,7 @@
-@include flexList("our-story", 20px, 4);
+@include flexList("our-story", 20px, 4, 2);
+@include flexList("catalog", 20px, 3, 1);
+@include flexList("product-images", 20px, 3, 1);
+@include flexList('our-solution-partners', 20px, 2, 1);
+@include flexList('projects', 20px, 2, 1);
+@include flexList('cappellini', 22px, 3, 1);
+@include flexList('product', 22px, 3, 1);
