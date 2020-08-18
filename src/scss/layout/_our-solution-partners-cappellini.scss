@@ -45,7 +45,7 @@ body.our-solution-partners-cappellini {
 }
 .jackson-h1 {
     width: 2px;
-    height: 74px;
+    height: 60px;
     opacity: 0.3;
     background-color: #ffffff;
     position: absolute;
@@ -67,4 +67,9 @@ body.our-solution-partners-cappellini {
     position: absolute;
     left: 50%;
     top: 255px;
+}
+.ems-new-tab-header {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
