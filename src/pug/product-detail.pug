@@ -47,7 +47,7 @@ block content
                                 a(href="javascript:void(0);" class="ems-flex ems-flex-middle p-y-10")
                                     span.m-r-5 Download Files
                                     +icon('download')
-                                a(href="javascript:void(0);" class="ems-flex ems-flex-middle p-y-10")
+                                a(href="#open-modal" class="ems-flex ems-flex-middle p-y-10")
                                     span.m-r-5 Share
                                     +icon('size')
                 .ems-section.p-lg-l-60.m-t-30.m-lg-t-60.ems-overflow-hidden
@@ -339,3 +339,35 @@ block content
                                         .banner-inset.p-t-20.p-b-20.p-lg-t-50.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
                                             span.prm-title-medium.m-r-10 Ronesans Medikal İnsaat
                                             span.prm-title-small Ronesans Medikal İnsaat
+            // PRODUCT DETAIL POPUP CONTENT
+            .modal-window(id="open-modal")
+                .modal-content
+                    .modal-header
+                        <a href="#" title="Close" class="modal-close">Close</a>
+                        h1 Share this product
+                    .modal-body
+                        .ems-flex.ems-flex-row.d-ems-flex.column.m-t-20.p-l-10.pr-10.p-lg-l-0.p-lg-r-0
+                            +image('no', 'https://via.placeholder.com/200x200')
+                            .ems-flex.ems-flex-column.ems-text-left.p-l-5
+                                .font-size-20.font-weight-bold.m-t-20 Magnolia
+                                .font-size-13.m-t-10 by Studio Balutto Associati
+                        .ems-social.m-t-40.p-l-40.p-r-40.p-lg-l-0.p-lg-r-0
+                            ul.ems-flex.ems-flex-row.ems-flex-between
+                                li
+                                    a(href="javascript:void(0);")
+                                        +image('no', 'https://via.placeholder.com/48x48')
+                                li
+                                    a(href="javascript:void(0);")
+                                        +image('no', 'https://via.placeholder.com/48x48')
+                                li
+                                    a(href="javascript:void(0);")
+                                        +image('no', 'https://via.placeholder.com/48x48')
+                                li
+                                    a(href="javascript:void(0);")
+                                        +image('no', 'https://via.placeholder.com/48x48')
+                                li
+                                    a(href="javascript:void(0);")
+                                        +image('no', 'https://via.placeholder.com/48x48')
+                        .ems-url.m-t-20.p-l-40.p-r-40.p-lg-l-0.p-lg-r-0
+                            label.ems-text-left.m-b-5 Copy URL
+                            input(type="text" placeholder='https://www.ersamobilya.com/magnolia-sandalye.html')

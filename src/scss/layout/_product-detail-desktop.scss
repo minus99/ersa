@@ -6,7 +6,7 @@
     &-media {
         height: 100vh;
         .swiper-slide {
-            img{
+            img {
                 width: 100vw;
                 height: 100vh;
             }
@@ -16,16 +16,16 @@
         max-width: 355px;
         margin-top: 170px;
     }
-    &-groups{
-        > div{
+    &-groups {
+        >div {
             width: 50%;
-            > span{
+            >span {
                 margin-bottom: 25px;
             }
         }
     }
-    &-options{
-        li{
+    &-options {
+        li {
             width: 33.333%;
             margin-bottom: 0;
         }
@@ -33,9 +33,76 @@
 }
 
 //Tab
-.ems-tab{
-    &-prdd{
+.ems-tab {
+    &-prdd {
         max-width: 740px;
-        margin:50px auto;
-    }   
+        margin: 50px auto;
+    }
+}
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .modal-content {
+        width: 650px;
+        height: 600px;
+        position: relative;
+        margin: 5% auto;
+        // transform: translate(-50%, -50%);
+        // padding: 2em;
+        background: #ddd;
+        .modal-body {
+            text-align: center;
+            max-width: 280px;
+            margin: auto;
+            .ems-social {
+                ul {
+                    li {
+                        border: 1px solid #eff2f3;
+                        border-radius: 5px;
+                        img {
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+            .ems-url {
+                input {
+                    font-size: 14px;
+                    border: 1px solid #eff2f3;
+                    border-radius: 5px;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+        color: black;
+    }
 }
