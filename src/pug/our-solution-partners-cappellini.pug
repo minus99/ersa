@@ -8,16 +8,20 @@ block prepend head
 block content
     .ems-breadcrumb-absolute
         include includes/_breadcrumb.pug
-    a(href="#1" class="banner display-block")
-        .banner-image
-            +picture('ems-responsive', 'no', 'http://via.placeholder.com/375x667', 'http://via.placeholder.com/750x1334', 'http://via.placeholder.com/2880x1580')
-        .banner-content
-            h1.color-white.font-size-32.font-size-lg-36.line-height-37.font-weight-bold Cappellini
-    
+    .ems-container-full
+        a(href="#1" class="display-block")
+            .banner.banner02
+                +picture('ems-responsive', 'no', 'upload/home-page-banner/fold-koltuk1x.jpg', 'upload/home-page-banner/fold-koltuk2x.jpg', 'upload/home-page-banner/fold-koltuk.jpg')
+                .banner-body.banner-body-0.new-banner-content
+                    h1.color-white.font-size-32.font-size-lg-36.line-height-37.font-weight-bold.ems-text-center.d-ems-text-center Cappellini
+                    div.scroll-down
+                        .jackson-h1
+                        .jackson-small
     //OUR PARTNER CAPPELLİNİ GRID
     .ems-container-small.m-r-auto.m-l-auto.p-lg-r-60.m-lg-t-80.m-t-30
         article.p-l-20.p-r-20.p-lg-l-0.p-lg-r-0
             .m-b-60
+                
                 h4.font-size-20.line-height-24 ERSA is a reseller of Italian design firm Cappellini in Turkey since 2015.
             article
                 .m-b-20
@@ -31,7 +35,7 @@ block content
                 p.font-size-17.m-0 Products from <br> 
                 h3.font-size-32.font-weight-bold.m-t-10 Cappellini
             .ems-tab.m-t-40
-                .ems-tab-header
+                .ems-tab-header.ems-new-tab-header.p-t-20.p-b-20
                     a(href="javascript:void(0);" rel="tab-1").selected All Products
                     a(href="javascript:void(0);" rel="tab-2") Sofas & Chairs
                     a(href="javascript:void(0);" rel="tab-3") Desks & Tables

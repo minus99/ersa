@@ -29,11 +29,47 @@ body.our-solution-partners-cappellini {
             a {
                 font-size: 17px;
                 color: $color7;
+
                 &.selected,
                 &:hover {
-                    color: $color3;
+                    color: $color3; 
                 }
             }
         }
     }
+}
+
+.m-width-jackson {
+    max-width: 363px;
+    overflow: hidden;
+}
+.jackson-h1 {
+    width: 2px;
+    height: 60px;
+    opacity: 0.3;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    left: 50%;
+    
+}
+.jackson-small {
+    width: 2px;
+    height: 26px;
+    background-color: #ffffff;
+    animation: mymove 1s infinite;
+    position: absolute;
+    right: 0;
+    left: 50%;
+}
+.scroll-down
+{
+    position: absolute;
+    left: 50%;
+    top: 255px;
+}
+.ems-new-tab-header {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }

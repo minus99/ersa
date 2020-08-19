@@ -9,16 +9,15 @@ block content
         include includes/_breadcrumb.pug
     .ems-container
         .ems-container-small.m-lg-t-80.m-lg-b-40.p-lg-r-60
-            h1.font-weight-bold.font-size-32.line-height-36.m-b-20 Projects
+            h1.font-weight-bold.font-size-32.line-height-36.m-b-20.m-t-30 Projects
             p.font-size-20.line-height-28.m-0 Providing comfortable seating with its curved back design and seating font that surrounds the user, Polar family chair series…
-            nav.m-t-40.m-t-lg-80
+            nav.m-t-40.m-lg-t-80
                 ul.ems-flex.ems-flex-wrap.ems-flex-middle
                     li.p-r-20
-                        a(href="#") All Projects
+                        p.color-red.font-size-17 All Projects
                     li.p-r-20
-                        a(href="#") Sector
-                            +icon('plus')
-        .ems-flex.ems-flex-wrap.ems-flex-projects-list
+                        p.color-gray.font-size-17.edit-icon Sector +
+        .ems-flex.ems-flex-wrap.ems-flex-projects-list.m-t-20
             -for (var y = 1; y <= 8; y++)
                 .ems-list-item.m-b-40
                     .ems-card
