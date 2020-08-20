@@ -1,6 +1,6 @@
 .space-and-solutions {
     &-logo {
-        padding: 30px 20px;
+        
         img {
             max-width: 230px;
         }
@@ -12,7 +12,6 @@
         a {
             font-family: UntitledReg, arial, sans-serif;
             font-size: 24px;
-            padding: 20px 10px;
             color: #babfc2;
         }
         a.selected {
@@ -42,14 +41,12 @@
         }
         .tab-2 {
             .col-1 {
-                padding-right: 0;
+                padding-right: 15px;
             }
             .col-2 {
-                padding-right: 20px;
+                padding-left: 0;
             }
-            .ems-flex-tab-line {
-                padding: 0 20px 20px 20px;
-            }
+            
         }
     }
     .p-l-0 {

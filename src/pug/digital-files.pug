@@ -11,7 +11,6 @@ block content
         .ems-flex.ems-flex-column.d-ems-flex-row.d-f-pages
             .ems-flex.ems-flex-column.p-t-30.p-lg-t-80.p-lg-b-40.d-f-filter.p-l-20.p-r-20.p-lg-l-0.p-lg-r-0
                 h1.font-size-32.font-weight-bold Digital Files
-
                 a(href="javascript:void(0);" class="ems-flex ems-flex-middle ems-flex-between p-y-10 ems-filter-trigger font-size-20" data-target="body" data-ready="ems-filter-ready" data-animate="ems-filter-animate" data-type="toggle")
                     |Work
                     +icon('down')
@@ -51,16 +50,10 @@ block content
             .ems-flex.ems-flex-column.p-t-10.p-lg-t-80.p-lg-b-40.d-f-content.p-l-20.p-r-20.p-lg-l-0.p-lg-r-0
                 .filter-search.ems-flex.ems-flex-middle
                     +icon('search')
-                    input(type="text" placeholder="Search product name" class="font-size-24")
+                    input(type="text" placeholder="Search product name" class="font-size-24 border-none m-l-10")
                 .ems-container-full
-                    .ems-tab.ems-overflow-hidden.p-t-80
-                        .swiper-container.swiper-auto(data-swiper="widgetAuto")
-                            .swiper-inner.ems-overflow-visible
-                                ul.swiper-wrapper.ems-tab-header.ems-tab-space-and-solutions-header.p-0
-                                    a(href="javascript:void(0);" rel="tab-1" class="swiper-slide selected") All Formats
-                                    a(href="javascript:void(0);" rel="tab-2" class="swiper-slide") 2D Models
-                                    a(href="javascript:void(0);" rel="tab-3" class="swiper-slide") 3D Models
-                                    a(href="javascript:void(0);" rel="tab-4" class="swiper-slide") CAT Data
+                    .ems-tab.ems-overflow-hidden.p-t-40
+                        include includes/_widget-swiper-nav.pug
                         .ems-tab-content
                             div(rel="tab-1" class="selected tab-1")
                                 .ems-flex.ems-flex-column.d-ems-flex-row.m-t-40.digital-files-tab
@@ -70,7 +63,7 @@ block content
                                             ul
                                                 li
                                                     -for (var y = 1; y <= 5; y++)
-                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10 m-background-digital")
                                                             p.font-size-17 1962
                                                             p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
                                                                 +icon('download p-l-5')
@@ -82,7 +75,7 @@ block content
                                             ul
                                                 li
                                                     -for (var y = 1; y <= 5; y++)
-                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10 m-background-digital")
                                                             p.font-size-17 1962
                                                             p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
                                                                 +icon('download p-l-5')
@@ -94,7 +87,7 @@ block content
                                             ul
                                                 li
                                                     -for (var y = 1; y <= 5; y++)
-                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10")
+                                                        a(href="#" class="ems-flex ems-flex-between ems-flex-middle p-l-20 p-r-20 m-b-10  m-background-digital")
                                                             p.font-size-17 1962
                                                             p.ems-flex.ems-flex-middle.font-weight-bold.font-size-15 ZIP Archive
                                                                 +icon('download p-l-5')

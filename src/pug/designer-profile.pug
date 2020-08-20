@@ -2,7 +2,7 @@ extends includes/_layout.pug
 
 block prepend head
     - var pageClass = "page designer-profile"
-    - var fixedClass = " fixed color-dark"
+    - var fixedClass = " fixed color-white"
 
 block content
     .ems-container-full
@@ -15,11 +15,18 @@ block content
                             include includes/_breadcrumb.pug
                         .ems-dp-media
                             .banner
-                                .prm-media.ems-responsive
-                                    +image('lazy-swiper', 'https://via.placeholder.com/1620x1400/ddd/000')(class="ems-responsive-item" alt='title')
-                    .ga2.p-t-30.p-l-30.p-r-30.p-lg-0
+                                .ems-container-full
+                                    a(href="#1" class="display-block")
+                                        .banner.banner02
+                                            +picture('ems-responsive', 'no', 'upload/home-page-banner/fold-koltuk1x.jpg', 'upload/home-page-banner/fold-koltuk2x.jpg', 'upload/home-page-banner/fold-koltuk.jpg')
+                                            .banner-body.banner-body-0.new-banner-content.display-lg-none
+                                                h1.color-white.font-size-32.font-size-lg-36.line-height-37.font-weight-bold.ems-text-center Cladio Bellini
+                                                    div.scroll-down
+                                                        .jackson-h1
+                                                        .jackson-small
+                    .ga2.p-t-30.p-l-30.p-r-30.p-lg-0.p-lg-l-80
                         .ems-dp-body
-                            h1.ems-dp-title Cladio Bellini
+                            h1.ems-dp-title.display-none.display-lg-block Cladio Bellini
                             h3.ems-dp-desc Claudio Bellini (1963) architect, designer and art director, lives and works in Milan where he graduated in Architecture and Industrial Design from the renowned university Politecnico di Milano. His strong fascination with creativity roots back to his early childhood years, growing up with his father Mario Bellini who is a pioneer of contemporary design. In 1996 he established CLAUDIO BELLINI; a Milan based multidisciplinary design studio shaped by a deep understanding of design process. This was the turning point of his career as he built his own distinctive brand. The core of his design approach considering the demands of growing global mark...
                             a(href="javascript:void(0);" class="view-more ems-flex ems-flex-middle")
                                     span.m-r-5 Viev more

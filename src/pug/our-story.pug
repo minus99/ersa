@@ -12,7 +12,7 @@ block content
             +picture('ems-responsive', 'no', 'http://via.placeholder.com/375x667', 'http://via.placeholder.com/750x1334', 'http://via.placeholder.com/2880x1580')
         .banner-content
             h1.color-white.font-size-32.font-size-lg-36.line-height-37.font-weight-bold Our Story
-    .sticky-menu
+    .sticky-menu.ems-container
         .ems-container-small.m-r-auto.m-l-auto.p-lg-l-30.p-lg-r-30
             .swiper-container(data-swiper="widgetAuto")
                 .swiper-inner
@@ -29,7 +29,7 @@ block content
                             a(href="#") Designers
                         li(rel="awards").swiper-slide
                             a(href="#") Awards
-    .ems-container-small.m-r-auto.m-l-auto.m-lg-t-80.p-lg-l-30.p-lg-r-30
+    .ems-container-small.m-r-auto.m-l-auto.m-lg-t-80.p-lg-l-30.p-lg-r-30.ems-container
         article
             p.m-0.font-size-20.line-height-28 Ersa, founded by Metin Atabey Ata in 1958, Sivas, has raised one of the pioneers of the furniture sector in Turkey with giving importance to innovation and design. The simple architectural design of the factory in harmony with the environment is a reflection of the sustainable production approach that Ersa adopts. Spread on approximately 60,000 square meters and equipped with state-of-the-art production technologies, the factory has the capacity to process 4.5 million square meters of panel boards, 500,000 running meters of laminated panels, and 530,000 pieces of furniture in one shift.
             p.m-t-40.m-b-0.font-size-16.line-height-24 Ersa, which offers innovative and high quality solutions for architectural needs of its users in Turkey and all around the world, has a noteworthy export success in the international arena with the average export rate three times more than the industry average of Turkey. 
@@ -49,11 +49,8 @@ block content
         h1.font-size-32.font-weight-bold Our History
 
         .our-history-tab.ems-tab
-            .ems-tab-header.m-lg-t-40.no-gutters
-                a(href="javascript:void(0);" rel="tab-1").selected The 50s & 60s
-                a(href="javascript:void(0);" rel="tab-2") The 70s & 80s
-                a(href="javascript:void(0);" rel="tab-3") The 90s
-                a(href="javascript:void(0);" rel="tab-4") The 2000s
+            .m-lg-t-40.ems-container.m-t-20.m-b-20
+                include includes/_widget-swiper-nav.pug
             .ems-tab-content.m-lg-t-80
                 div(rel="tab-1").selected
                     .our-story-row-1
@@ -145,9 +142,9 @@ block content
                         +picture('ems-responsive', 'no', 'http://via.placeholder.com/400x466', 'http://via.placeholder.com/800x932', 'http://via.placeholder.com/1200x1398')
             .m-lg-t-100
                 .ems-container-small.p-lg-r-60
-                    h3.font-size-32.font-weight-bold Designers
-                    p.font-size-20.line-height-28 Driven by its passion for good design since the very beginning, Ersa collaborates with numerous Turkish and international designers, and also offers designs by some of the leading brands to the Turkish market through global partnerships. <br> <br> As the winner of more than fifty prestigious local and international awards, Ersa believes in the power of good design and addresses design together with the idea behind it, developing and masterfully crafting products to offer users new and unique experiences beyond function.
-                .m-lg-t-80
+                    h3.font-size-32.font-weight-bold.m-t-40 Designers
+                    p.font-size-20.line-height-28.m-0.m-t-10 Driven by its passion for good design since the very beginning, Ersa collaborates with numerous Turkish and international designers, and also offers designs by some of the leading brands to the Turkish market through global partnerships. <br> <br> As the winner of more than fifty prestigious local and international awards, Ersa believes in the power of good design and addresses design together with the idea behind it, developing and masterfully crafting products to offer users new and unique experiences beyond function.
+                .m-lg-t-80.m-t-40
                     ul.ems-flex.ems-flex-wrap.ems-flex-our-story-list
                         -for (var y = 1; y <= 12; y++)
                             li.ems-list-item.m-b-30.m-lg-b-80

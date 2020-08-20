@@ -4,37 +4,38 @@ block prepend head
     - var pageClass = "page new-and-stories-page"
 
 block content
-    .ems-container
-        .d-ems-grid.d-ems-grid-cover-top
-            .d-ems-area-a
-                include includes/_breadcrumb.pug
-        .ems-flex.ems-flex-column
+    .ems-container-lg
+        include includes/_breadcrumb.pug
+        .ems-flex.ems-flex-column.ems-container
             .p-t-80
                 h1.font-size-32.font-weight-bold News & Stories
             .new-and-stories-tabs.m-t-40
                 ul.ems-flex
-                    li.p-r-20
+                    li.p-r-20.font-size-17
                         a(href="#").active View All
-                    li.p-r-20
+                    li.p-r-20.font-size-17
                         a(href="#") News
-                    li.p-r-20
+                    li.p-r-20.font-size-17
                         a(href="#") Ideas
-                    li.p-r-20
+                    li.p-r-20.font-size-17
                         a(href="#") Article
-                    li.p-r-20
+                    li.p-r-20.font-size-17
                         a(href="#") Press
-            .ems-prd-list.ems-prd-list-page.ems-section.m-t-30.m-lg-t-60
-                ul.ems-flex.ems-flex-wrap.ems-flex-prd-list-wrapper
-                    -for (var y = 1; y <= 9; y++)
-                        li.ems-prd
-                            .ems-prd-inner
-                                +image('no', 'https://via.placeholder.com/800x670/DDDDDD/000000')
-                                .new-and-stories-type.font-weight-bold.m-t-25 ARTICLE
-                                .ems-prd-title.font-size-20.font-weight-bold.m-t-5.p-t-0 Ersa Completes Its Transformation
-                                .ems-prd-desc.line-height-1-5.p-t-15 What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the …
-                                .ems-flex.font-size-15.p-t-20.ems-flex-middle.font-weight-bold Read more
-                                    +icon('right-arrow m-l-5')
-                                +link('')(href="product-detail.html" class="ems-prd-link btn-full")
+            .ems-prd-list.ems-prd-list-page.ems-section.m-t-20.m-lg-0
+                .ems-tab-content.m-lg-t-40
+                    div(rel="tab-1").selected
+                        .ems-flex.ems-flex-wrap.ems-flex-cappellini-list
+                            -for (var y = 1; y <= 9; y++)
+                                .ems-list-item.m-b-40
+                                    .ems-card
+                                        .ems-card-image.m-b-20
+                                            +image('no', 'https://via.placeholder.com/800x670/DDDDDD/000000')
+                                            .new-and-stories-type.font-weight-bold.m-t-25.color-red ARTICLE
+                                            .ems-prd-title.font-size-20.font-weight-bold.m-t-5.p-t-0 Ersa Completes Its Transformation
+                                            .ems-prd-desc.line-height-1-5.p-t-15 What we’ve traditionally called the “office” is changing. As technology increases its foothold in our lives and changes the …
+                                            .ems-flex.font-size-15.p-t-20.ems-flex-middle.font-weight-bold Read more
+                                                +icon('right-arrow m-l-5')
+                                            +link('')(href="product-detail.html" class="ems-prd-link btn-full")
             .ems-flex.ems-flex-center
                 .btn.btn-transparent.btn-icon.show-more
                     span.color-red Show more

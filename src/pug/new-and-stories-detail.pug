@@ -4,11 +4,9 @@ block prepend head
     - var pageClass = "page new-and-stories-detail-page"
 
 block content
-    .ems-container
-        .d-ems-grid.d-ems-grid-cover-top
-            .d-ems-area-a
-                include includes/_breadcrumb.pug
-        .ems-flex.ems-flex-column.p-t-80.p-b-40.new-and-stories-detail-content
+    .ems-container-lg
+        include includes/_breadcrumb.pug
+        .ems-flex.ems-flex-column.p-t-80.p-b-40.new-and-stories-detail-content.ems-container
             .ems-prd-title
                 h1.font-size-32.font-weight-bold How Are Offices Evolving?
             .ems-prd-info.ems-flex.ems-flex-row.ems-flex-between.m-t-40.m-b-40

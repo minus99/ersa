@@ -97,9 +97,11 @@ table {
 }
 
 iframe {
+    border: none ;
+}
+.border-none {
     border: none;
 }
-
 //<main>
 .site-main {
     min-height: 500px;
@@ -963,7 +965,7 @@ iframe {
         padding-left: $p15;
     }
     //PADDING BOTTOM 15
-    &-b-10 {
+    &-b-15 {
         padding-bottom: $p15;
     }
     //PADDING TOP 20
@@ -1230,6 +1232,9 @@ iframe {
     &-24 {
         line-height: 24px;
     }
+    &-25 {
+        line-height: 25px;
+    }
     &-28 {
         line-height: 28px;
     }
@@ -1241,4 +1246,8 @@ iframe {
 .no-gutters {
     margin-left: 0 !important;
     margin-right: 0 !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }

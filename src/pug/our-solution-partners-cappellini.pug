@@ -35,11 +35,7 @@ block content
                 p.font-size-17.m-0 Products from <br> 
                 h3.font-size-32.font-weight-bold.m-t-10 Cappellini
             .ems-tab.m-t-40
-                .ems-tab-header.ems-new-tab-header.p-t-20.p-b-20
-                    a(href="javascript:void(0);" rel="tab-1").selected All Products
-                    a(href="javascript:void(0);" rel="tab-2") Sofas & Chairs
-                    a(href="javascript:void(0);" rel="tab-3") Desks & Tables
-                    a(href="javascript:void(0);" rel="tab-4") Accessories
+                include includes/_widget-swiper-nav.pug 
                 .ems-tab-content.m-t-40
                     div(rel="tab-1").selected
                         .ems-flex.ems-flex-wrap.ems-flex-cappellini-list
@@ -52,3 +48,4 @@ block content
                     div(rel="tab-2") tab content 2
                     div(rel="tab-3") tab content 3
                     div(rel="tab-4") tab content 4
+            include includes/_widget-3-swiper.pug        

@@ -6,10 +6,11 @@ block prepend head
 
 block content
     .ems-container-full
-        .ems-breadcrumb-absolute
-            include includes/_breadcrumb.pug
+        .ems-container-lg
+            .ems-breadcrumb-absolute
+                include includes/_breadcrumb.pug
         .ems-flex.solutions-title.position-relative
-            +picture('ems-responsive', 'no', 'upload/home-page-slide/mnSlide1x1.jpg', 'upload/home-page-slide/mnSlide1x2.jpg', 'upload/home-page-slide/mnSlide1.jpg')
+            +picture('ems-responsive', 'no', 'src/images/home-page-slide/mnSlide1x1.jpg', 'upload/home-page-slide/mnSlide1x2.jpg', 'upload/home-page-slide/mnSlide1.jpg')
             .title.position-absolute.font-size-36.font-weight-bold.color-white Creative spaces
         .ems-container-lg
             .ems-flex.space-and-solutions-logo.p-t-80.p-l-80

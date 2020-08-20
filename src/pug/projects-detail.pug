@@ -50,10 +50,13 @@ block content
     .ems-container
         .m-b-30
             h1.font-size-24.font-weight-bold Products in this project
-        
         //PRODUCT LIST GRID
         .ems-prd-list.ems-prd-list-page.ems-section.m-lg-t-42.p-lg-l-0
             ul.ems-flex.ems-flex-wrap.ems-flex-prd-list-wrapper
                 +product('', 'Polar', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
                 +product('', 'Likhia', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
                 +product('', 'Risus', 'https://via.placeholder.com/800x800/DDDDDD/000000', 'by Ersa R&D + Design Team')
+        //WIDGET INCLUDE
+        h1.font-size-24.font-weight-bold.m-t-60.m-b-30 Products in this project
+        include includes/_widget-3-swiper.pug
+          

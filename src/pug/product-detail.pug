@@ -50,22 +50,15 @@ block content
                                 a(href="#open-modal" class="ems-flex ems-flex-middle p-y-10")
                                     span.m-r-5 Share
                                     +icon('size')
-                .ems-section.p-lg-l-60.m-t-30.m-lg-t-60.ems-overflow-hidden
-                    .swiper-container.slider-pagination.slider-progressbar.p-b-20.p-lg-b-30.p-l-15.p-r-15.p-lg-l-0.p-lg-r-0(data-swiper="WidgetProgressbar")
+                .m-b-60.m-lg-b-100.m-t-30.m-lg-t-60.ems-overflow-hidden.ems-container
+                    .swiper-container.slider-pagination.slider-progressbar.p-b-20.p-lg-b-30.p-r-15.p-lg-l-0.p-lg-r-0(data-swiper="WidgetProgressbar")
                         .swiper-inner.ems-overflow-visible
                             ul.swiper-wrapper
-                                li.swiper-slide
-                                    .banner.p-5.p-lg-20
-                                        .prm-media.ems-responsive
-                                            +image('lazy-swiper', 'https://via.placeholder.com/840x620/ff0/f00')(class="ems-responsive-item" alt='title')
-                                li.swiper-slide
-                                    .banner.p-5.p-lg-20
-                                        .prm-media.ems-responsive
-                                            +image('lazy-swiper', 'https://via.placeholder.com/840x620/ff0/f00')(class="ems-responsive-item" alt='title')
-                                li.swiper-slide
-                                    .banner.p-5.p-lg-20
-                                        .prm-media.ems-responsive
-                                            +image('lazy-swiper', 'https://via.placeholder.com/840x620/ff0/f00')(class="ems-responsive-item" alt='title')
+                                -for (var y = 1; y <= 3; y++)
+                                    li.swiper-slide
+                                        .banner.p-lg-r-40.p-r-10
+                                            .prm-media.ems-responsive
+                                                +image('lazy-swiper', 'https://via.placeholder.com/840x627')(class="ems-responsive-item" alt='title')
                         .swiper-button-next.ems-none
                         .swiper-button-prev.ems-none
                         .swiper-pagination
@@ -75,7 +68,7 @@ block content
                 .ems-tab.ems-tab-prdd.ems-overflow-hidden
                     .swiper-container.swiper-auto(data-swiper="widgetAuto")
                         .swiper-inner.ems-overflow-visible
-                            ul.swiper-wrapper.ems-tab-header.ems-tab-prdd-detail-header
+                            ul.swiper-wrapper.ems-tab-prdd-detail-header
                                 a(href="javascript:void(0);" rel="tab-1" class="swiper-slide selected") Specifications
                                 a(href="javascript:void(0);" rel="tab-2" class="swiper-slide") Material & Finishes
                                 a(href="javascript:void(0);" rel="tab-3" class="swiper-slide") Downloads
@@ -309,7 +302,7 @@ block content
                 .related-projects.ems-section.m-t-40.m-lg-t-80
                     .p-l-20.p-t-40.p-r-20.p-lg-l-60.p-lg-t-80.p-lg-r-60
                         .ems-section-title1.p-lg-r-20.p-lg-l-20.p-b-10.p-lg-b-20
-                            |Related Projects
+                            p Related Projects
                         ul.ems-flex.ems-flex-wrap.width-100
                             li.p-lg-20
                                 .banner
@@ -323,7 +316,7 @@ block content
                                     a(href="javascript:void(0)" class="display-block")
                                         +picture('ems-responsive', 'no', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/335x280/FFFF00/000000', 'https://via.placeholder.com/670x560/FFFF00/000000')
                                         .banner-inset.p-t-20.p-b-20.p-lg-t-50.p-lg-b-30.ems-flex.ems-flex-bottom.ems-flex-wrap
-                                            span.prm-title-medium.m-r-10 Zai Jackson Park
+                                            span.prm-title-medium.m-r-10 Jackson Park
                                             span.prm-title-small Queens, USA
                             li.p-lg-20
                                 .banner
