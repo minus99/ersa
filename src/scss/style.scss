@@ -16,6 +16,7 @@
 @import 'components/bulletin';
 @import 'components/banner';
 @import 'components/list';
+@import 'components/widget-right-menu';
 
 //LAYOUT
 @import 'layout/header';
@@ -49,6 +50,7 @@
         @import 'components/modal-desktop';
         @import 'components/breadcrumb-desktop';
         @import 'components/banner-desktop';
+        @import 'components/widget-right-menu-desktop';
         //LAYOUT
         @import 'layout/header-desktop';
         @import 'layout/footer-desktop';

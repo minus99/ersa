@@ -123,14 +123,14 @@ iframe {
     //OVERLAY
     &-overlay {
         display: none;
-        position: fixed;
-        left: 0;
-        top: 0;
-        /*z-index: $z-index-overlay;*/
+        position: absolute;
+        z-index: 99;
         width: 100%;
         height: 100%;
-        /*background: rgba($color: $color0, $alpha: .2);*/
+        background: rgba($color: $color1, $alpha: .2);
         animation: show .5s ease;
+        
+        
     }
     //PAGE LOADING
     &-loading-overlay {
@@ -795,6 +795,10 @@ iframe {
     &-r-40 {
         margin-right: $m40;
     }
+    //MARGIN RIGHT 42
+    &-r-42 {
+        margin-right: 42px;
+    }
     //MARGIN LEFT 40
     &-l-40 {
         margin-left: $m40;
@@ -1215,6 +1219,9 @@ iframe {
 .font-weight {
     &-bold {
         font-weight: bold;
+    }
+    &-medium {
+        font-weight: 500;
     }
 }
 

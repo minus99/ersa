@@ -14,9 +14,9 @@ block content
             nav.m-t-40.m-lg-t-80
                 ul.ems-flex.ems-flex-wrap.ems-flex-middle
                     li.p-r-20
-                        p.color-red.font-size-17 All Projects
+                        a(href="#").color-red.font-size-17 All Projects
                     li.p-r-20
-                        p.color-gray.font-size-17.edit-icon Sector +
+                        a(href="#").color-gray.font-size-17.edit-icon Sector +
         .ems-flex.ems-flex-wrap.ems-flex-projects-list.m-t-20
             -for (var y = 1; y <= 8; y++)
                 .ems-list-item.m-b-40
@@ -26,3 +26,5 @@ block content
                         .ems-card-title.ems-flex.ems-flex-wrap.ems-flex-top.d-ems-flex-middle.ems-flex-column.d-ems-flex-row
                             span.font-size-20.font-weight-bold.m-lg-r-20.m-b-5.m-lg-b-0 Catalog Work 2020
                             small.font-size-14 Bodrum, Turkey
+    include includes/_widget-right-menu.pug
+        

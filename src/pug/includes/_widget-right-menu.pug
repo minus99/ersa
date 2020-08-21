@@ -1,0 +1,25 @@
+include __imports.pug
+
+div.right-bar.ems-flex.ems-flex-column
+    div.ems-flex
+        h1.font-size-20.font-weight-bold Styles
+        a(href="#").m-l-auto.font-weight-bold.font-size-20.widget-right-escape x
+    ul.lvl-1.filter-tree.d-ems-flex.d-ems-flex-left
+        li
+            ul.lvl-2.m-t-60
+                li.ems-flex.ems-flex-column.d-ems-flex-wrap
+                    +link('<span></span> Magnolia')(href="javascript:void(0);" class="filter_link")
+                    +link('<span></span> Polar')(href="javascript:void(0);" class="filter_link selected")
+                    +link('<span></span> Premier')(href="javascript:void(0);" class="filter_link ")
+                    +link('<span></span> Fold')(href="javascript:void(0);" class="filter_link")
+                    +link('<span></span> Larms')(href="javascript:void(0);" class="filter_link selected")
+                    +link('<span></span> Premier')(href="javascript:void(0);" class="filter_link ")
+                    +link('<span></span> Fold')(href="javascript:void(0);" class="filter_link")
+                    +link('<span></span> Magnolia')(href="javascript:void(0);" class="filter_link")
+    div.ems-flex.m-t-auto
+        ul.apply-button-group.ems-flex
+            li.m-r-50
+                p.font-size-15.font-weight-medium Clean All
+            li
+                p.font-size-14.font-weight-bold Apply
+

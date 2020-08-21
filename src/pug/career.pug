@@ -110,9 +110,8 @@ block content
                     input(type="file" name="attachment" placeholder="No file chosen")
                 .ems-flex
                     .ems-flex-item
-                        .form-group.ems-flex.ems-flex-middle.no-gutters
-                            input(type="checkbox" name="privacy_policy")
-                            label.m-t-15(for="privacy_policy selected") I accept the <a href="#">Privacy Policy</a> and consent to the <br> processing of my personal data.
+                        .form-group.m-b-30.m-lg-b-0.ems-flex.ems-flex-middle
+                            +link('<span></span> <p class="m-0"> I accept the <a href="#" class="privacy-title"> Privacy Policy</a> and consent to the processing of my personal data.</p>')(href="javascript:void(0);" class="privacy_link ")
                     .ems-flex-item
                         .form-group.p-lg-l-45
                             button(type="submit").btn.width-100 Send
